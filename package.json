@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "extract": "node scripts/extract-sets.mjs",
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run extract && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

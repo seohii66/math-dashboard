@@ -43,7 +43,7 @@ export default function App() {
             <ConnBadge />
           </div>
           <div style={{ display: "flex", background: "#EEF0F3", borderRadius: 10, padding: 3 }}>
-            {[["student", "학생용"], ["teacher", "선생님용"]].map(([r, label]) => (
+            {[["student", "이서"], ["teacher", "선생님용"]].map(([r, label]) => (
               <button key={r} onClick={() => switchRole(r)} style={{ border: "none", cursor: "pointer", fontFamily: "inherit", fontSize: 13, fontWeight: 600, padding: "7px 16px", borderRadius: 8, background: role === r ? "#fff" : "transparent", color: role === r ? "#1a1a1a" : "#888", boxShadow: role === r ? "0 1px 3px rgba(0,0,0,.1)" : "none" }}>{label}</button>
             ))}
           </div>
