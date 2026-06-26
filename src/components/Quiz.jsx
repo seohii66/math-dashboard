@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { checkSpr } from "../data/sets.js";
-import { recordAttempt, resetSet, useStore } from "../store.js";
+import { recordAttempt, resetSet, useStore, toggleBookmark } from "../store.js";
 
 function OptionButton({ opt, isRevealed, isAnswer, isSelected, onSelect }) {
   let bg = "#F7F7F7", border = "1px solid #ECECEC", color = "#333";
@@ -59,6 +59,8 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
 
   const answeredCount = set.problems.filter((p) => revealed[p.id]).length;
 
+  const bookmarks = snapshot.bookmarks?.[set.id] || {};
+
   return (
     <div style={{ maxWidth: 680, margin: "0 auto", padding: "16px 16px 60px", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
       <button onClick={onBack} style={{ background: "none", border: "none", color: "#888", fontSize: 14, cursor: "pointer", padding: "8px 0", marginBottom: 8, fontFamily: "inherit" }}>← 대시보드로</button>
@@ -84,7 +86,18 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
           <div key={p.id} style={{ background: "#fff", borderRadius: 14, marginBottom: 20, padding: "20px 20px 16px", border: isR && !teacherMode ? `1.5px solid ${cor ? "#66BB6A" : "#EF5350"}` : "1px solid #E8E8E8" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
               <span style={{ fontSize: 11, fontWeight: 600, color: cc, background: cc + "14", padding: "3px 10px", borderRadius: 20 }}>{p.category}</span>
-              <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1, color: p.type === "spr" ? "#E63946" : "#457B9D", background: p.type === "spr" ? "#FFEBEE" : "#E3F2FD", padding: "3px 8px", borderRadius: 4, textTransform: "uppercase" }}>{p.type === "spr" ? "Grid-In" : "MC"}</span>
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1, color: p.type === "spr" ? "#E63946" : "#457B9D", background: p.type === "spr" ? "#FFEBEE" : "#E3F2FD", padding: "3px 8px", borderRadius: 4, textTransform: "uppercase" }}>{p.type === "spr" ? "Grid-In" : "MC"}</span>
+                {!teacherMode && (
+                  <button
+                    onClick={() => toggleBookmark(set.id, p.id)}
+                    title={bookmarks[p.id] ? "북마크 해제" : "북마크에 추가"}
+                    style={{ background: bookmarks[p.id] ? "#FFF3CD" : "none", border: bookmarks[p.id] ? "1px solid #FFD54F" : "1px solid transparent", cursor: "pointer", fontSize: 14, padding: "2px 7px", lineHeight: 1.5, borderRadius: 6, opacity: bookmarks[p.id] ? 1 : 0.4, transition: "all .15s" }}
+                  >
+                    🔖
+                  </button>
+                )}
+              </div>
             </div>
             <p style={{ fontSize: 13, color: "#999", margin: "0 0 4px", fontWeight: 600 }}>Q{idx + 1} <span style={{ color: "#ccc" }}>{p.difficulty}</span></p>
             <pre style={{ fontSize: 14, color: "#2a2a2a", lineHeight: 1.7, whiteSpace: "pre-wrap", fontFamily: "inherit", margin: "0 0 16px" }}>{p.question}</pre>

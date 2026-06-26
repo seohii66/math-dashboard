@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SETS, useStore, setProgress, allWrongProblems, weaknessByCategory, todoSets } from "../store.js";
+import { SETS, useStore, setProgress, allWrongProblems, weaknessByCategory, todoSets, allBookmarkedProblems, toggleBookmark } from "../store.js";
 import { correctLabel } from "../data/sets.js";
 
 const STATUS = {
@@ -24,6 +24,7 @@ function Card({ children, style }) {
 export default function StudentDashboard({ onOpenSet }) {
   const snapshot = useStore();
   const [showWrong, setShowWrong] = useState(true);
+  const [showBookmarks, setShowBookmarks] = useState(true);
 
   const perSet = SETS.map((set) => ({ set, prog: setProgress(snapshot, set) }));
   const totalProblems = perSet.reduce((s, x) => s + x.prog.total, 0);
@@ -34,6 +35,7 @@ export default function StudentDashboard({ onOpenSet }) {
   const todo = todoSets(snapshot);
   const wrong = allWrongProblems(snapshot);
   const weak = weaknessByCategory(snapshot);
+  const bookmarked = allBookmarkedProblems(snapshot);
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "8px 16px 60px" }}>
@@ -108,13 +110,100 @@ export default function StudentDashboard({ onOpenSet }) {
         </Card>
       )}
 
+      {/* Bookmarked problems */}
+      <Card>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <SectionTitle style={{ margin: 0 }}>🔖 북마크한 문제 ({bookmarked.length})</SectionTitle>
+          <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+            {bookmarked.length > 0 && (
+              <button
+                onClick={() => {
+                  const catColors = Object.assign({}, ...bookmarked.map(({ set }) => set.catColors));
+                  onOpenSet({
+                    id: "__bookmark-review__",
+                    label: "북마크 복습",
+                    title: "북마크한 문제 풀기",
+                    subtitle: `총 ${bookmarked.length}문제`,
+                    accent: "#E8870A",
+                    catColors,
+                    problems: bookmarked.map(({ set, problem }) => ({ ...problem, id: `${set.id}-${problem.id}` })),
+                  });
+                }}
+                style={{ background: "#FFF3CD", border: "1px solid #FFD54F", color: "#8a6d00", borderRadius: 8, padding: "6px 12px", fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: "inherit" }}
+              >
+                북마크만 풀기 →
+              </button>
+            )}
+            {bookmarked.length > 0 && (
+              <button onClick={() => setShowBookmarks((s) => !s)} style={{ background: "none", border: "none", color: "#888", fontSize: 13, cursor: "pointer" }}>{showBookmarks ? "접기" : "펼치기"}</button>
+            )}
+          </div>
+        </div>
+        {bookmarked.length === 0 ? (
+          <Empty>아직 북마크한 문제가 없어요. 문제 풀기 화면에서 🔖 버튼을 눌러 저장해보세요.</Empty>
+        ) : showBookmarks ? (
+          <div style={{ marginTop: 14 }}>
+            {bookmarked.map(({ set, problem, at }) => (
+              <details key={`${set.id}-${problem.id}`} style={{ borderTop: "1px solid #F0F0F0", padding: "12px 0" }}>
+                <summary style={{ cursor: "pointer", listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
+                  <span style={{ fontSize: 13, color: "#333", display: "flex", alignItems: "center", gap: 8 }}>
+                    <span style={chip(set.catColors[problem.category] || "#888", (set.catColors[problem.category] || "#888") + "18")}>{problem.category}</span>
+                    <span style={{ color: "#aaa", fontSize: 11 }}>{new Date(at).toLocaleDateString("ko-KR", { month: "short", day: "numeric" })}</span>
+                  </span>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                    <span style={{ fontSize: 11, color: "#bbb" }}>{set.label}</span>
+                    <button
+                      onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleBookmark(set.id, problem.id); }}
+                      title="북마크 해제"
+                      style={{ background: "#FFF3CD", border: "1px solid #FFD54F", cursor: "pointer", fontSize: 12, padding: "2px 7px", borderRadius: 6, color: "#8a6d00" }}
+                    >
+                      해제
+                    </button>
+                  </div>
+                </summary>
+                <pre style={{ fontSize: 13, color: "#444", lineHeight: 1.6, whiteSpace: "pre-wrap", fontFamily: "inherit", margin: "10px 0" }}>{problem.question}</pre>
+                <div style={{ display: "flex", gap: 10, flexWrap: "wrap", fontSize: 12, marginBottom: 8 }}>
+                  <span style={{ fontSize: 10, fontWeight: 700, color: problem.type === "spr" ? "#E63946" : "#457B9D", background: problem.type === "spr" ? "#FFEBEE" : "#E3F2FD", padding: "3px 8px", borderRadius: 4 }}>{problem.type === "spr" ? "Grid-In" : "MC"}</span>
+                  <span style={{ color: "#2E7D32", background: "#E8F5E9", padding: "3px 8px", borderRadius: 6 }}>정답: {correctLabel(problem)}</span>
+                </div>
+                {problem.explanation && (
+                  <pre style={{ fontSize: 12.5, color: "#666", lineHeight: 1.7, whiteSpace: "pre-wrap", fontFamily: "inherit", background: "#FAFAFA", borderRadius: 8, padding: 12, margin: 0 }}>{problem.explanation}</pre>
+                )}
+                <button onClick={() => onOpenSet(set)} style={{ marginTop: 10, background: "none", border: `1px solid ${set.accent}`, color: set.accent, borderRadius: 8, padding: "6px 14px", fontSize: 12, cursor: "pointer" }}>이 세트 풀기 →</button>
+              </details>
+            ))}
+          </div>
+        ) : null}
+      </Card>
+
       {/* Wrong problems review */}
       <Card>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <SectionTitle style={{ margin: 0 }}>❌ 틀린 문제 다시 보기 ({wrong.length})</SectionTitle>
-          {wrong.length > 0 && (
-            <button onClick={() => setShowWrong((s) => !s)} style={{ background: "none", border: "none", color: "#888", fontSize: 13, cursor: "pointer" }}>{showWrong ? "접기" : "펼치기"}</button>
-          )}
+          <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+            {wrong.length > 0 && (
+              <button
+                onClick={() => {
+                  const catColors = Object.assign({}, ...wrong.map(({ set }) => set.catColors));
+                  onOpenSet({
+                    id: "__wrong-review__",
+                    label: "오답 복습",
+                    title: "틀린 문제 다시 풀기",
+                    subtitle: `총 ${wrong.length}문제`,
+                    accent: "#E53935",
+                    catColors,
+                    problems: wrong.map(({ set, problem }) => ({ ...problem, id: `${set.id}-${problem.id}` })),
+                  });
+                }}
+                style={{ background: "#FFEBEE", border: "1px solid #EF9A9A", color: "#C62828", borderRadius: 8, padding: "6px 12px", fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: "inherit" }}
+              >
+                오답만 다시 풀기 →
+              </button>
+            )}
+            {wrong.length > 0 && (
+              <button onClick={() => setShowWrong((s) => !s)} style={{ background: "none", border: "none", color: "#888", fontSize: 13, cursor: "pointer" }}>{showWrong ? "접기" : "펼치기"}</button>
+            )}
+          </div>
         </div>
         {wrong.length === 0 ? (
           <Empty>아직 틀린 문제가 없어요.</Empty>

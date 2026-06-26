@@ -16,14 +16,14 @@ import { supabase, TABLE, STATE_ID } from "./supabase.js";
 // ----------------------------------------------------------------------------
 
 const KEY = "math-platform-v1";
-const empty = { attempts: {}, assigned: {} };
+const empty = { attempts: {}, assigned: {}, bookmarks: {} };
 
 function readLocal() {
   try {
     const raw = localStorage.getItem(KEY);
     if (!raw) return empty;
     const p = JSON.parse(raw);
-    return { attempts: p.attempts || {}, assigned: p.assigned || {} };
+    return { attempts: p.attempts || {}, assigned: p.assigned || {}, bookmarks: p.bookmarks || {} };
   } catch {
     return empty;
   }
@@ -56,7 +56,7 @@ function pushRemote() {
   }, 250);
 }
 
-// Merge two states: keep the later attempt per problem; union assignments.
+// Merge two states: keep the later attempt per problem; union assignments and bookmarks.
 // Used on first load to reconcile this device's local cache with the cloud.
 function merge(a, b) {
   const attempts = {};
@@ -69,7 +69,11 @@ function merge(a, b) {
     }
     attempts[setId] = m;
   }
-  return { attempts, assigned: { ...a.assigned, ...b.assigned } };
+  const bookmarks = {};
+  for (const setId of new Set([...Object.keys(a.bookmarks || {}), ...Object.keys(b.bookmarks || {})])) {
+    bookmarks[setId] = { ...(a.bookmarks?.[setId] || {}), ...(b.bookmarks?.[setId] || {}) };
+  }
+  return { attempts, assigned: { ...a.assigned, ...b.assigned }, bookmarks };
 }
 
 // Cross-tab sync (same browser).
@@ -137,6 +141,14 @@ export function toggleAssigned(setId) {
   persist();
 }
 
+export function toggleBookmark(setId, problemId) {
+  const setBookmarks = { ...(state.bookmarks[setId] || {}) };
+  if (setBookmarks[problemId]) delete setBookmarks[problemId];
+  else setBookmarks[problemId] = { at: Date.now() };
+  state = { ...state, bookmarks: { ...state.bookmarks, [setId]: setBookmarks } };
+  persist();
+}
+
 // ---- export / import (file-based transfer; still useful as a backup) -------
 export function exportState() {
   return JSON.stringify({ kind: "math-practice-hub", version: 1, exportedAt: Date.now(), ...state }, null, 2);
@@ -171,6 +183,17 @@ export function setProgress(snapshot, set) {
   if (answered === total && total > 0) status = "completed";
   else if (answered > 0) status = "in-progress";
   return { total, answered, correct, wrong, assigned, status };
+}
+
+export function allBookmarkedProblems(snapshot) {
+  const out = [];
+  SETS.forEach((set) => {
+    const bm = snapshot.bookmarks?.[set.id] || {};
+    set.problems.forEach((p) => {
+      if (bm[p.id]) out.push({ set, problem: p, at: bm[p.id].at });
+    });
+  });
+  return out.sort((a, b) => b.at - a.at);
 }
 
 export function allWrongProblems(snapshot) {
