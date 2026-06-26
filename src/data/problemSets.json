@@ -840,5 +840,283 @@
         "explanation": "Step 1 — Total loaves: 150 × 3 = 450\nStep 2 — Total flour: 450 × 350 g = 157,500 g = 157.5 kg\nStep 3 — Bags: 157.5 ÷ 25 = 6.3 → round UP = 7\n\nAnswer: 7 bags\n\n💡 g → kg (÷ 1,000), then divide by bag size and round UP. 6 bags only gives 150 kg — not enough."
       }
     ]
+  },
+  {
+    "id": "june2026-set8",
+    "label": "June 2026 · SET 8",
+    "title": "Science & Statistics",
+    "subtitle": "CO₂ · Light · Sound · Solar",
+    "accent": "#D6336C",
+    "catColors": {
+      "Carbon Footprint · Rate × Time": "#E63946",
+      "Margin of Error · Statistics": "#457B9D",
+      "Speed of Light · Scientific Notation": "#2A9D8F",
+      "Length · Conversion Factor": "#E9C46A",
+      "Population Growth · Compound": "#F4A261",
+      "Speed in Different Media": "#264653",
+      "Weighted Average Cost": "#6A4C93",
+      "Solar Panel · Efficiency": "#1982C4",
+      "Probability from Data": "#8AC926",
+      "Road Trip · Fuel Cost": "#FF595E"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "spr",
+        "category": "Carbon Footprint · Rate × Time",
+        "question": "A car emits 2.5 kg of CO₂ per liter of gasoline. A driver uses 40 liters per week. How many metric tons of CO₂ does the car emit in one year (52 weeks)? (1 metric ton = 1,000 kg)",
+        "correctValue": 5.2,
+        "tolerance": 0.01,
+        "unit": "metric tons",
+        "explanation": "Step 1 — Annual fuel: 40 × 52 = 2,080 L\nStep 2 — CO₂: 2,080 × 2.5 = 5,200 kg\nStep 3 — Convert: 5,200 ÷ 1,000 = 5.2 metric tons\n\nAnswer: 5.2\n\n💡 Three-step chain: weekly→yearly→mass→tons."
+      },
+      {
+        "id": 2,
+        "type": "mc",
+        "category": "Margin of Error · Statistics",
+        "question": "A poll of 400 people shows 55% support a proposal. The margin of error is ±4 percentage points. What is the range of likely actual support?",
+        "options": [
+          "A) 51% to 59%",
+          "B) 55% to 59%",
+          "C) 53% to 57%",
+          "D) 50% to 60%"
+        ],
+        "answer": 0,
+        "explanation": "Lower bound: 55% − 4% = 51%\nUpper bound: 55% + 4% = 59%\n\nRange: 51% to 59%\n\nAnswer: A) 51% to 59%\n\n💡 Margin of error goes BOTH directions. Option B only adds, option C uses ±2."
+      },
+      {
+        "id": 3,
+        "type": "spr",
+        "category": "Speed of Light · Scientific Notation",
+        "question": "Light travels at 3 × 10⁸ meters per second. How many millions of kilometers does light travel in one minute?",
+        "correctValue": 18,
+        "tolerance": 0,
+        "unit": "million km",
+        "explanation": "Step 1 — Distance in meters:\n3 × 10⁸ m/s × 60 s = 1.8 × 10¹⁰ m\n\nStep 2 — Convert to km:\n1.8 × 10¹⁰ ÷ 1,000 = 1.8 × 10⁷ km\n\nStep 3 — In millions:\n1.8 × 10⁷ = 18 million km\n\nAnswer: 18 million km\n\n💡 m → km (÷1,000) then → millions (÷1,000,000). Handle the powers of 10 carefully."
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Length · Conversion Factor",
+        "question": "A rope is 15 yards long. Using 1 yard = 0.9144 meters, how long is the rope in meters?",
+        "options": [
+          "A) 13.5 m",
+          "B) 13.7 m",
+          "C) 14.0 m",
+          "D) 16.4 m"
+        ],
+        "answer": 1,
+        "explanation": "15 × 0.9144 = 13.716 m ≈ 13.7 m\n\nAnswer: B) 13.7 m\n\n💡 Option D (16.4) divides instead of multiplying. Since yards are slightly shorter than meters, the answer must be less than 15."
+      },
+      {
+        "id": 5,
+        "type": "spr",
+        "category": "Population Growth · Compound",
+        "question": "A city has 50,000 residents. The population grows at 10% per year. What will the population be after 2 years?",
+        "correctValue": 60500,
+        "tolerance": 0,
+        "unit": "people",
+        "explanation": "Year 1: 50,000 × 1.10 = 55,000\nYear 2: 55,000 × 1.10 = 60,500\n\nOr: 50,000 × (1.10)² = 50,000 × 1.21 = 60,500\n\nAnswer: 60,500\n\n💡 Not 50,000 + 10,000 = 60,000. The second year's 10% applies to 55,000, not 50,000."
+      },
+      {
+        "id": 6,
+        "type": "spr",
+        "category": "Speed in Different Media",
+        "question": "Sound travels at 343 m/s in air and 1,480 m/s in water. A sound source is 2 km away. How many seconds faster does the sound arrive through water than through air? Round to the nearest tenth.",
+        "correctValue": 4.5,
+        "tolerance": 0.05,
+        "unit": "seconds",
+        "explanation": "Convert distance: 2 km = 2,000 m\n\nTime in air: 2,000 ÷ 343 = 5.831 s\nTime in water: 2,000 ÷ 1,480 = 1.351 s\n\nDifference: 5.831 − 1.351 = 4.480 ≈ 4.5 s\n\nAnswer: 4.5 seconds\n\n💡 Convert km → m first, then divide each by its speed. Subtract times, not speeds."
+      },
+      {
+        "id": 7,
+        "type": "mc",
+        "category": "Weighted Average Cost",
+        "question": "A factory buys from 3 suppliers: A provides 200 units at $5.00 each, B provides 300 units at $4.50 each, and C provides 500 units at $3.80 each. What is the weighted average cost per unit?",
+        "options": [
+          "A) $4.25",
+          "B) $4.43",
+          "C) $4.50",
+          "D) $4.10"
+        ],
+        "answer": 0,
+        "explanation": "Total cost: 200(5) + 300(4.50) + 500(3.80)\n= 1,000 + 1,350 + 1,900 = $4,250\n\nTotal units: 200 + 300 + 500 = 1,000\n\nAverage: $4,250 ÷ 1,000 = $4.25\n\nAnswer: A) $4.25\n\n💡 Simple average of prices = (5+4.50+3.80)/3 = $4.43 — that's option B, the trap. Weights by quantity matter."
+      },
+      {
+        "id": 8,
+        "type": "spr",
+        "category": "Solar Panel · Efficiency",
+        "question": "A solar panel has an area of 2 m² and receives 1,000 watts per m² of sunlight. If the panel is 18% efficient, how many watt-hours of energy does it produce in 5 hours of peak sunlight?",
+        "correctValue": 1800,
+        "tolerance": 0,
+        "unit": "Wh",
+        "explanation": "Step 1 — Power input: 2 × 1,000 = 2,000 W\nStep 2 — Power output: 2,000 × 0.18 = 360 W\nStep 3 — Energy: 360 × 5 = 1,800 Wh\n\nAnswer: 1,800 Wh\n\n💡 Efficiency reduces power, not time. Apply the 18% to wattage, then multiply by hours."
+      },
+      {
+        "id": 9,
+        "type": "mc",
+        "category": "Probability from Data",
+        "question": "In a batch of 500 products: 320 passed inspection, 150 need minor fixes, and 30 are rejected. What is the probability a randomly selected product either passes or needs minor fixes?",
+        "options": [
+          "A) 64%",
+          "B) 84%",
+          "C) 94%",
+          "D) 97%"
+        ],
+        "answer": 2,
+        "explanation": "Favorable outcomes: 320 + 150 = 470\n\nP = 470 ÷ 500 = 0.94 = 94%\n\nAnswer: C) 94%\n\n💡 \"Either A or B\" = add the counts. Option A (64%) is pass-only. Option B forgets to add."
+      },
+      {
+        "id": 10,
+        "type": "spr",
+        "category": "Road Trip · Fuel Cost",
+        "question": "A road trip is 720 miles. A car gets 30 miles per gallon. Gas costs $3.60 per gallon. What is the total fuel cost?",
+        "correctValue": 86.4,
+        "tolerance": 0.01,
+        "unit": "$",
+        "explanation": "Step 1 — Gallons needed: 720 ÷ 30 = 24 gallons\nStep 2 — Cost: 24 × $3.60 = $86.40\n\nAnswer: $86.40\n\n💡 Distance ÷ efficiency = fuel needed. Then fuel × price = cost. Two clean steps."
+      }
+    ]
+  },
+  {
+    "id": "june2026-set9",
+    "label": "June 2026 · SET 9",
+    "title": "Business & Daily Life",
+    "subtitle": "Rent · Pricing · Construction · Commute",
+    "accent": "#2B8A3E",
+    "catColors": {
+      "Rent · Area Conversion": "#E63946",
+      "Break-Even Analysis": "#457B9D",
+      "Circular Patio · Volume · Cost": "#2A9D8F",
+      "Price Comparison · Forex": "#E9C46A",
+      "Wallpaper · Surface Area": "#F4A261",
+      "Percentage Change · Q-over-Q": "#264653",
+      "Tiered Pricing · Print Shop": "#6A4C93",
+      "Fill & Drain · Net Rate": "#1982C4",
+      "Commute Cost Comparison": "#8AC926",
+      "Tiling · Waste Factor": "#FF595E"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "spr",
+        "category": "Rent · Area Conversion",
+        "question": "An apartment is 65 m². Monthly rent is $1,800. Using 1 m² ≈ 10.764 ft², what is the rent per square foot per month? Round to the nearest cent.",
+        "correctValue": 2.57,
+        "tolerance": 0.01,
+        "unit": "$/ft²",
+        "explanation": "Step 1 — Convert area: 65 × 10.764 = 699.66 ft²\nStep 2 — Rent per ft²: $1,800 ÷ 699.66 = $2.573 ≈ $2.57\n\nAnswer: $2.57/ft²\n\n💡 Must square the conversion factor for area. Using 3.281 (linear) instead of 10.764 (area) gives a wrong answer."
+      },
+      {
+        "id": 2,
+        "type": "mc",
+        "category": "Break-Even Analysis",
+        "question": "A food truck has fixed daily costs of $800. Each meal costs $4 to make and sells for $10. How many meals must be sold daily to break even?",
+        "options": [
+          "A) 80",
+          "B) 114",
+          "C) 134",
+          "D) 200"
+        ],
+        "answer": 2,
+        "explanation": "Profit per meal: $10 − $4 = $6\n\nBreak even: $800 ÷ $6 = 133.33\n\nRound UP (can't sell a fraction): 134 meals\n\nAnswer: C) 134\n\n💡 Option A (80) divides by $10 instead of $6. Always subtract variable cost from price first."
+      },
+      {
+        "id": 3,
+        "type": "spr",
+        "category": "Circular Patio · Volume · Cost",
+        "question": "A circular patio has a diameter of 10 meters and is 0.1 meters thick. Concrete costs $100 per cubic meter. Using π ≈ 3.14, what is the total cost?",
+        "correctValue": 785,
+        "tolerance": 0,
+        "unit": "$",
+        "explanation": "Step 1 — Radius: 10 ÷ 2 = 5 m\nStep 2 — Volume: π × r² × h = 3.14 × 25 × 0.1 = 7.85 m³\nStep 3 — Cost: 7.85 × $100 = $785\n\nAnswer: $785\n\n💡 Use RADIUS (5), not diameter (10). πr² with diameter gives 4× the correct area."
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Price Comparison · Forex",
+        "question": "A coffee costs ¥450 in Tokyo and $4.50 in New York. Using 1 USD = 150 JPY, which city is cheaper and by how much in US dollars?",
+        "options": [
+          "A) Tokyo by $1.50",
+          "B) New York by $1.50",
+          "C) Tokyo by $0.50",
+          "D) Same price"
+        ],
+        "answer": 0,
+        "explanation": "Tokyo in USD: ¥450 ÷ 150 = $3.00\n\nDifference: $4.50 − $3.00 = $1.50\n\nTokyo is $1.50 cheaper.\n\nAnswer: A) Tokyo by $1.50\n\n💡 Convert to the SAME currency before comparing."
+      },
+      {
+        "id": 5,
+        "type": "spr",
+        "category": "Wallpaper · Surface Area",
+        "question": "A room has 4 walls, each 3.5 m high. Two walls are 5 m wide and two are 4 m wide. Wallpaper rolls are 0.5 m wide and 10 m long. How many rolls are needed? (Ignore doors and windows. Round up.)",
+        "correctValue": 13,
+        "tolerance": 0,
+        "unit": "rolls",
+        "explanation": "Step 1 — Total wall area:\n2(5 × 3.5) + 2(4 × 3.5) = 35 + 28 = 63 m²\n\nStep 2 — Area per roll:\n0.5 × 10 = 5 m²\n\nStep 3 — Rolls: 63 ÷ 5 = 12.6 → round UP = 13\n\nAnswer: 13 rolls\n\n💡 12 rolls = 60 m², which is 3 m² short. Always round up for materials."
+      },
+      {
+        "id": 6,
+        "type": "mc",
+        "category": "Percentage Change · Q-over-Q",
+        "question": "A store's revenue was $48,000 in Q1, $54,000 in Q2, and $51,000 in Q3. What was the percentage change from Q1 to Q3?",
+        "options": [
+          "A) 5.6%",
+          "B) 6.25%",
+          "C) 6.5%",
+          "D) 12.5%"
+        ],
+        "answer": 1,
+        "explanation": "Change: $51,000 − $48,000 = $3,000\n\nPercent: ($3,000 ÷ $48,000) × 100 = 6.25%\n\nAnswer: B) 6.25%\n\n💡 Use the ORIGINAL value (Q1) as the denominator, not Q2 or Q3. Option D adds both quarter changes."
+      },
+      {
+        "id": 7,
+        "type": "spr",
+        "category": "Tiered Pricing · Print Shop",
+        "question": "A print shop charges $0.08 per page for the first 500 pages and $0.05 per page for each additional page. How much does it cost to print 1,200 pages?",
+        "correctValue": 75,
+        "tolerance": 0,
+        "unit": "$",
+        "explanation": "First 500 pages: 500 × $0.08 = $40\nRemaining 700 pages: 700 × $0.05 = $35\n\nTotal: $40 + $35 = $75\n\nAnswer: $75\n\n💡 Tiered pricing = calculate each tier separately, then add. Don't apply one rate to all pages."
+      },
+      {
+        "id": 8,
+        "type": "mc",
+        "category": "Fill & Drain · Net Rate",
+        "question": "A pipe fills a 300-liter tank in 25 minutes. A drain empties the tank in 50 minutes. If both are open, how long to fill the tank from empty?",
+        "options": [
+          "A) 25 min",
+          "B) 37.5 min",
+          "C) 50 min",
+          "D) 75 min"
+        ],
+        "answer": 2,
+        "explanation": "Fill rate: 300 ÷ 25 = 12 L/min\nDrain rate: 300 ÷ 50 = 6 L/min\n\nNet rate: 12 − 6 = 6 L/min\n\nTime: 300 ÷ 6 = 50 min\n\nAnswer: C) 50 min\n\n💡 Subtract drain rate from fill rate. Option B averages the two times — that's not how rates work."
+      },
+      {
+        "id": 9,
+        "type": "spr",
+        "category": "Commute Cost Comparison",
+        "question": "Driving: 25 km each way, car uses 8 L per 100 km, gas is $1.50/L. Monthly bus pass: $85. Working 22 days/month, how much do you save monthly by taking the bus?",
+        "correctValue": 47,
+        "tolerance": 0,
+        "unit": "$",
+        "explanation": "Daily drive distance: 25 × 2 = 50 km\nDaily fuel: 50 × (8/100) = 4 L\nDaily fuel cost: 4 × $1.50 = $6.00\nMonthly driving: $6 × 22 = $132\n\nSavings: $132 − $85 = $47\n\nAnswer: $47\n\n💡 Don't forget the ROUND TRIP (×2). One-way gives $66/month driving, making the bus look more expensive."
+      },
+      {
+        "id": 10,
+        "type": "mc",
+        "category": "Tiling · Waste Factor",
+        "question": "A room is 4 m × 5 m. Tiles cost $18 per m². A contractor recommends 10% extra for waste and cuts. What is the total tile cost?",
+        "options": [
+          "A) $360",
+          "B) $378",
+          "C) $396",
+          "D) $432"
+        ],
+        "answer": 2,
+        "explanation": "Step 1 — Base area: 4 × 5 = 20 m²\nStep 2 — With 10% extra: 20 × 1.10 = 22 m²\nStep 3 — Cost: 22 × $18 = $396\n\nAnswer: C) $396\n\n💡 Option A ($360) forgets the waste. Option B adds 10% to the cost, not the area — close but wrong method."
+      }
+    ]
   }
 ]
