@@ -75,7 +75,7 @@ export default function StudentDashboard({ onOpenSet, onOpenOdapNote }) {
                 subtitle: `총 ${bookmarked.length}문제`,
                 accent: "#E8870A",
                 catColors,
-                problems: bookmarked.map(({ set, problem }) => ({ ...problem, id: `${set.id}-${problem.id}` })),
+                problems: bookmarked.map(({ set, problem }) => ({ ...problem, id: `${set.id}-${problem.id}`, _sourceSetId: set.id, _originalId: problem.id })),
               });
             }}
             style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: "1.5px solid #FFD54F", borderRadius: 12, padding: "12px 18px", cursor: "pointer", fontFamily: "inherit", flex: 1, minWidth: 160 }}
@@ -208,7 +208,7 @@ export default function StudentDashboard({ onOpenSet, onOpenOdapNote }) {
                     subtitle: `총 ${wrong.length}문제`,
                     accent: "#E53935",
                     catColors,
-                    problems: wrong.map(({ set, problem }) => ({ ...problem, id: `${set.id}-${problem.id}` })),
+                    problems: wrong.map(({ set, problem }) => ({ ...problem, id: `${set.id}-${problem.id}`, _sourceSetId: set.id, _originalId: problem.id })),
                   });
                 }}
                 style={{ background: "#FFEBEE", border: "1px solid #EF9A9A", color: "#C62828", borderRadius: 8, padding: "6px 12px", fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: "inherit" }}
