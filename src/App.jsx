@@ -3,6 +3,7 @@ import StudentDashboard from "./components/StudentDashboard.jsx";
 import TeacherDashboard from "./components/TeacherDashboard.jsx";
 import DataTransfer from "./components/DataTransfer.jsx";
 import Quiz from "./components/Quiz.jsx";
+import OdapNote from "./components/OdapNote.jsx";
 import { useConnection } from "./store.js";
 
 const CONN = {
@@ -24,13 +25,18 @@ function ConnBadge() {
 
 export default function App() {
   const [role, setRole] = useState(() => localStorage.getItem("math-platform-role") || "student");
-  const [activeSet, setActiveSet] = useState(null); // currently open quiz
+  const [activeSet, setActiveSet] = useState(null);
+  const [odapOpen, setOdapOpen] = useState(false);
 
   const switchRole = (r) => {
     setRole(r);
     setActiveSet(null);
+    setOdapOpen(false);
     localStorage.setItem("math-platform-role", r);
   };
+
+  const openSet = (set) => { setActiveSet(set); setOdapOpen(false); };
+  const goBack = () => { setActiveSet(null); setOdapOpen(false); };
 
   return (
     <div style={{ minHeight: "100vh", background: "#F5F6F8", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
@@ -52,13 +58,15 @@ export default function App() {
 
       <main style={{ paddingTop: 16 }}>
         {activeSet ? (
-          <Quiz set={activeSet} teacherMode={role === "teacher"} onBack={() => setActiveSet(null)} />
+          <Quiz set={activeSet} teacherMode={role === "teacher"} onBack={goBack} />
+        ) : odapOpen ? (
+          <OdapNote onBack={() => setOdapOpen(false)} onOpenSet={openSet} />
         ) : (
           <>
             {role === "student" ? (
-              <StudentDashboard onOpenSet={setActiveSet} />
+              <StudentDashboard onOpenSet={openSet} onOpenOdapNote={() => setOdapOpen(true)} />
             ) : (
-              <TeacherDashboard onPreviewSet={setActiveSet} />
+              <TeacherDashboard onPreviewSet={openSet} />
             )}
             <DataTransfer role={role} />
           </>

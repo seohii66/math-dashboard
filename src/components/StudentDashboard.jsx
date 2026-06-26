@@ -21,7 +21,7 @@ function Card({ children, style }) {
   return <div style={{ background: "#fff", borderRadius: 14, border: "1px solid #E8E8E8", padding: 20, marginBottom: 20, ...style }}>{children}</div>;
 }
 
-export default function StudentDashboard({ onOpenSet }) {
+export default function StudentDashboard({ onOpenSet, onOpenOdapNote }) {
   const snapshot = useStore();
   const [showWrong, setShowWrong] = useState(true);
   const [showBookmarks, setShowBookmarks] = useState(true);
@@ -51,6 +51,43 @@ export default function StudentDashboard({ onOpenSet }) {
           <Bar value={totalAnswered} total={totalProblems} color="#64B5F6" />
         </div>
       </Card>
+
+      {/* Quick action bar */}
+      <div style={{ display: "flex", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>
+        <button
+          onClick={onOpenOdapNote}
+          style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: "1.5px solid #EF9A9A", borderRadius: 12, padding: "12px 18px", cursor: "pointer", fontFamily: "inherit", flex: 1, minWidth: 160 }}
+        >
+          <span style={{ fontSize: 20 }}>📒</span>
+          <div style={{ textAlign: "left" }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: "#C62828" }}>오답노트</div>
+            <div style={{ fontSize: 11, color: "#aaa" }}>틀린 {wrong.length}문제 · 유사 문제 생성</div>
+          </div>
+        </button>
+        {bookmarked.length > 0 && (
+          <button
+            onClick={() => {
+              const catColors = Object.assign({}, ...bookmarked.map(({ set }) => set.catColors));
+              onOpenSet({
+                id: "__bookmark-review__",
+                label: "북마크 복습",
+                title: "북마크한 문제 풀기",
+                subtitle: `총 ${bookmarked.length}문제`,
+                accent: "#E8870A",
+                catColors,
+                problems: bookmarked.map(({ set, problem }) => ({ ...problem, id: `${set.id}-${problem.id}` })),
+              });
+            }}
+            style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: "1.5px solid #FFD54F", borderRadius: 12, padding: "12px 18px", cursor: "pointer", fontFamily: "inherit", flex: 1, minWidth: 160 }}
+          >
+            <span style={{ fontSize: 20 }}>🔖</span>
+            <div style={{ textAlign: "left" }}>
+              <div style={{ fontSize: 13, fontWeight: 700, color: "#8a6d00" }}>북마크</div>
+              <div style={{ fontSize: 11, color: "#aaa" }}>{bookmarked.length}문제 모아 풀기</div>
+            </div>
+          </button>
+        )}
+      </div>
 
       {/* To-do */}
       <Card>
@@ -114,30 +151,9 @@ export default function StudentDashboard({ onOpenSet }) {
       <Card>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <SectionTitle style={{ margin: 0 }}>🔖 북마크한 문제 ({bookmarked.length})</SectionTitle>
-          <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-            {bookmarked.length > 0 && (
-              <button
-                onClick={() => {
-                  const catColors = Object.assign({}, ...bookmarked.map(({ set }) => set.catColors));
-                  onOpenSet({
-                    id: "__bookmark-review__",
-                    label: "북마크 복습",
-                    title: "북마크한 문제 풀기",
-                    subtitle: `총 ${bookmarked.length}문제`,
-                    accent: "#E8870A",
-                    catColors,
-                    problems: bookmarked.map(({ set, problem }) => ({ ...problem, id: `${set.id}-${problem.id}` })),
-                  });
-                }}
-                style={{ background: "#FFF3CD", border: "1px solid #FFD54F", color: "#8a6d00", borderRadius: 8, padding: "6px 12px", fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: "inherit" }}
-              >
-                북마크만 풀기 →
-              </button>
-            )}
-            {bookmarked.length > 0 && (
-              <button onClick={() => setShowBookmarks((s) => !s)} style={{ background: "none", border: "none", color: "#888", fontSize: 13, cursor: "pointer" }}>{showBookmarks ? "접기" : "펼치기"}</button>
-            )}
-          </div>
+          {bookmarked.length > 0 && (
+            <button onClick={() => setShowBookmarks((s) => !s)} style={{ background: "none", border: "none", color: "#888", fontSize: 13, cursor: "pointer" }}>{showBookmarks ? "접기" : "펼치기"}</button>
+          )}
         </div>
         {bookmarked.length === 0 ? (
           <Empty>아직 북마크한 문제가 없어요. 문제 풀기 화면에서 🔖 버튼을 눌러 저장해보세요.</Empty>
