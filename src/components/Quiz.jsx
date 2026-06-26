@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { checkSpr } from "../data/sets.js";
 import { recordAttempt, resetSet, useStore, toggleBookmark } from "../store.js";
+
+const TIME_LIMIT = 15 * 60; // 15분 (초 단위)
 
 function OptionButton({ opt, isRevealed, isAnswer, isSelected, onSelect }) {
   let bg = "#F7F7F7", border = "1px solid #ECECEC", color = "#333";
@@ -34,10 +36,31 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
   const [redeemedCount, setRedeemedCount] = useState(0);
   const [redeemedIds, setRedeemedIds] = useState({});
   const [showKey, setShowKey] = useState(teacherMode);
+  const [timeLeft, setTimeLeft] = useState(teacherMode ? null : TIME_LIMIT);
+  const [timesUp, setTimesUp] = useState(false);
+  const scoreAllRef = useRef(null);
 
   const getAnswer = (p) => (p.type === "mc" ? selected[p.id] : sprInputs[p.id] || "");
   const handleSelect = (pid, oi) => { if (!revealed[pid]) setSelected((prev) => ({ ...prev, [pid]: oi })); };
   const handleSprInput = (pid, v) => { if (!revealed[pid]) setSprInputs((prev) => ({ ...prev, [pid]: v })); };
+
+  // 타이머: teacherMode가 아닐 때, 채점 전까지만 카운트다운
+  useEffect(() => {
+    if (teacherMode || score !== null) return;
+    if (timeLeft <= 0) return;
+    const id = setInterval(() => {
+      setTimeLeft((t) => {
+        if (t <= 1) {
+          clearInterval(id);
+          setTimesUp(true);
+          scoreAllRef.current?.();
+          return 0;
+        }
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(id);
+  }, [teacherMode, score]);
 
   const isAnswered = (p) => (p.type === "mc" ? selected[p.id] !== undefined : (sprInputs[p.id] || "") !== "");
   const isCorrect = (p) => (p.type === "mc" ? (teacherMode ? false : selected[p.id] === p.answer) : checkSpr(p, sprInputs[p.id] || ""));
@@ -74,10 +97,13 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
     setRedeemedIds(newRedeemedIds);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  scoreAllRef.current = scoreAll;
 
   const reset = () => {
     setSelected({}); setSprInputs({}); setRevealed({}); setScore(null);
     setRedeemedCount(0); setRedeemedIds({}); setShowKey(false);
+    setTimeLeft(teacherMode ? null : TIME_LIMIT);
+    setTimesUp(false);
     // Don't reset the store for virtual review sets — original records should persist.
     if (!set.id.startsWith("__")) resetSet(set.id);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -95,7 +121,26 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
         </div>
         <h1 style={{ fontSize: 24, fontWeight: 700, color: "#1a1a1a", margin: "0 0 8px" }}>{set.title}</h1>
         <p style={{ fontSize: 13, color: "#777", margin: 0 }}>{set.subtitle}</p>
+
+        {!teacherMode && timeLeft !== null && (
+          <div style={{ marginTop: 16, display: "inline-flex", alignItems: "center", gap: 8, background: timesUp ? "#FFEBEE" : timeLeft <= 120 ? "#FFF3E0" : "#F5F5F5", border: `1.5px solid ${timesUp ? "#EF5350" : timeLeft <= 120 ? "#FFA726" : "#E0E0E0"}`, borderRadius: 12, padding: "8px 20px" }}>
+            <span style={{ fontSize: 13, color: timesUp ? "#C62828" : timeLeft <= 120 ? "#E65100" : "#555", fontWeight: 600 }}>
+              {timesUp ? "⏰ 시간 종료!" : "⏱"}
+            </span>
+            {!timesUp && (
+              <span style={{ fontSize: 22, fontWeight: 700, fontVariantNumeric: "tabular-nums", color: timeLeft <= 120 ? "#E65100" : "#1a1a1a", letterSpacing: 1 }}>
+                {String(Math.floor(timeLeft / 60)).padStart(2, "0")}:{String(timeLeft % 60).padStart(2, "0")}
+              </span>
+            )}
+          </div>
+        )}
       </div>
+
+      {timesUp && score !== null && (
+        <div style={{ background: "#FFEBEE", border: "1.5px solid #EF5350", borderRadius: 12, padding: "12px 20px", marginBottom: 16, textAlign: "center" }}>
+          <span style={{ fontSize: 14, fontWeight: 700, color: "#C62828" }}>⏰ 15분 시간 종료 — 자동 채점되었습니다</span>
+        </div>
+      )}
 
       {score !== null && (
         isRetrySet ? (
