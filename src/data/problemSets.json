@@ -1,10 +1,908 @@
 [
   {
+    "id": "actual-set10",
+    "label": "actual-set10",
+    "title": "Core Algebra & Functions",
+    "subtitle": "Function eval · Factoring · Systems · Percent chains",
+    "accent": "#E63946",
+    "catColors": {
+      "Unit Conversion · Rate": "#E63946",
+      "Function Evaluation": "#457B9D",
+      "System of Equations": "#2A9D8F",
+      "Factoring Polynomials": "#E9C46A",
+      "Basic Probability": "#F4A261",
+      "Triangle Angle Theorem": "#264653",
+      "Combining Like Terms": "#6A4C93",
+      "Exponential Modeling": "#1982C4",
+      "Finding a Constant": "#8AC926",
+      "Percent Chain": "#FF595E"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Unit Conversion · Rate",
+        "question": "A truck uses 24 gallons of diesel to travel 840 miles. At this rate, how many kilometers does the truck travel using 24 gallons of diesel? (Use 1 mile = 1.6 kilometers.)",
+        "options": [
+          "A) 525",
+          "B) 1,344",
+          "C) 13,440",
+          "D) 134.4"
+        ],
+        "answer": 1,
+        "explanation": "840 miles × 1.6 km/mile = 1,344 km\n\nAnswer: B) 1,344\n\n💡 The rate (24 gallons → 840 miles) stays the same. Just convert miles to km. Option C is ×16 instead of ×1.6."
+      },
+      {
+        "id": 2,
+        "type": "mc",
+        "category": "Function Evaluation",
+        "question": "The function g is defined by g(x) = 5x − 12. What is the value of g(−4)?",
+        "options": [
+          "A) 32",
+          "B) 8",
+          "C) −8",
+          "D) −32"
+        ],
+        "answer": 3,
+        "explanation": "g(−4) = 5(−4) − 12 = −20 − 12 = −32\n\nAnswer: D) −32\n\n💡 Common mistake: forgetting the negative sign on −4 gives 5(4)−12=8 (option B)."
+      },
+      {
+        "id": 3,
+        "type": "mc",
+        "category": "System of Equations",
+        "question": "12x = 84\n5x − 23 = y\n\nThe solution to the given system is (x, y). What is the value of y?",
+        "options": [
+          "A) 84",
+          "B) 7",
+          "C) 12",
+          "D) −12"
+        ],
+        "answer": 2,
+        "explanation": "From the first equation:\n12x = 84 → x = 7\n\nSubstitute into the second:\ny = 5(7) − 23 = 35 − 23 = 12\n\nAnswer: C) 12\n\n💡 Option B (7) is the value of x, not y. Read what the question asks!"
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Factoring Polynomials",
+        "question": "Which expression is equivalent to 5x⁴ − 10x³ + 15x²?",
+        "options": [
+          "A) 5x(x³ − 2x² + 3x)",
+          "B) 5x²(x² − 2x + 3)",
+          "C) x²(5x² − 10x + 15)",
+          "D) 15x²(x² − 2x + 1)"
+        ],
+        "answer": 1,
+        "explanation": "Find the GCF of all terms:\n5x⁴, 10x³, 15x² → GCF = 5x²\n\nFactor out 5x²:\n5x²(x² − 2x + 3)\n\nVerify: 5x²(x²) − 5x²(2x) + 5x²(3) = 5x⁴ − 10x³ + 15x² ✓\n\nAnswer: B) 5x²(x² − 2x + 3)\n\n💡 Option A factors out 5x instead of 5x². Option C factors out x² but not the 5."
+      },
+      {
+        "id": 5,
+        "type": "spr",
+        "category": "Basic Probability",
+        "question": "A jar contains 60 marbles: 42 are red, 12 are blue, and 6 are green. If a marble is selected at random, what is the probability of selecting a green marble?\n(Express your answer as a decimal or fraction, not as a percent.)",
+        "correctValue": 0.1,
+        "tolerance": 0.001,
+        "unit": "",
+        "explanation": "P(green) = 6/60 = 1/10 = 0.1\n\nAnswer: 0.1 (or 1/10)\n\n💡 Total marbles = 60, not just the non-red ones."
+      },
+      {
+        "id": 6,
+        "type": "mc",
+        "category": "Triangle Angle Theorem",
+        "question": "In △PQR, the measure of ∠P is 108°. Which of the following could be the measure, in degrees, of ∠Q?",
+        "options": [
+          "A) 108",
+          "B) 90",
+          "C) 72",
+          "D) 71"
+        ],
+        "answer": 3,
+        "explanation": "Sum of angles in a triangle = 180°\n∠Q + ∠R = 180° − 108° = 72°\n\nBoth ∠Q and ∠R must be positive, so each must be less than 72°.\n\nCheck options:\nA) 108 > 72 ✗\nB) 90 > 72 ✗\nC) 72 → ∠R = 0 ✗ (not valid)\nD) 71 → ∠R = 1° ✓\n\nAnswer: D) 71\n\n💡 The answer must be STRICTLY less than 72°. Equal to 72° means the third angle is 0°, which isn't a triangle."
+      },
+      {
+        "id": 7,
+        "type": "mc",
+        "category": "Combining Like Terms",
+        "question": "Which expression is equivalent to 15x³ + 7 + 8x³?",
+        "options": [
+          "A) 23x⁶ + 7",
+          "B) 23x³ + 7",
+          "C) 120x³",
+          "D) 30x⁶"
+        ],
+        "answer": 1,
+        "explanation": "Combine like terms:\n15x³ + 8x³ = 23x³\n\nResult: 23x³ + 7\n\nAnswer: B) 23x³ + 7\n\n💡 When adding like terms, add the coefficients only — the exponent stays the same. x³ + x³ = 2x³, NOT x⁶."
+      },
+      {
+        "id": 8,
+        "type": "mc",
+        "category": "Exponential Modeling",
+        "question": "A town has a population of 12,000. The population increases by 6% each year. Which function models the population P after t years?",
+        "options": [
+          "A) P(t) = 12,000(0.06)^t",
+          "B) P(t) = 12,000(1.06)^t",
+          "C) P(t) = 12,000(6)^t",
+          "D) P(t) = 12,000 + 0.06t"
+        ],
+        "answer": 1,
+        "explanation": "Exponential growth: P(t) = initial × (1 + rate)^t\n= 12,000 × (1.06)^t\n\nAnswer: B) P(t) = 12,000(1.06)^t\n\n💡 Option A uses the rate alone (0.06) as the base — wrong. Option D is linear growth, not exponential."
+      },
+      {
+        "id": 9,
+        "type": "spr",
+        "category": "Finding a Constant",
+        "question": "The function f is defined by f(x) = 3x + c, where c is a constant and f(5) = 8. What is the value of c?",
+        "correctValue": -7,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "f(5) = 3(5) + c = 8\n15 + c = 8\nc = 8 − 15 = −7\n\nAnswer: −7\n\n💡 Plug in x = 5, set equal to 8, solve for c."
+      },
+      {
+        "id": 10,
+        "type": "mc",
+        "category": "Percent Chain",
+        "question": "A number p is 80% greater than a positive number q. A number r is 60% less than the number p. The number r is how many times the number q?",
+        "options": [
+          "A) 0.48",
+          "B) 0.72",
+          "C) 1.20",
+          "D) 1.40"
+        ],
+        "answer": 1,
+        "explanation": "p is 80% greater than q:\np = q + 0.80q = 1.80q\n\nr is 60% less than p:\nr = p − 0.60p = 0.40p\n\nSubstitute:\nr = 0.40(1.80q) = 0.72q\n\nSo r = 0.72 times q.\n\nAnswer: B) 0.72\n\n💡 \"80% greater\" means ×1.80, not ×0.80. \"60% less\" means ×0.40, not ×0.60."
+      }
+    ]
+  },
+  {
+    "id": "actual-set11",
+    "label": "actual-set11",
+    "title": "Advanced Algebra & Quadratics",
+    "subtitle": "Systems · Free fall · No solution · Scaling",
+    "accent": "#457B9D",
+    "catColors": {
+      "Quadratic System": "#E63946",
+      "Y-Intercept of Exponential": "#457B9D",
+      "Area Scaling · Percent Increase": "#2A9D8F",
+      "Solving (x − a)² = b": "#E9C46A",
+      "Consecutive Integers": "#F4A261",
+      "Setting Up Equations": "#264653",
+      "Free Fall · Quadratic": "#6A4C93",
+      "No Solution · Find k": "#1982C4",
+      "Exponential Account Balance": "#8AC926",
+      "Rate Conversion": "#FF595E"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Quadratic System",
+        "question": "y = 0\ny = 5(x² − 16)\n\nWhich ordered pair (x, y) is a solution to the given system of equations?",
+        "options": [
+          "A) (0, 4)",
+          "B) (0, 16)",
+          "C) (4, 0)",
+          "D) (16, 0)"
+        ],
+        "answer": 2,
+        "explanation": "Substitute y = 0 into the second equation:\n0 = 5(x² − 16)\n0 = x² − 16\nx² = 16\nx = ±4\n\nSolutions: (4, 0) and (−4, 0)\n\nAnswer: C) (4, 0)\n\n💡 y = 0 means we're finding x-intercepts. Don't confuse (x, y) order — (0, 4) has x=0, y=4."
+      },
+      {
+        "id": 2,
+        "type": "mc",
+        "category": "Y-Intercept of Exponential",
+        "question": "What is the y-intercept of the graph of y = 8ˣ in the xy-plane?",
+        "options": [
+          "A) (0, 8)",
+          "B) (0, 1)",
+          "C) (0, 0)",
+          "D) (0, −1)"
+        ],
+        "answer": 1,
+        "explanation": "The y-intercept occurs when x = 0:\ny = 8⁰ = 1\n\nPoint: (0, 1)\n\nAnswer: B) (0, 1)\n\n💡 For ANY exponential y = aˣ (where a > 0), the y-intercept is always (0, 1) because a⁰ = 1. This is a rule worth memorizing."
+      },
+      {
+        "id": 3,
+        "type": "mc",
+        "category": "Area Scaling · Percent Increase",
+        "question": "A rectangular poster has an area of 1,600 square centimeters. A copy is made in which the length and width are each increased by 25%. What is the area of the copy, in square centimeters?",
+        "options": [
+          "A) 2,000",
+          "B) 2,400",
+          "C) 2,500",
+          "D) 3,200"
+        ],
+        "answer": 2,
+        "explanation": "Each dimension is multiplied by 1.25.\n\nNew area = original × (1.25)² = 1,600 × 1.5625 = 2,500\n\nAnswer: C) 2,500\n\n💡 Area scales by the SQUARE of the linear factor. 25% increase in each dimension → (1.25)² = 56.25% increase in area, NOT 50%."
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Solving (x − a)² = b",
+        "question": "(x − 15)² = 9\n\nWhat is the sum of the solutions to the given equation?",
+        "options": [
+          "A) 15",
+          "B) 18",
+          "C) 27",
+          "D) 30"
+        ],
+        "answer": 3,
+        "explanation": "Take the square root of both sides:\nx − 15 = ±3\n\nx = 15 + 3 = 18\nx = 15 − 3 = 12\n\nSum = 18 + 12 = 30\n\nAnswer: D) 30\n\n💡 Shortcut: for (x − a)² = b, the two solutions are a + √b and a − √b. Their sum is always 2a. Here: 2(15) = 30."
+      },
+      {
+        "id": 5,
+        "type": "spr",
+        "category": "Consecutive Integers",
+        "question": "For a set of three consecutive integers, the result of subtracting the greatest integer from the sum of the other two integers is 32. What is the value of the greatest of the three integers?",
+        "correctValue": 35,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Let the integers be n, n+1, n+2.\n\nSum of the other two: n + (n+1) = 2n + 1\nSubtract the greatest: (2n + 1) − (n + 2) = n − 1\n\nn − 1 = 32\nn = 33\n\nGreatest = n + 2 = 35\n\nAnswer: 35\n\n💡 \"Subtracting the greatest FROM the sum\" means (sum) − (greatest), not the other way around."
+      },
+      {
+        "id": 6,
+        "type": "mc",
+        "category": "Setting Up Equations",
+        "question": "A store sells pens for $2.50 each and notebooks for $6.75 each. A customer buys x pens and y notebooks. The cost of 12 notebooks is $81. The total cost of pens and notebooks is $113.50. Which equation represents the total cost?",
+        "options": [
+          "A) 2.50x + 81y = 113.50",
+          "B) 81x + 2.50y = 113.50",
+          "C) 2.50x + 6.75y = 113.50",
+          "D) 6.75x + 2.50y = 113.50"
+        ],
+        "answer": 2,
+        "explanation": "Total cost = (price per pen)(number of pens) + (price per notebook)(number of notebooks)\n\n= 2.50x + 6.75y = 113.50\n\nAnswer: C) 2.50x + 6.75y = 113.50\n\n💡 The $81 for 12 notebooks confirms the price ($81÷12 = $6.75/notebook). Use the unit price, not the bulk price."
+      },
+      {
+        "id": 7,
+        "type": "spr",
+        "category": "Free Fall · Quadratic",
+        "question": "h(t) = −16t² + b\n\nThe function h estimates an object's height, in feet, above the ground t seconds after it is dropped, where b is a constant. The object is 64 feet above the ground when dropped at t = 0. How many seconds after being dropped does the object hit the ground?",
+        "correctValue": 2,
+        "tolerance": 0,
+        "unit": "seconds",
+        "explanation": "At t = 0: h(0) = b = 64, so b = 64.\n\nHit the ground when h(t) = 0:\n−16t² + 64 = 0\n16t² = 64\nt² = 4\nt = 2 (positive only)\n\nAnswer: 2 seconds\n\n💡 Step 1: find b from initial condition. Step 2: set h = 0 and solve. Don't forget to reject the negative root."
+      },
+      {
+        "id": 8,
+        "type": "spr",
+        "category": "No Solution · Find k",
+        "question": "3(kx + 5) = (12/5)x − 9\n\nIn the given equation, k is a constant. The equation has no solution. What is the value of k?",
+        "correctValue": 0.8,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "Expand the left side:\n3kx + 15 = (12/5)x − 9\n\nFor NO SOLUTION, the x coefficients must be equal but the constants must differ:\n3k = 12/5\nk = 12/15 = 4/5 = 0.8\n\nCheck constants: 15 ≠ −9 ✓ (different, so no solution)\n\nAnswer: 4/5 or 0.8\n\n💡 No solution = same slope, different intercept. Set the coefficients of x equal and solve for k."
+      },
+      {
+        "id": 9,
+        "type": "mc",
+        "category": "Exponential Account Balance",
+        "question": "An account opens with $28,000 and earns 5% interest compounded annually. No deposits or withdrawals are made. Which function gives the balance A(t) after t years?",
+        "options": [
+          "A) A(t) = 28,000(1.05)^t",
+          "B) A(t) = 28,000(0.05)^t",
+          "C) A(t) = 28,000 + 0.05t",
+          "D) A(t) = 28,000(0.95)^t"
+        ],
+        "answer": 0,
+        "explanation": "Compound interest: A(t) = P(1 + r)^t\n= 28,000(1.05)^t\n\nAnswer: A) A(t) = 28,000(1.05)^t\n\n💡 Option B uses 0.05 as base (would approach 0). Option C is linear. Option D is 5% DECAY, not growth."
+      },
+      {
+        "id": 10,
+        "type": "mc",
+        "category": "Rate Conversion",
+        "question": "A printer prints 480 pages in 8 minutes. At this rate, how many pages does the printer print per second?",
+        "options": [
+          "A) 0.5",
+          "B) 1",
+          "C) 6",
+          "D) 60"
+        ],
+        "answer": 1,
+        "explanation": "Step 1 — Pages per minute:\n480 ÷ 8 = 60 pages/min\n\nStep 2 — Pages per second:\n60 ÷ 60 = 1 page/sec\n\nAnswer: B) 1\n\n💡 Two-step conversion: first find per minute, then divide by 60 for per second. Option D stops at per minute."
+      }
+    ]
+  },
+  {
+    "id": "actual-set12",
+    "label": "actual-set12",
+    "title": "Algebra & Reasoning",
+    "subtitle": "Vieta's · Rearrange · Diff of squares · Cost functions · Verified ✓",
+    "accent": "#2A9D8F",
+    "catColors": {
+      "Expression from Equation": "#E63946",
+      "Parallel Line · Slope": "#457B9D",
+      "Rearranging Formulas": "#2A9D8F",
+      "Sum of Solutions · Vieta's": "#E9C46A",
+      "Squared Unit Conversion": "#F4A261",
+      "Inequality · Solution Check": "#264653",
+      "Surface Area · Rectangular Box": "#6A4C93",
+      "Factoring · Difference of Squares": "#1982C4",
+      "Piecewise Cost Function": "#8AC926",
+      "No-Solution System": "#FF595E"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Expression from Equation",
+        "question": "If 7 + x = 3, what is the value of −14 − 2x?",
+        "options": [
+          "A) −6",
+          "B) −10",
+          "C) 6",
+          "D) 22"
+        ],
+        "answer": 0,
+        "explanation": "From 7 + x = 3: x = −4\n\n−14 − 2(−4) = −14 + 8 = −6\n\nShortcut: notice −14 − 2x = −2(7 + x) = −2(3) = −6\n\nAnswer: A) −6\n\n💡 Factor the target expression to match the given equation — saves time and avoids sign errors."
+      },
+      {
+        "id": 2,
+        "type": "mc",
+        "category": "Parallel Line · Slope",
+        "question": "In the xy-plane, line s is parallel to line t.\nLine s is defined by y + 12 = 5x. What is the slope of line t?",
+        "options": [
+          "A) −12",
+          "B) −5",
+          "C) 5",
+          "D) 12"
+        ],
+        "answer": 2,
+        "explanation": "Rewrite line s in slope-intercept form:\ny + 12 = 5x → y = 5x − 12\n\nSlope of s = 5\nParallel lines have equal slopes, so slope of t = 5.\n\nAnswer: C) 5\n\n💡 Option A (−12) is the y-intercept, not the slope. Rearrange to y = mx + b first."
+      },
+      {
+        "id": 3,
+        "type": "mc",
+        "category": "Rearranging Formulas",
+        "question": "A = B(20 − C)\n\nThe given equation relates the variables A, B, and C. Which expression represents the value of C for distinct positive values of A and B?",
+        "options": [
+          "A) 20 + A/B",
+          "B) 20 − A/B",
+          "C) A/B − 20",
+          "D) (20 − A)/B"
+        ],
+        "answer": 1,
+        "explanation": "A = B(20 − C)\n\nDivide both sides by B:\nA/B = 20 − C\n\nSolve for C:\nC = 20 − A/B\n\nAnswer: B) 20 − A/B\n\n💡 Don't distribute first — divide by B directly to isolate (20 − C), then rearrange."
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Sum of Solutions · Vieta's",
+        "question": "x² − 18x + 45 = 0\n\nWhat is the sum of the solutions to the given equation?",
+        "options": [
+          "A) 45",
+          "B) 18",
+          "C) 3",
+          "D) 0"
+        ],
+        "answer": 1,
+        "explanation": "By Vieta's formulas, for ax² + bx + c = 0:\nSum of solutions = −b/a\n\nHere: −(−18)/1 = 18\n\nAnswer: B) 18\n\n💡 You DON'T need to find the individual solutions. Sum = −b/a works every time for any quadratic."
+      },
+      {
+        "id": 5,
+        "type": "mc",
+        "category": "Squared Unit Conversion",
+        "question": "A pressure measurement is 4.5 newtons per square centimeter. What is this in newtons per square millimeter? (1 centimeter = 10 millimeters)",
+        "options": [
+          "A) 450",
+          "B) 45",
+          "C) 0.45",
+          "D) 0.045"
+        ],
+        "answer": 3,
+        "explanation": "1 cm = 10 mm → 1 cm² = 100 mm²\n\n4.5 N/cm² means 4.5 N per 1 cm² = 4.5 N per 100 mm²\n\n= 4.5 ÷ 100 = 0.045 N/mm²\n\nAnswer: D) 0.045\n\n💡 When converting \"per area,\" the area factor is SQUARED. ÷100 (not ÷10). This is the same trap as the bone density question on the actual DSAT."
+      },
+      {
+        "id": 6,
+        "type": "mc",
+        "category": "Inequality · Solution Check",
+        "question": "y > 3x − 2\n\nWhich of the following ordered pairs (x, y) is a solution to the given inequality?",
+        "options": [
+          "A) (1, 5)",
+          "B) (2, 4)",
+          "C) (0, −3)",
+          "D) (3, 7)"
+        ],
+        "answer": 0,
+        "explanation": "Check each:\n\nA) (1, 5): 5 > 3(1) − 2 = 1 → 5 > 1 ✓\nB) (2, 4): 4 > 3(2) − 2 = 4 → 4 > 4 ✗ (not strict)\nC) (0, −3): −3 > −2 ✗\nD) (3, 7): 7 > 3(3) − 2 = 7 → 7 > 7 ✗\n\nAnswer: A) (1, 5)\n\n💡 The inequality is STRICT (>, not ≥). Equal values don't count — that eliminates B and D."
+      },
+      {
+        "id": 7,
+        "type": "spr",
+        "category": "Surface Area · Rectangular Box",
+        "question": "A rectangular box has a length of 8 units, a width of 5 units, and a height of 3 units. What is the total surface area, in square units?",
+        "correctValue": 158,
+        "tolerance": 0,
+        "unit": "sq units",
+        "explanation": "SA = 2(lw + lh + wh)\n= 2(8×5 + 8×3 + 5×3)\n= 2(40 + 24 + 15)\n= 2(79) = 158\n\nAnswer: 158\n\n💡 Three different face pairs, each appearing twice. Don't forget the ×2 at the end."
+      },
+      {
+        "id": 8,
+        "type": "mc",
+        "category": "Factoring · Difference of Squares",
+        "question": "Which expression is a factor of 25x⁸ − 9x⁶?",
+        "options": [
+          "A) 5x + 3",
+          "B) 25x² + 9",
+          "C) 5x − 9",
+          "D) −16x²"
+        ],
+        "answer": 0,
+        "explanation": "Factor out x⁶:\n25x⁸ − 9x⁶ = x⁶(25x² − 9)\n\nRecognize difference of squares:\n25x² − 9 = (5x)² − 3² = (5x − 3)(5x + 3)\n\nSo: x⁶(5x − 3)(5x + 3)\n\nAnswer: A) 5x + 3\n\n💡 Factor out the GCF first (x⁶), THEN apply difference of squares. Option B (sum of squares) does NOT factor over reals."
+      },
+      {
+        "id": 9,
+        "type": "mc",
+        "category": "Piecewise Cost Function",
+        "question": "A plumber charges $120 for the first hour of repair plus $45 for each additional hour. The total cost for 6 hours is $345. Which function f gives the total cost, in dollars, for x hours of repair, where x ≥ 1?",
+        "options": [
+          "A) f(x) = 45x + 75",
+          "B) f(x) = 45x + 120",
+          "C) f(x) = 120x",
+          "D) f(x) = 120x + 45"
+        ],
+        "answer": 0,
+        "explanation": "After the first hour, each additional hour costs $45.\n\nf(x) = 120 + 45(x − 1)\n= 120 + 45x − 45\n= 45x + 75\n\nVerify: f(1) = 45 + 75 = $120 ✓\nf(6) = 270 + 75 = $345 ✓\n\nAnswer: A) f(x) = 45x + 75\n\n💡 Option B (45x + 120) gives f(1) = $165 — too high. The $120 INCLUDES the first hour's work."
+      },
+      {
+        "id": 10,
+        "type": "spr",
+        "category": "No-Solution System",
+        "question": "8x − 18y = 5\n−4x + ty = 2/3\n\nIn the given system, t is a constant. If the system has no solution, what is the value of t?",
+        "correctValue": 9,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "For no solution, the lines must be parallel (same slope, different intercept).\n\nMultiply eq 2 by −2:\n8x − 2ty = −4/3\n\nCompare with eq 1:\n8x − 18y = 5\n\nFor parallel: −2t = −18 → t = 9\n\nCheck intercepts: 5 ≠ −4/3 ✓ (different, so no solution)\n\nAnswer: 9\n\n💡 Multiply one equation so the x-coefficients match, then set the y-coefficients equal. Different constants confirm no solution."
+      }
+    ]
+  },
+  {
+    "id": "actual-set13",
+    "label": "actual-set13",
+    "title": "Core Skills Drill",
+    "subtitle": "Shortcuts · Slope · Vieta's · Cost · Inequality · Verified ✓",
+    "accent": "#E08A1E",
+    "catColors": {
+      "Expression Shortcut": "#E63946",
+      "Parallel Line · Rearrange": "#457B9D",
+      "Rearranging Formulas": "#2A9D8F",
+      "Sum of Solutions · Vieta's": "#E9C46A",
+      "Squared Unit Conversion": "#F4A261",
+      "Factoring · High Exponents": "#264653",
+      "Surface Area · Rectangular Prism": "#6A4C93",
+      "Cost Function · First-N-Hours": "#1982C4",
+      "Inequality · Table Check": "#8AC926",
+      "No-Solution System · Fractions": "#FF595E"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Expression Shortcut",
+        "question": "If 3x + 5 = 20, what is the value of 9x + 15?",
+        "options": [
+          "A) 45",
+          "B) 55",
+          "C) 60",
+          "D) 75"
+        ],
+        "answer": 2,
+        "explanation": "Notice: 9x + 15 = 3(3x + 5)\n\nSince 3x + 5 = 20:\n3(20) = 60\n\nAnswer: C) 60\n\n💡 Don't solve for x first. Factor the target expression to match the given equation — instant answer."
+      },
+      {
+        "id": 2,
+        "type": "mc",
+        "category": "Parallel Line · Rearrange",
+        "question": "In the xy-plane, line p is parallel to line q.\nLine p is defined by 2y − 8 = 6x. What is the slope of line q?",
+        "options": [
+          "A) −4",
+          "B) −3",
+          "C) 3",
+          "D) 8"
+        ],
+        "answer": 2,
+        "explanation": "Rearrange line p:\n2y − 8 = 6x\n2y = 6x + 8\ny = 3x + 4\n\nSlope of p = 3\nParallel → slope of q = 3\n\nAnswer: C) 3\n\n💡 Option D (8) is twice the y-intercept. Always isolate y first."
+      },
+      {
+        "id": 3,
+        "type": "mc",
+        "category": "Rearranging Formulas",
+        "question": "M = K(15 + R)\n\nWhich expression represents the value of R?",
+        "options": [
+          "A) M/K + 15",
+          "B) M/K − 15",
+          "C) 15 − M/K",
+          "D) (M − 15)/K"
+        ],
+        "answer": 1,
+        "explanation": "M = K(15 + R)\n\nDivide by K:\nM/K = 15 + R\n\nSolve for R:\nR = M/K − 15\n\nAnswer: B) M/K − 15\n\n💡 Option D distributes K incorrectly. Divide the entire left side by K first."
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Sum of Solutions · Vieta's",
+        "question": "x² − 22x + 40 = 0\n\nWhat is the sum of the solutions to the given equation?",
+        "options": [
+          "A) 40",
+          "B) 22",
+          "C) 2",
+          "D) −22"
+        ],
+        "answer": 1,
+        "explanation": "By Vieta's: sum = −b/a = −(−22)/1 = 22\n\nAnswer: B) 22\n\n💡 For any ax² + bx + c = 0: sum = −b/a, product = c/a. No need to factor or use the quadratic formula."
+      },
+      {
+        "id": 5,
+        "type": "mc",
+        "category": "Squared Unit Conversion",
+        "question": "A bone mineral density is estimated to be 0.65 grams per square centimeter. What is this in grams per square millimeter?\n(1 centimeter = 10 millimeters)",
+        "options": [
+          "A) 65",
+          "B) 6.5",
+          "C) 0.065",
+          "D) 0.0065"
+        ],
+        "answer": 3,
+        "explanation": "1 cm = 10 mm → 1 cm² = 100 mm²\n\n0.65 g/cm² = 0.65 g per 100 mm²\n= 0.65 ÷ 100 = 0.0065 g/mm²\n\nAnswer: D) 0.0065\n\n💡 \"Per square\" means divide by 100 (10²), not by 10. This exact type appeared on the June 2026 DSAT."
+      },
+      {
+        "id": 6,
+        "type": "mc",
+        "category": "Factoring · High Exponents",
+        "question": "Which expression is a factor of 36x¹² − 81x¹⁰?",
+        "options": [
+          "A) 2x + 3",
+          "B) 6x² + 9",
+          "C) 2x − 3",
+          "D) 9x¹⁰"
+        ],
+        "answer": 0,
+        "explanation": "Factor out 9x¹⁰:\n36x¹² − 81x¹⁰ = 9x¹⁰(4x² − 9)\n\nDifference of squares:\n4x² − 9 = (2x)² − 3² = (2x − 3)(2x + 3)\n\nFull: 9x¹⁰(2x − 3)(2x + 3)\n\nAnswer: A) 2x + 3\n\n💡 Factor out GCF first, then recognize difference of squares. The high exponents are just the GCF — don't let them intimidate you."
+      },
+      {
+        "id": 7,
+        "type": "spr",
+        "category": "Surface Area · Rectangular Prism",
+        "question": "A rectangular prism has a length of 10 units, a width of 7 units, and a height of 4 units. What is the surface area, in square units?",
+        "correctValue": 276,
+        "tolerance": 0,
+        "unit": "sq units",
+        "explanation": "SA = 2(lw + lh + wh)\n= 2(10×7 + 10×4 + 7×4)\n= 2(70 + 40 + 28)\n= 2(138) = 276\n\nAnswer: 276\n\n💡 Six faces in three pairs. Each pair has different dimensions."
+      },
+      {
+        "id": 8,
+        "type": "mc",
+        "category": "Cost Function · First-N-Hours",
+        "question": "A mechanic charges $200 for the first 3 hours of work plus $60 for each additional hour. Which function f gives the total cost, in dollars, for x hours of work, where x ≥ 3?",
+        "options": [
+          "A) f(x) = 60x + 20",
+          "B) f(x) = 60x + 200",
+          "C) f(x) = 200x",
+          "D) f(x) = 200x + 60"
+        ],
+        "answer": 0,
+        "explanation": "For x ≥ 3, additional hours = x − 3\n\nf(x) = 200 + 60(x − 3)\n= 200 + 60x − 180\n= 60x + 20\n\nVerify:\nf(3) = 180 + 20 = $200 ✓\nf(8) = 480 + 20 = $500 ✓\n\nAnswer: A) f(x) = 60x + 20\n\n💡 The $200 covers the FIRST 3 hours. For x > 3, subtract those 3 hours before multiplying by the hourly rate."
+      },
+      {
+        "id": 9,
+        "type": "mc",
+        "category": "Inequality · Table Check",
+        "question": "y > 4x − 5\n\nWhich ordered pair (x, y) satisfies the inequality?",
+        "options": [
+          "A) (2, 3)",
+          "B) (1, 0)",
+          "C) (3, 7)",
+          "D) (0, −5)"
+        ],
+        "answer": 1,
+        "explanation": "Check each:\n\nA) (2, 3): 3 > 4(2) − 5 = 3 → 3 > 3 ✗ (not strict)\nB) (1, 0): 0 > 4(1) − 5 = −1 → 0 > −1 ✓\nC) (3, 7): 7 > 4(3) − 5 = 7 → 7 > 7 ✗ (not strict)\nD) (0, −5): −5 > 0 − 5 = −5 → −5 > −5 ✗ (not strict)\n\nAnswer: B) (1, 0)\n\n💡 Strict inequality means equal values DON'T count. Always plug in and compare carefully."
+      },
+      {
+        "id": 10,
+        "type": "spr",
+        "category": "No-Solution System · Fractions",
+        "question": "10x − 16y = 6\n−5x + ty = 3/8\n\nIn the given system, t is a constant. If the system has no solution, what is the value of t?",
+        "correctValue": 8,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Multiply eq 2 by −2 to match x-coefficients:\n10x − 2ty = −3/4\n\nCompare with eq 1:\n10x − 16y = 6\n\nFor no solution (parallel):\n−2t = −16 → t = 8\n\nCheck constants: 6 ≠ −3/4 ✓ (different, confirmed)\n\nAnswer: 8\n\n💡 Match x-coefficients by multiplying, then set y-coefficients equal. Different constants guarantee no solution."
+      }
+    ]
+  },
+  {
+    "id": "geometry-set14",
+    "label": "geometry-set14",
+    "title": "Circles · Triangles · 3D",
+    "subtitle": "Arc · Sector · Trig · Cone · Composite · Verified ✓",
+    "accent": "#6A4C93",
+    "catColors": {
+      "Arc Length": "#E63946",
+      "Sector Area": "#457B9D",
+      "Similar Triangles · Area": "#2A9D8F",
+      "Inscribed Angle Theorem": "#E9C46A",
+      "Cylinder Volume · Conversion": "#F4A261",
+      "Circle Equation": "#264653",
+      "Right Triangle · Tangent": "#6A4C93",
+      "Composite Figure": "#1982C4",
+      "Midpoint · Distance to Origin": "#8AC926",
+      "Cone Volume": "#FF595E"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Arc Length",
+        "question": "A circle has a radius of 10. What is the length of an arc with a central angle of 72°?",
+        "options": [
+          "A) 2π",
+          "B) 4π",
+          "C) 10π",
+          "D) 20π"
+        ],
+        "answer": 1,
+        "explanation": "Arc length = (θ/360) × 2πr\n= (72/360) × 2π(10)\n= (1/5) × 20π = 4π\n\nAnswer: B) 4π\n\n💡 72° is exactly 1/5 of 360°. Recognizing clean fractions saves time."
+      },
+      {
+        "id": 2,
+        "type": "mc",
+        "category": "Sector Area",
+        "question": "A circle has a radius of 12. What is the area of a sector with a central angle of 90°?",
+        "options": [
+          "A) 12π",
+          "B) 24π",
+          "C) 36π",
+          "D) 144π"
+        ],
+        "answer": 2,
+        "explanation": "Sector area = (θ/360) × πr²\n= (90/360) × π(12²)\n= (1/4) × 144π = 36π\n\nAnswer: C) 36π\n\n💡 90° = 1/4 of the circle. Option D (144π) is the FULL circle area."
+      },
+      {
+        "id": 3,
+        "type": "spr",
+        "category": "Similar Triangles · Area",
+        "question": "Two triangles are similar. The smaller triangle has sides 5, 12, and 13. The larger triangle has a hypotenuse of 39. What is the area of the larger triangle?",
+        "correctValue": 270,
+        "tolerance": 0,
+        "unit": "sq units",
+        "explanation": "Scale factor: 39 ÷ 13 = 3\n\nSmall triangle area: (1/2)(5)(12) = 30\n\nArea scales by the SQUARE of the linear factor:\n30 × 3² = 30 × 9 = 270\n\nAnswer: 270\n\n💡 Area ratio = (linear ratio)². If sides triple, area becomes 9× larger."
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Inscribed Angle Theorem",
+        "question": "In a circle, an inscribed angle intercepts an arc of 140°. What is the measure of the inscribed angle?",
+        "options": [
+          "A) 35°",
+          "B) 70°",
+          "C) 140°",
+          "D) 280°"
+        ],
+        "answer": 1,
+        "explanation": "Inscribed angle = (1/2) × intercepted arc\n= (1/2)(140°) = 70°\n\nAnswer: B) 70°\n\n💡 Inscribed angle = half the arc. Central angle = the full arc. Don't confuse the two."
+      },
+      {
+        "id": 5,
+        "type": "spr",
+        "category": "Cylinder Volume · Conversion",
+        "question": "A cylindrical tank has a diameter of 10 cm and a height of 20 cm. What is the volume of the tank in milliliters? (1 cm³ = 1 mL. Use π ≈ 3.14)",
+        "correctValue": 1570,
+        "tolerance": 5,
+        "unit": "mL",
+        "explanation": "Radius = 10 ÷ 2 = 5 cm\n\nV = πr²h = 3.14 × 25 × 20 = 1,570 cm³\n\n1 cm³ = 1 mL → V = 1,570 mL\n\nAnswer: 1,570\n\n💡 Use RADIUS (5), not diameter (10). Using diameter gives 4× the correct volume."
+      },
+      {
+        "id": 6,
+        "type": "mc",
+        "category": "Circle Equation",
+        "question": "A circle has its center at (3, −2) and passes through the point (3, 4). What is the equation of the circle?",
+        "options": [
+          "A) (x−3)²+(y+2)²=6",
+          "B) (x−3)²+(y+2)²=36",
+          "C) (x+3)²+(y−2)²=36",
+          "D) (x−3)²+(y−2)²=36"
+        ],
+        "answer": 1,
+        "explanation": "Radius = distance from (3,−2) to (3,4)\n= |4−(−2)| = 6\n\nEquation: (x−h)²+(y−k)²=r²\n= (x−3)²+(y+2)²=36\n\nAnswer: B) (x−3)²+(y+2)²=36\n\n💡 Center (3,−2) → (x−3) and (y−(−2))=(y+2). r=6 → r²=36, not 6."
+      },
+      {
+        "id": 7,
+        "type": "spr",
+        "category": "Right Triangle · Tangent",
+        "question": "In right triangle ABC, ∠C = 90°, AB = 13, and AC = 5. What is the value of tan(A)?",
+        "correctValue": 2.4,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "Find BC using Pythagorean theorem:\nBC² = AB² − AC² = 169 − 25 = 144\nBC = 12\n\ntan(A) = opposite/adjacent = BC/AC = 12/5 = 2.4\n\nAnswer: 2.4\n\n💡 For angle A: opposite side is BC, adjacent is AC. Know your 5-12-13 triple!"
+      },
+      {
+        "id": 8,
+        "type": "mc",
+        "category": "Composite Figure",
+        "question": "A rectangle is 16 units long and 10 units wide. A semicircle with diameter 10 is removed from one end. Which expression represents the remaining area?",
+        "options": [
+          "A) 160 − 25π",
+          "B) 160 − 12.5π",
+          "C) 160 − 5π",
+          "D) 160 − 50π"
+        ],
+        "answer": 1,
+        "explanation": "Rectangle area: 16 × 10 = 160\n\nSemicircle: diameter = 10, radius = 5\nArea = (1/2)πr² = (1/2)π(25) = 12.5π\n\nRemaining: 160 − 12.5π\n\nAnswer: B) 160 − 12.5π\n\n💡 Semicircle = HALF of πr². Option A uses πr² (full circle). Option C uses π×radius (circumference, not area)."
+      },
+      {
+        "id": 9,
+        "type": "mc",
+        "category": "Midpoint · Distance to Origin",
+        "question": "M is the midpoint of segment AB, where A = (2, 8) and B = (10, 4). What is the distance from M to the origin?",
+        "options": [
+          "A) 6",
+          "B) 6√2",
+          "C) √52",
+          "D) 12"
+        ],
+        "answer": 1,
+        "explanation": "Midpoint M = ((2+10)/2, (8+4)/2) = (6, 6)\n\nDistance from M to origin:\nd = √(6² + 6²) = √(36 + 36) = √72 = 6√2\n\nAnswer: B) 6√2\n\n💡 √72 simplifies: √(36×2) = 6√2. The DSAT expects simplified radicals."
+      },
+      {
+        "id": 10,
+        "type": "spr",
+        "category": "Cone Volume",
+        "question": "A cone has a radius of 6 and a height of 10. What is the volume? (V = (1/3)πr²h. Use π ≈ 3.14. Round to nearest tenth.)",
+        "correctValue": 376.8,
+        "tolerance": 0.5,
+        "unit": "cubic units",
+        "explanation": "V = (1/3)πr²h\n= (1/3)(3.14)(36)(10)\n= (1/3)(1,130.4)\n= 376.8\n\nAnswer: 376.8\n\n💡 Don't forget the 1/3 — that's what makes it a cone, not a cylinder."
+      }
+    ]
+  },
+  {
+    "id": "geometry-set15",
+    "label": "geometry-set15",
+    "title": "Special Triangles · 3D · Proofs",
+    "subtitle": "30-60-90 · Tangent · Sphere · Exterior angle · Verified ✓",
+    "accent": "#1982C4",
+    "catColors": {
+      "Supplementary Angles": "#E63946",
+      "Pythagorean · Ladder Problem": "#457B9D",
+      "Tangent Line · Perpendicular Slope": "#2A9D8F",
+      "Equilateral Triangle · Area": "#E9C46A",
+      "30-60-90 Triangle": "#F4A261",
+      "Sphere Volume": "#264653",
+      "Distance Formula": "#6A4C93",
+      "Exterior Angle Theorem": "#1982C4",
+      "Trapezoid Area": "#8AC926",
+      "Similar Triangles · Area Ratio": "#FF595E"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Supplementary Angles",
+        "question": "Two angles are supplementary. One angle is 3 times the other. What is the measure of the larger angle?",
+        "options": [
+          "A) 45°",
+          "B) 90°",
+          "C) 120°",
+          "D) 135°"
+        ],
+        "answer": 3,
+        "explanation": "Let the smaller angle = x. Then the larger = 3x.\n\nx + 3x = 180°\n4x = 180°\nx = 45°\n\nLarger angle = 3(45) = 135°\n\nAnswer: D) 135°\n\n💡 Supplementary = 180°. Option A (45°) is the smaller angle."
+      },
+      {
+        "id": 2,
+        "type": "spr",
+        "category": "Pythagorean · Ladder Problem",
+        "question": "A 20-foot ladder leans against a wall. The base of the ladder is 12 feet from the wall. How high up the wall does the ladder reach, in feet?",
+        "correctValue": 16,
+        "tolerance": 0,
+        "unit": "feet",
+        "explanation": "h² + 12² = 20²\nh² + 144 = 400\nh² = 256\nh = 16\n\nAnswer: 16 feet\n\n💡 This is a 3-4-5 triple scaled by 4: (12, 16, 20). Recognizing triples saves time."
+      },
+      {
+        "id": 3,
+        "type": "mc",
+        "category": "Tangent Line · Perpendicular Slope",
+        "question": "Line t is tangent to a circle at point P. The radius drawn to point P has a slope of 3/4. What is the slope of line t?",
+        "options": [
+          "A) 4/3",
+          "B) −4/3",
+          "C) 3/4",
+          "D) −3/4"
+        ],
+        "answer": 1,
+        "explanation": "A tangent line is PERPENDICULAR to the radius at the point of tangency.\n\nPerpendicular slopes are negative reciprocals:\nSlope of radius = 3/4\nSlope of tangent = −4/3\n\nAnswer: B) −4/3\n\n💡 Negative reciprocal: flip the fraction AND change the sign. Both steps are required."
+      },
+      {
+        "id": 4,
+        "type": "spr",
+        "category": "Equilateral Triangle · Area",
+        "question": "An equilateral triangle has a perimeter of 36. What is its area? (Use √3 ≈ 1.732. Round to the nearest tenth.)",
+        "correctValue": 62.4,
+        "tolerance": 0.2,
+        "unit": "sq units",
+        "explanation": "Side = 36 ÷ 3 = 12\n\nArea of equilateral triangle = (√3/4) × s²\n= (√3/4) × 144\n= 36√3\n= 36 × 1.732 ≈ 62.4\n\nAnswer: 62.4\n\n💡 The formula (√3/4)s² is worth memorizing. Alternatively: height = 12×(√3/2) = 6√3, then area = (1/2)(12)(6√3) = 36√3."
+      },
+      {
+        "id": 5,
+        "type": "mc",
+        "category": "30-60-90 Triangle",
+        "question": "In a 30-60-90 triangle, the hypotenuse is 18. What is the length of the side opposite the 60° angle?",
+        "options": [
+          "A) 9",
+          "B) 9√2",
+          "C) 9√3",
+          "D) 18√3"
+        ],
+        "answer": 2,
+        "explanation": "30-60-90 side ratio: x : x√3 : 2x\n\nHypotenuse = 2x = 18 → x = 9\n\nSide opposite 60° = x√3 = 9√3\n\nAnswer: C) 9√3\n\n💡 Option A (9) is the side opposite 30°. Option B uses √2, which is for 45-45-90 triangles."
+      },
+      {
+        "id": 6,
+        "type": "mc",
+        "category": "Sphere Volume",
+        "question": "A sphere has a diameter of 12. What is the volume of the sphere?",
+        "options": [
+          "A) 48π",
+          "B) 144π",
+          "C) 288π",
+          "D) 864π"
+        ],
+        "answer": 2,
+        "explanation": "Diameter = 12 → radius = 6\n\nV = (4/3)πr³\n= (4/3)π(216)\n= 288π\n\nAnswer: C) 288π\n\n💡 Use RADIUS (6), not diameter (12). (4/3)π(12³) = 2,304π — way too big. Option B (144π) uses r² instead of r³."
+      },
+      {
+        "id": 7,
+        "type": "spr",
+        "category": "Distance Formula",
+        "question": "What is the distance between the points (1, 3) and (7, 11) in the xy-plane?",
+        "correctValue": 10,
+        "tolerance": 0,
+        "unit": "units",
+        "explanation": "d = √[(7−1)² + (11−3)²]\n= √[36 + 64]\n= √100 = 10\n\nAnswer: 10\n\n💡 This is a 6-8-10 right triangle (a 3-4-5 triple ×2). Recognizing the pattern is faster than computing."
+      },
+      {
+        "id": 8,
+        "type": "mc",
+        "category": "Exterior Angle Theorem",
+        "question": "In a triangle, one exterior angle measures 130°. One of the two non-adjacent interior angles is 55°. What is the other non-adjacent interior angle?",
+        "options": [
+          "A) 50°",
+          "B) 55°",
+          "C) 75°",
+          "D) 130°"
+        ],
+        "answer": 2,
+        "explanation": "Exterior angle = sum of the two non-adjacent interior angles\n\n130° = 55° + x\nx = 75°\n\nAnswer: C) 75°\n\n💡 Don't use 180° − 130° = 50° — that gives the ADJACENT interior angle, not the non-adjacent one."
+      },
+      {
+        "id": 9,
+        "type": "spr",
+        "category": "Trapezoid Area",
+        "question": "A trapezoid has parallel sides of 14 cm and 22 cm, with a height of 8 cm. What is the area, in square centimeters?",
+        "correctValue": 144,
+        "tolerance": 0,
+        "unit": "cm²",
+        "explanation": "A = (1/2)(b₁ + b₂)(h)\n= (1/2)(14 + 22)(8)\n= (1/2)(36)(8)\n= 144 cm²\n\nAnswer: 144\n\n💡 Average the two bases, then multiply by height. Forgetting the (1/2) gives 288 — double the correct answer."
+      },
+      {
+        "id": 10,
+        "type": "mc",
+        "category": "Similar Triangles · Area Ratio",
+        "question": "Two similar triangles have perimeters in the ratio 3:5. If the area of the smaller triangle is 27 square units, what is the area of the larger triangle?",
+        "options": [
+          "A) 45",
+          "B) 75",
+          "C) 125",
+          "D) 135"
+        ],
+        "answer": 1,
+        "explanation": "Perimeter ratio = linear ratio = 3:5\n\nArea ratio = (linear ratio)² = 9:25\n\n27/A = 9/25\nA = 27 × 25/9 = 75\n\nAnswer: B) 75\n\n💡 Area scales by the SQUARE of the linear ratio. Linear ×(5/3) → Area ×(5/3)² = ×(25/9)."
+      }
+    ]
+  },
+  {
     "id": "june2026-set2",
     "label": "June 2026 · SET 2",
     "title": "Unit Conversion & Multi-Step",
     "subtitle": "Currency · Fuel · Dosage · Volume",
-    "accent": "#E63946",
+    "accent": "#D6336C",
     "catColors": {
       "Currency · Fee · Conversion": "#E63946",
       "Fuel Efficiency · Dual Conversion": "#457B9D",
@@ -151,7 +1049,7 @@
     "label": "June 2026 · SET 3",
     "title": "Multi-Step & Reasoning",
     "subtitle": "Work rates · Dilution · Density · Average speed",
-    "accent": "#457B9D",
+    "accent": "#2B8A3E",
     "catColors": {
       "Work Rate · Time Conversion": "#E63946",
       "Dilution · Concentration": "#457B9D",
@@ -298,7 +1196,7 @@
     "label": "June 2026 · SET 4",
     "title": "Real-World Multi-Step",
     "subtitle": "Construction · Science · Travel · Engineering",
-    "accent": "#2A9D8F",
+    "accent": "#E63946",
     "catColors": {
       "Volume · Density · Mass": "#E63946",
       "VAT Refund · Exchange Rate": "#457B9D",
@@ -435,7 +1333,7 @@
     "label": "June 2026 · SET 5",
     "title": "Applied Problem Solving",
     "subtitle": "Shipping · BMI · Tax · Fuel · Mixtures",
-    "accent": "#E08A1E",
+    "accent": "#457B9D",
     "catColors": {
       "Shipping · Weight Conversion": "#E63946",
       "BMI · Dual Unit Conversion": "#457B9D",
@@ -572,7 +1470,7 @@
     "label": "June 2026 · SET 6",
     "title": "Data & Rates",
     "subtitle": "Unit rates · IV drips · Interest · Nutrition",
-    "accent": "#6A4C93",
+    "accent": "#2A9D8F",
     "catColors": {
       "Data Storage · Scientific Notation": "#E63946",
       "Unit Rate Comparison": "#457B9D",
@@ -709,7 +1607,7 @@
     "label": "June 2026 · SET 7",
     "title": "Geometry & Finance",
     "subtitle": "Cylinders · Loans · Mixtures · Scale",
-    "accent": "#1982C4",
+    "accent": "#E08A1E",
     "catColors": {
       "Cylinder Volume · Conversion": "#E63946",
       "Trail Grade · Percent": "#457B9D",
@@ -846,7 +1744,7 @@
     "label": "June 2026 · SET 8",
     "title": "Science & Statistics",
     "subtitle": "CO₂ · Light · Sound · Solar",
-    "accent": "#D6336C",
+    "accent": "#6A4C93",
     "catColors": {
       "Carbon Footprint · Rate × Time": "#E63946",
       "Margin of Error · Statistics": "#457B9D",
@@ -983,7 +1881,7 @@
     "label": "June 2026 · SET 9",
     "title": "Business & Daily Life",
     "subtitle": "Rent · Pricing · Construction · Commute",
-    "accent": "#2B8A3E",
+    "accent": "#1982C4",
     "catColors": {
       "Rent · Area Conversion": "#E63946",
       "Break-Even Analysis": "#457B9D",
