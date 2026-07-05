@@ -41,14 +41,14 @@ const evalLiteral = (lit) => (lit ? vm.runInNewContext("(" + lit + ")") : undefi
 
 function meta(text, file) {
   const id = file.replace(/^dsat-/, "").replace(/\.jsx$/, ""); // june2026-set4
-  // The badge div: <div style={{...background:"#XXXXXX"...}}>June 2026 · SET N</div>
-  const labelM = />\s*(June 2026[^<]*?SET\s*\d+)\s*<\/div>/i.exec(text);
+  // The badge div: <div style={{...}}>June 2026 · SET N</div> or Actual DSAT Pattern · SET N
+  const labelM = />\s*([^<]*?SET\s*\d+)\s*<\/div>/i.exec(text);
   const label = labelM?.[1]?.trim() || id;
   const title = (/<h1[^>]*>([^<]*)<\/h1>/.exec(text) || [])[1]?.trim() || label;
   let subtitle = (/<p[^>]*>([^<]*)<\/p>/.exec(text) || [])[1]?.trim() || "";
   subtitle = subtitle.replace(/\s*·?\s*All verified.*$/i, "").trim();
   // accent = the background color immediately preceding the badge label
-  const before = text.slice(0, labelM ? labelM.index : text.indexOf("June 2026"));
+  const before = text.slice(0, labelM ? labelM.index : 0);
   const colors = [...before.matchAll(/background:\s*"(#[0-9A-Fa-f]{6})"/g)];
   const accent = colors.length ? colors[colors.length - 1][1] : "#264653";
   return { id, label, title, subtitle, accent };
