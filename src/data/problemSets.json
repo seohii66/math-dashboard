@@ -21,7 +21,9 @@
       
     {
         "id": 1,
-        "difficulty": "Easy",
+        "type": "Easy",
+                "category": "Factoring Polynomials",
+
         "question": "The area of a rectangular floor is 8 square yards. If 1 yard is equivalent to 3 feet, what is the area of the floor in square feet?",
         "options": {
             "A": "24",
@@ -34,7 +36,8 @@
     },
     {
         "id": 2,
-        "difficulty": "Easy",
+        "type": "Easy",        "category": "Factoring Polynomials",
+
         "question": "A certain material has a surface area of 3.5 square meters. If 1 meter is equal to 100 centimeters, what is the surface area in square centimeters?",
         "options": {
             "A": "350",
@@ -47,7 +50,8 @@
     },
     {
         "id": 3,
-        "difficulty": "Medium",
+        "type": "Medium",        "category": "Factoring Polynomials",
+
         "question": "An architect is looking at a blueprint where the area of a room is given as 432 square inches. If 1 foot equals 12 inches, what is the area of the room in square feet?",
         "options": {
             "A": "3",
@@ -60,7 +64,8 @@
     },
     {
         "id": 4,
-        "difficulty": "Medium",
+        "type": "Medium",        "category": "Factoring Polynomials",
+
         "question": "A type of solar panel produces 2.5 watts of power per square foot. Given that 1 foot is equal to 12 inches, how many watts of power does it produce per square inch?",
         "options": {
             "A": "0.017",
@@ -73,7 +78,8 @@
     },
     {
         "id": 5,
-        "difficulty": "Medium",
+        "type": "Medium",        "category": "Factoring Polynomials",
+
         "question": "The population density of a certain bacteria culture is 4,000 cells per square centimeter. If 1 centimeter is equal to 10 millimeters, what is the population density in cells per square millimeter?",
         "options": {
             "A": "40",
@@ -86,7 +92,8 @@
     },
     {
         "id": 6,
-        "difficulty": "Hard",
+        "type": "Hard",        "category": "Factoring Polynomials",
+
         "question": "On a scale map, 1 inch represents an actual distance of 5 miles. If a national park occupies an area of 6.4 square inches on the map, what is the actual area of the park in square miles?",
         "options": {
             "A": "32",
@@ -99,7 +106,8 @@
     },
     {
         "id": 7,
-        "difficulty": "Hard",
+        "type": "Hard",        "category": "Factoring Polynomials",
+
         "question": "A certain specialized paint costs $15 per square meter to apply. If 1 meter is equal to 100 centimeters, what is the cost to apply this paint per square centimeter?",
         "options": {
             "A": "$0.0015",
@@ -112,7 +120,8 @@
     },
     {
         "id": 8,
-        "difficulty": "Hard",
+        "type": "Hard",        "category": "Factoring Polynomials",
+
         "question": "A computer monitor has a display area of 150 square inches. If 1 inch is exactly 2.54 centimeters, which of the following is closest to the display area in square centimeters?",
         "options": {
             "A": "381",
@@ -125,7 +134,8 @@
     },
     {
         "id": 9,
-        "difficulty": "Hard",
+        "type": "Hard",        "category": "Factoring Polynomials",
+
         "question": "The pressure exerted by an object is 120 Newtons per square meter. If 1 meter equals 1,000 millimeters, what is the pressure exerted in Newtons per square millimeter?",
         "options": {
             "A": "0.00012",
@@ -138,7 +148,8 @@
     },
     {
         "id": 10,
-        "difficulty": "Hard",
+        "type": "Hard",        "category": "Factoring Polynomials",
+
         "question": "A city has a population density of 12,500 people per square mile. If 1 mile is equal to 5,280 feet, which of the following expressions represents the population density in people per square foot?",
         "options": {
             "A": "12,500 / 5,280",
