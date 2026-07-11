@@ -1,169 +1,7 @@
 [
   {
-    "id": "actual-set16",
-    "label": "actual-set16",
-    "title": "Again&Again",
-    "subtitle": "Function eval =",
-    "accent": "#E63946",
-    "catColors": {
-      "Unit Conversion · Rate": "#E63946",
-      "Function Evaluation": "#457B9D",
-      "System of Equations": "#2A9D8F",
-      "Factoring Polynomials": "#E9C46A",
-      "Basic Probability": "#F4A261",
-      "Triangle Angle Theorem": "#264653",
-      "Combining Like Terms": "#6A4C93",
-      "Exponential Modeling": "#1982C4",
-      "Finding a Constant": "#8AC926",
-      "Percent Chain": "#FF595E"
-    },
-    "problems": [
-      
-    {
-        "id": 1,
-        "type": "Easy",
-                "category": "Factoring Polynomials",
-
-        "question": "The area of a rectangular floor is 8 square yards. If 1 yard is equivalent to 3 feet, what is the area of the floor in square feet?",
-        "options": {
-            "A": "24",
-            "B": "64",
-            "C": "72",
-            "D": "512"
-        },
-        "correct_answer": "C",
-        "explanation": "1 yard = 3 feet. Squaring both sides gives 1 square yard = 9 square feet. 8 square yards * 9 = 72 square feet."
-    },
-    {
-        "id": 2,
-        "type": "Easy",        "category": "Factoring Polynomials",
-
-        "question": "A certain material has a surface area of 3.5 square meters. If 1 meter is equal to 100 centimeters, what is the surface area in square centimeters?",
-        "options": {
-            "A": "350",
-            "B": "3,500",
-            "C": "35,000",
-            "D": "350,000"
-        },
-        "correct_answer": "D",
-        "explanation": "1 meter = 100 centimeters. Squaring both sides gives 1 square meter = 10,000 square centimeters. 3.5 * 10,000 = 350,000 square centimeters."
-    },
-    {
-        "id": 3,
-        "type": "Medium",        "category": "Factoring Polynomials",
-
-        "question": "An architect is looking at a blueprint where the area of a room is given as 432 square inches. If 1 foot equals 12 inches, what is the area of the room in square feet?",
-        "options": {
-            "A": "3",
-            "B": "12",
-            "C": "36",
-            "D": "144"
-        },
-        "correct_answer": "A",
-        "explanation": "1 foot = 12 inches, so 1 square foot = 144 square inches. To convert from square inches to square feet, divide by 144. 432 / 144 = 3 square feet."
-    },
-    {
-        "id": 4,
-        "type": "Medium",        "category": "Factoring Polynomials",
-
-        "question": "A type of solar panel produces 2.5 watts of power per square foot. Given that 1 foot is equal to 12 inches, how many watts of power does it produce per square inch?",
-        "options": {
-            "A": "0.017",
-            "B": "0.208",
-            "C": "30",
-            "D": "360"
-        },
-        "correct_answer": "A",
-        "explanation": "1 square foot = 144 square inches. The panel produces 2.5 watts / 1 sq ft. Substitute 144 sq in for 1 sq ft: 2.5 watts / 144 sq in \u2248 0.01736 watts per square inch."
-    },
-    {
-        "id": 5,
-        "type": "Medium",        "category": "Factoring Polynomials",
-
-        "question": "The population density of a certain bacteria culture is 4,000 cells per square centimeter. If 1 centimeter is equal to 10 millimeters, what is the population density in cells per square millimeter?",
-        "options": {
-            "A": "40",
-            "B": "400",
-            "C": "40,000",
-            "D": "400,000"
-        },
-        "correct_answer": "A",
-        "explanation": "1 centimeter = 10 millimeters, so 1 square centimeter = 100 square millimeters. Density = 4000 cells / 1 sq cm = 4000 cells / 100 sq mm = 40 cells per square millimeter."
-    },
-    {
-        "id": 6,
-        "type": "Hard",        "category": "Factoring Polynomials",
-
-        "question": "On a scale map, 1 inch represents an actual distance of 5 miles. If a national park occupies an area of 6.4 square inches on the map, what is the actual area of the park in square miles?",
-        "options": {
-            "A": "32",
-            "B": "64",
-            "C": "160",
-            "D": "320"
-        },
-        "correct_answer": "C",
-        "explanation": "The linear scale is 1 inch = 5 miles. The area scale is (1 inch)^2 = (5 miles)^2, so 1 square inch = 25 square miles. 6.4 square inches * 25 = 160 square miles."
-    },
-    {
-        "id": 7,
-        "type": "Hard",        "category": "Factoring Polynomials",
-
-        "question": "A certain specialized paint costs $15 per square meter to apply. If 1 meter is equal to 100 centimeters, what is the cost to apply this paint per square centimeter?",
-        "options": {
-            "A": "$0.0015",
-            "B": "$0.015",
-            "C": "$0.15",
-            "D": "$1.50"
-        },
-        "correct_answer": "A",
-        "explanation": "1 square meter = 10,000 square centimeters. The cost is $15 / 1 sq m = $15 / 10,000 sq cm = $0.0015 per square centimeter."
-    },
-    {
-        "id": 8,
-        "type": "Hard",        "category": "Factoring Polynomials",
-
-        "question": "A computer monitor has a display area of 150 square inches. If 1 inch is exactly 2.54 centimeters, which of the following is closest to the display area in square centimeters?",
-        "options": {
-            "A": "381",
-            "B": "968",
-            "C": "1,500",
-            "D": "3,810"
-        },
-        "correct_answer": "B",
-        "explanation": "1 inch = 2.54 cm, so 1 square inch = (2.54)^2 sq cm = 6.4516 sq cm. 150 sq inches * 6.4516 = 967.74 square centimeters, which is closest to 968."
-    },
-    {
-        "id": 9,
-        "type": "Hard",        "category": "Factoring Polynomials",
-
-        "question": "The pressure exerted by an object is 120 Newtons per square meter. If 1 meter equals 1,000 millimeters, what is the pressure exerted in Newtons per square millimeter?",
-        "options": {
-            "A": "0.00012",
-            "B": "0.0012",
-            "C": "0.12",
-            "D": "120,000"
-        },
-        "correct_answer": "A",
-        "explanation": "1 meter = 1000 mm, so 1 square meter = 1,000,000 square mm. Pressure = 120 N / 1 sq m = 120 N / 1,000,000 sq mm = 0.00012 N/sq mm."
-    },
-    {
-        "id": 10,
-        "type": "Hard",        "category": "Factoring Polynomials",
-
-        "question": "A city has a population density of 12,500 people per square mile. If 1 mile is equal to 5,280 feet, which of the following expressions represents the population density in people per square foot?",
-        "options": {
-            "A": "12,500 / 5,280",
-            "B": "12,500 / (5,280)^2",
-            "C": "12,500 * 5,280",
-            "D": "12,500 * (5,280)^2"
-        },
-        "correct_answer": "B",
-        "explanation": "1 mile = 5280 feet, so 1 square mile = (5280)^2 square feet. Density = 12,500 people / 1 sq mile = 12,500 people / (5280)^2 sq ft."
-    }]}
-,
-  {
     "id": "actual-set10",
-    "label": "actual-set10",
+    "label": "Actual DSAT Pattern · SET 10",
     "title": "Core Algebra & Functions",
     "subtitle": "Function eval · Factoring · Systems · Percent chains",
     "accent": "#E63946",
@@ -316,7 +154,7 @@
   },
   {
     "id": "actual-set11",
-    "label": "actual-set11",
+    "label": "Actual DSAT Pattern · SET 11",
     "title": "Advanced Algebra & Quadratics",
     "subtitle": "Systems · Free fall · No solution · Scaling",
     "accent": "#457B9D",
@@ -465,7 +303,7 @@
   },
   {
     "id": "actual-set12",
-    "label": "actual-set12",
+    "label": "Actual DSAT · SET 12",
     "title": "Algebra & Reasoning",
     "subtitle": "Vieta's · Rearrange · Diff of squares · Cost functions · Verified ✓",
     "accent": "#2A9D8F",
@@ -618,7 +456,7 @@
   },
   {
     "id": "actual-set13",
-    "label": "actual-set13",
+    "label": "Actual DSAT · SET 13",
     "title": "Core Skills Drill",
     "subtitle": "Shortcuts · Slope · Vieta's · Cost · Inequality · Verified ✓",
     "accent": "#E08A1E",
@@ -770,11 +608,587 @@
     ]
   },
   {
+    "id": "fulltest-1",
+    "label": "fulltest-1",
+    "title": "DSAT Math Module 2 Simulation",
+    "subtitle": "고오답률 유형 집중 · Revenue · Interest · Unit · Trig · Verified ✓",
+    "accent": "#6A4C93",
+    "catColors": {},
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Unit Conversion · Rate",
+        "question": "A bus travels 650 miles on a full tank. How many kilometers is this? (1 mile = 1.6 km)",
+        "options": [
+          "A) 406",
+          "B) 1,040",
+          "C) 10,400",
+          "D) 104"
+        ],
+        "answer": 1,
+        "explanation": "650 × 1.6 = 1,040 km\n\nAnswer: B) 1,040\n\n💡 Option A divides instead of multiplying. Since km > miles, the number must be LARGER."
+      },
+      {
+        "id": 2,
+        "type": "mc",
+        "category": "Function Evaluation",
+        "question": "g(x) = 7x − 3. What is g(−5)?",
+        "options": [
+          "A) 32",
+          "B) −32",
+          "C) −38",
+          "D) 38"
+        ],
+        "answer": 2,
+        "explanation": "g(−5) = 7(−5) − 3 = −35 − 3 = −38\n\nAnswer: C) −38\n\n💡 Don't lose the negative sign: 7 × (−5) = −35, not 35."
+      },
+      {
+        "id": 3,
+        "type": "mc",
+        "category": "System of Equations",
+        "question": "15x = 90\n4x − 17 = y\n\nWhat is the value of y?",
+        "options": [
+          "A) 90",
+          "B) 6",
+          "C) 7",
+          "D) −7"
+        ],
+        "answer": 2,
+        "explanation": "15x = 90 → x = 6\ny = 4(6) − 17 = 24 − 17 = 7\n\nAnswer: C) 7\n\n💡 Option B is x, not y. Read what the question asks!"
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Exponential Decay",
+        "question": "A machine worth $3,200 loses 15% of its value each year. Which models its value v after t years?",
+        "options": [
+          "A) v = 3,200(0.15)^t",
+          "B) v = 3,200(0.85)^t",
+          "C) v = 3,200(1.15)^t",
+          "D) v = 3,200 − 480t"
+        ],
+        "answer": 1,
+        "explanation": "Loses 15% → retains 85% → multiplier = 0.85\nv = 3,200(0.85)^t\n\nAnswer: B)\n\n💡 \"Loses 15%\" = ×0.85, NOT ×0.15. Option D is linear depreciation."
+      },
+      {
+        "id": 5,
+        "type": "spr",
+        "category": "Probability",
+        "question": "A bag has 40 tiles: 24 red, 8 blue, 8 green. What is the probability of selecting a blue tile? (Express as decimal.)",
+        "correctValue": 0.2,
+        "tolerance": 0.001,
+        "unit": "",
+        "explanation": "P(blue) = 8/40 = 0.2\n\nAnswer: 0.2"
+      },
+      {
+        "id": 6,
+        "type": "mc",
+        "category": "Percent Chain",
+        "question": "f is 60% greater than g. h is 75% less than f. What is h in terms of g?",
+        "options": [
+          "A) 0.15g",
+          "B) 0.40g",
+          "C) 0.85g",
+          "D) 1.20g"
+        ],
+        "answer": 1,
+        "explanation": "f = 1.60g\nh = 0.25f = 0.25(1.60g) = 0.40g\n\nAnswer: B) 0.40g\n\n💡 \"75% less\" means 25% remains (×0.25). Then multiply by the first factor."
+      },
+      {
+        "id": 7,
+        "type": "mc",
+        "category": "Parallel Line Slope",
+        "question": "Line r is parallel to line s. Line r: 3y + 9 = 12x. What is the slope of s?",
+        "options": [
+          "A) −3",
+          "B) 3",
+          "C) 4",
+          "D) 12"
+        ],
+        "answer": 2,
+        "explanation": "3y = 12x − 9 → y = 4x − 3\nSlope of r = 4. Parallel → slope of s = 4.\n\nAnswer: C) 4\n\n💡 Isolate y first. Option D is the coefficient before dividing by 3."
+      },
+      {
+        "id": 8,
+        "type": "spr",
+        "category": "Discriminant · Max k",
+        "question": "x(kx − 96) = −6\n\nk is an integer. If the equation has two distinct real solutions, what is the greatest possible value of k?",
+        "correctValue": 383,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "kx² − 96x + 6 = 0\nD = 96² − 4(k)(6) = 9,216 − 24k > 0\nk < 384 → max integer k = 383\n\nAnswer: 383\n\n💡 Expand, rearrange, apply D > 0. Don't forget k ≠ 0."
+      },
+      {
+        "id": 9,
+        "type": "mc",
+        "category": "Squared Unit Conversion",
+        "question": "A force is 5.4 N/cm². What is this in N/mm²? (1 cm = 10 mm)",
+        "options": [
+          "A) 54",
+          "B) 0.54",
+          "C) 0.054",
+          "D) 0.0054"
+        ],
+        "answer": 2,
+        "explanation": "1 cm² = 100 mm²\n5.4 N per 1 cm² = 5.4 per 100 mm² = 0.054 N/mm²\n\nAnswer: C) 0.054\n\n💡 Larger unit → smaller unit: DIVIDE by 100 (10²). Not by 10."
+      },
+      {
+        "id": 10,
+        "type": "mc",
+        "category": "Combining Like Terms",
+        "question": "Which is equivalent to 12x⁴ + 8x⁴ + 5?",
+        "options": [
+          "A) 20x⁸ + 5",
+          "B) 20x⁴ + 5",
+          "C) 96x⁴",
+          "D) 25x⁴"
+        ],
+        "answer": 1,
+        "explanation": "12x⁴ + 8x⁴ = 20x⁴ (add coefficients, keep exponent)\n\nResult: 20x⁴ + 5\n\nAnswer: B)\n\n💡 x⁴ + x⁴ = 2x⁴, NOT x⁸. Exponents don't add when adding terms."
+      },
+      {
+        "id": 11,
+        "type": "mc",
+        "category": "Factoring Polynomial",
+        "question": "Which is equivalent to 6x⁶ − 15x⁵ + 9x⁴?",
+        "options": [
+          "A) 3x⁴(2x² − 5x + 3)",
+          "B) 3x⁵(2x − 5 + 3)",
+          "C) x⁴(6x² − 15x + 9)",
+          "D) 6x⁴(x² − 5x + 9)"
+        ],
+        "answer": 0,
+        "explanation": "GCF = 3x⁴\n6x⁶ ÷ 3x⁴ = 2x²\n−15x⁵ ÷ 3x⁴ = −5x\n9x⁴ ÷ 3x⁴ = 3\n\n= 3x⁴(2x² − 5x + 3)\n\nAnswer: A)\n\n💡 Option C factors out x⁴ but not the 3. Always find the full GCF."
+      },
+      {
+        "id": 12,
+        "type": "spr",
+        "category": "Find Constant",
+        "question": "f(x) = 4x + c, where c is a constant and f(6) = 11. What is c?",
+        "correctValue": -13,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "4(6) + c = 11\n24 + c = 11\nc = −13\n\nAnswer: −13"
+      },
+      {
+        "id": 13,
+        "type": "mc",
+        "category": "Compound Interest",
+        "question": "$15,000 is invested at 5% annual interest, compounded annually. What is the value after 3 years?",
+        "options": [
+          "A) $15,750",
+          "B) $16,537.50",
+          "C) $17,250",
+          "D) $17,364.38"
+        ],
+        "answer": 3,
+        "explanation": "15,000(1.05)³ = 15,000(1.157625) = $17,364.38\n\nYear by year: 15,750 → 16,537.50 → 17,364.38\n\nAnswer: D)\n\n💡 Options A–C are the year 1, 2 values. Go all the way to year 3."
+      },
+      {
+        "id": 14,
+        "type": "mc",
+        "category": "Area Scaling",
+        "question": "A rectangle has area 2,000 cm². A copy increases each dimension by 20%. New area?",
+        "options": [
+          "A) 2,400",
+          "B) 2,800",
+          "C) 2,880",
+          "D) 4,000"
+        ],
+        "answer": 2,
+        "explanation": "New area = 2,000 × (1.20)² = 2,000 × 1.44 = 2,880\n\nAnswer: C) 2,880\n\n💡 20% per dimension ≠ 40% area increase. It's (1.20)² = 1.44 = 44% increase."
+      },
+      {
+        "id": 15,
+        "type": "spr",
+        "category": "Consecutive Integers",
+        "question": "For three consecutive integers, subtracting the greatest from the sum of the other two gives 38. What is the greatest integer?",
+        "correctValue": 41,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "n + (n+1) − (n+2) = n − 1 = 38\nn = 39 → greatest = 41\n\nAnswer: 41"
+      },
+      {
+        "id": 16,
+        "type": "mc",
+        "category": "Triangle Angle",
+        "question": "In △ABC, ∠A = 122°. Which could be ∠B?",
+        "options": [
+          "A) 122",
+          "B) 90",
+          "C) 58",
+          "D) 57"
+        ],
+        "answer": 3,
+        "explanation": "∠B + ∠C = 180 − 122 = 58°\nBoth must be positive and < 58°.\n\n57° works (∠C = 1°). 58° doesn't (∠C = 0°).\n\nAnswer: D) 57"
+      },
+      {
+        "id": 17,
+        "type": "mc",
+        "category": "Graph Interpretation",
+        "question": "A graph models subscribers over six-month periods since Jan 2020. What does the point (3, 450) mean?",
+        "options": [
+          "A) 450 subscribers after 18 months",
+          "B) Subscribers grow by 450 every 3 months",
+          "C) 450 subscribers in January 2020",
+          "D) 3 subscribers after 450 months"
+        ],
+        "answer": 0,
+        "explanation": "x = 3 six-month periods = 18 months after Jan 2020\ny = 450 subscribers\n\nAnswer: A)\n\n💡 Multiply periods by 6 to get months. (3, 450) is a snapshot, not a rate."
+      },
+      {
+        "id": 18,
+        "type": "spr",
+        "category": "Unit Circle · tan",
+        "question": "Unit circle: A(1,0), B(4/5, −3/5). Angle AOB = w radians. Find tan w.",
+        "correctValue": -0.75,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "cos w = 4/5, sin w = −3/5\ntan w = (−3/5)/(4/5) = −3/4 = −0.75\n\nAnswer: −0.75\n\n💡 tan = y/x on the unit circle. The denominator cancels."
+      },
+      {
+        "id": 19,
+        "type": "mc",
+        "category": "Rearrange Formula",
+        "question": "T = R(50 − W). Which expression gives W?",
+        "options": [
+          "A) 50 + T/R",
+          "B) 50 − T/R",
+          "C) T/R − 50",
+          "D) (50 − T)/R"
+        ],
+        "answer": 1,
+        "explanation": "T/R = 50 − W\nW = 50 − T/R\n\nAnswer: B)\n\n💡 Divide by R first, then isolate W."
+      },
+      {
+        "id": 20,
+        "type": "spr",
+        "category": "Free Fall",
+        "question": "h(t) = −16t² + b. Object is 57.76 ft high at t = 0. When does it hit the ground?",
+        "correctValue": 1.9,
+        "tolerance": 0.01,
+        "unit": "seconds",
+        "explanation": "b = 57.76\n0 = −16t² + 57.76\n16t² = 57.76\nt² = 3.61\nt = 1.9\n\nAnswer: 1.9 seconds"
+      },
+      {
+        "id": 21,
+        "type": "mc",
+        "category": "Vieta's · Sum",
+        "question": "x² − 20x + 36 = 0. What is the sum of the solutions?",
+        "options": [
+          "A) 36",
+          "B) 20",
+          "C) 4",
+          "D) −20"
+        ],
+        "answer": 1,
+        "explanation": "By Vieta's: sum = −b/a = −(−20)/1 = 20\n\nAnswer: B) 20\n\n💡 No factoring needed. Sum = −b/a works for any quadratic."
+      },
+      {
+        "id": 22,
+        "type": "spr",
+        "category": "No Solution · Find k",
+        "question": "5(kx − 8) = (40/7)x + 15\n\nThe equation has no solution. What is the value of k? (Express as fraction or decimal.)",
+        "correctValue": 1.1429,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "5kx − 40 = (40/7)x + 15\n\nNo solution: 5k = 40/7 AND −40 ≠ 15 ✓\nk = 40/35 = 8/7 ≈ 1.143\n\nAnswer: 8/7\n\n💡 Same x-coefficient + different constants = no solution."
+      }
+    ]
+  },
+  {
+    "id": "fulltest-2",
+    "label": "fulltest-2",
+    "title": "DSAT Math Module 2 Simulation",
+    "subtitle": "Revenue · Interest · 3D · Trig · Discriminant · Verified ✓",
+    "accent": "#1982C4",
+    "catColors": {},
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Revenue · Context",
+        "question": "f(t) = 1,200(1.06)^t models a company's monthly revenue in dollars, t years after 2021. Which best describes f(4) ≈ 1,515?",
+        "options": [
+          "A) Revenue in 2025 is about $1,515",
+          "B) Revenue grows by $1,515 per year",
+          "C) Revenue in 2021 was $1,515",
+          "D) Revenue quadrupled by year 4"
+        ],
+        "answer": 0,
+        "explanation": "t = 4 → year 2021 + 4 = 2025\nf(4) ≈ 1,515 → revenue is $1,515\n\nAnswer: A)\n\n💡 f(t) gives the OUTPUT at time t. Option B confuses a point with a rate."
+      },
+      {
+        "id": 2,
+        "type": "spr",
+        "category": "Expression Shortcut",
+        "question": "If 5x + 10 = 35, what is the value of 25x + 50?",
+        "correctValue": 175,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "25x + 50 = 5(5x + 10) = 5(35) = 175\n\nAnswer: 175\n\n💡 Factor to match the given equation. No need to solve for x."
+      },
+      {
+        "id": 3,
+        "type": "mc",
+        "category": "Simple Interest",
+        "question": "$20,000 is deposited at 4% simple interest for 5 years. What is the total value?",
+        "options": [
+          "A) $20,800",
+          "B) $22,000",
+          "C) $24,000",
+          "D) $24,333"
+        ],
+        "answer": 2,
+        "explanation": "Interest = P×r×t = 20,000 × 0.04 × 5 = $4,000\nTotal = 20,000 + 4,000 = $24,000\n\nAnswer: C) $24,000\n\n💡 Simple interest: same amount each year. Option D would be compound interest."
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Cubed Unit Conversion",
+        "question": "A crystal has density 0.065 g/mm³. What is this in g/cm³? (1 cm = 10 mm)",
+        "options": [
+          "A) 0.0065",
+          "B) 0.65",
+          "C) 6.5",
+          "D) 65"
+        ],
+        "answer": 3,
+        "explanation": "1 cm³ = 10³ = 1,000 mm³\n0.065 g/mm³ × 1,000 = 65 g/cm³\n\nAnswer: D) 65\n\n💡 CUBED: ×10³ = ×1,000. Smaller→larger unit: multiply. Each cm³ holds 1,000 mm³ of material."
+      },
+      {
+        "id": 5,
+        "type": "mc",
+        "category": "Exponential Growth",
+        "question": "A town of 6,500 grows 4% annually. Which function models population P after t years?",
+        "options": [
+          "A) P = 6,500 + 0.04t",
+          "B) P = 6,500(0.04)^t",
+          "C) P = 6,500(1.04)^t",
+          "D) P = 6,500(0.96)^t"
+        ],
+        "answer": 2,
+        "explanation": "Growth 4% → multiplier = 1.04\nP = 6,500(1.04)^t\n\nAnswer: C)\n\n💡 A is linear. B uses rate as base. D is 4% DECAY."
+      },
+      {
+        "id": 6,
+        "type": "spr",
+        "category": "Percent More Than",
+        "question": "Group A: 600 items. Group B: 780 items. B is p% more than A. Find p.",
+        "correctValue": 30,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "(780 − 600)/600 × 100 = 180/600 × 100 = 30%\n\nAnswer: 30\n\n💡 \"p% more\" = (difference/original) × 100. Always divide by the ORIGINAL."
+      },
+      {
+        "id": 7,
+        "type": "mc",
+        "category": "Factoring · Diff of Squares",
+        "question": "Which is a factor of 16x¹⁴ − 49x¹²?",
+        "options": [
+          "A) 4x + 7",
+          "B) 16x² + 49",
+          "C) 4x − 49",
+          "D) −33x²"
+        ],
+        "answer": 0,
+        "explanation": "x¹²(16x² − 49) = x¹²(4x − 7)(4x + 7)\n\nAnswer: A) 4x + 7\n\n💡 Factor out GCF (x¹²), then apply difference of squares: (4x)² − 7²."
+      },
+      {
+        "id": 8,
+        "type": "mc",
+        "category": "Cone Volume",
+        "question": "A cone has radius 8 and height 15. What is its volume?",
+        "options": [
+          "A) 120π",
+          "B) 320π",
+          "C) 960π",
+          "D) 1,280π"
+        ],
+        "answer": 1,
+        "explanation": "V = (1/3)πr²h = (1/3)π(64)(15) = (1/3)(960π) = 320π\n\nAnswer: B) 320π\n\n💡 Option C is the CYLINDER volume. Cone = (1/3) × cylinder."
+      },
+      {
+        "id": 9,
+        "type": "spr",
+        "category": "Substitution Trick",
+        "question": "If 4 + (3−x)/5 = −2(3−x)/7, what is the value of (3−x)?",
+        "correctValue": -8.235,
+        "tolerance": 0.02,
+        "unit": "",
+        "explanation": "Let u = 3−x. Multiply by 35:\n140 + 7u = −10u\n140 = −17u\nu = −140/17 ≈ −8.235\n\nAnswer: −140/17\n\n💡 Substitute u = (3−x), don't solve for x. The question asks for (3−x) directly."
+      },
+      {
+        "id": 10,
+        "type": "mc",
+        "category": "Exponential Y-Intercept",
+        "question": "What is the y-intercept of y = 12^x?",
+        "options": [
+          "A) (0, 12)",
+          "B) (0, 1)",
+          "C) (0, 0)",
+          "D) (12, 0)"
+        ],
+        "answer": 1,
+        "explanation": "y-intercept: x = 0\ny = 12⁰ = 1 → (0, 1)\n\nAnswer: B) (0, 1)\n\n💡 For ANY aˣ where a > 0: a⁰ = 1. The y-intercept is ALWAYS (0, 1)."
+      },
+      {
+        "id": 11,
+        "type": "mc",
+        "category": "Equation Setup",
+        "question": "Pens cost $3.50, markers $2.25. Total cost is $47.50. Which equation represents this, where x = pens and y = markers?",
+        "options": [
+          "A) 3.50x + 47.50y = 2.25",
+          "B) 2.25x + 3.50y = 47.50",
+          "C) 3.50x + 2.25y = 47.50",
+          "D) x + y = 47.50"
+        ],
+        "answer": 2,
+        "explanation": "Total = (price per pen)(pens) + (price per marker)(markers)\n3.50x + 2.25y = 47.50\n\nAnswer: C)\n\n💡 Match the price to the correct variable. Option B swaps them."
+      },
+      {
+        "id": 12,
+        "type": "spr",
+        "category": "Quadratic System",
+        "question": "y = 0\ny = 3(x² − 25)\n\nWhich positive x-value satisfies the system?",
+        "correctValue": 5,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "0 = 3(x² − 25)\nx² = 25\nx = ±5\n\nPositive: x = 5\n\nAnswer: 5"
+      },
+      {
+        "id": 13,
+        "type": "mc",
+        "category": "Sphere Surface Area",
+        "question": "A sphere has radius 7. What is its surface area?",
+        "options": [
+          "A) 49π",
+          "B) 98π",
+          "C) 196π",
+          "D) 1,372π"
+        ],
+        "answer": 2,
+        "explanation": "SA = 4πr² = 4π(49) = 196π\n\nAnswer: C) 196π\n\n💡 Option A is just r². Option B is 2πr² (hemisphere). Don't forget the 4."
+      },
+      {
+        "id": 14,
+        "type": "mc",
+        "category": "Cost Function",
+        "question": "A repair shop charges $180 for the first 2 hours plus $55 for each additional hour. Which gives total cost f(x) for x ≥ 2 hours?",
+        "options": [
+          "A) f(x) = 55x + 70",
+          "B) f(x) = 55x + 180",
+          "C) f(x) = 180x",
+          "D) f(x) = 180x + 55"
+        ],
+        "answer": 0,
+        "explanation": "f(x) = 180 + 55(x − 2) = 180 + 55x − 110 = 55x + 70\n\nf(2) = 110 + 70 = $180 ✓\nf(6) = 330 + 70 = $400 ✓\n\nAnswer: A)\n\n💡 The $180 covers 2 hours. Additional hours start from hour 3."
+      },
+      {
+        "id": 15,
+        "type": "spr",
+        "category": "Circle · Complete Square",
+        "question": "x² + y² + 8x − 14y = 35. What is the radius of the circle?",
+        "correctValue": 10,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "(x² + 8x + 16) + (y² − 14y + 49) = 35 + 16 + 49\n(x + 4)² + (y − 7)² = 100\nr = √100 = 10\n\nAnswer: 10"
+      },
+      {
+        "id": 16,
+        "type": "mc",
+        "category": "30-60-90 Triangle",
+        "question": "In a 30-60-90 triangle, the hypotenuse is 24. What is the side opposite the 60° angle?",
+        "options": [
+          "A) 12",
+          "B) 12√2",
+          "C) 12√3",
+          "D) 24√3"
+        ],
+        "answer": 2,
+        "explanation": "Ratio x : x√3 : 2x\n2x = 24 → x = 12\nOpposite 60° = 12√3\n\nAnswer: C) 12√3\n\n💡 Option A is opposite 30°. Option B uses √2 (that's 45-45-90)."
+      },
+      {
+        "id": 17,
+        "type": "mc",
+        "category": "Simple vs Compound Interest",
+        "question": "$10,000 for 3 years. Bank A: 6% simple. Bank B: 5.8% compound. Which gives more?",
+        "options": [
+          "A) A by about $157",
+          "B) A by about $43",
+          "C) B by about $43",
+          "D) B by about $157"
+        ],
+        "answer": 2,
+        "explanation": "A: 10,000 + 10,000(0.06)(3) = $11,800\nB: 10,000(1.058)³ = $11,842.87\n\nB wins by ≈ $43\n\nAnswer: C)\n\n💡 Compound beats simple when rates are close. Always calculate both — don't assume!"
+      },
+      {
+        "id": 18,
+        "type": "spr",
+        "category": "Frustum Volume",
+        "question": "A cone (r=12, h=20) has a smaller cone (r=6, h=10) removed from the top. What is the frustum volume as a multiple of π?",
+        "correctValue": 840,
+        "tolerance": 0,
+        "unit": "π",
+        "explanation": "Big: (1/3)π(144)(20) = 960π\nSmall: (1/3)π(36)(10) = 120π\nFrustum = 960π − 120π = 840π\n\nAnswer: 840π"
+      },
+      {
+        "id": 19,
+        "type": "mc",
+        "category": "Squared Unit · Reverse",
+        "question": "A pressure is 0.48 N/mm². What is this in N/cm²? (1 cm = 10 mm)",
+        "options": [
+          "A) 0.048",
+          "B) 4.8",
+          "C) 48",
+          "D) 480"
+        ],
+        "answer": 2,
+        "explanation": "1 cm² = 100 mm²\n0.48 N per mm² × 100 = 48 N/cm²\n\nAnswer: C) 48\n\n💡 Smaller→larger unit: MULTIPLY by 100. Each cm² contains 100× more area."
+      },
+      {
+        "id": 20,
+        "type": "mc",
+        "category": "Inscribed Angle",
+        "question": "An inscribed angle intercepts an arc of 156°. What is the inscribed angle?",
+        "options": [
+          "A) 39°",
+          "B) 78°",
+          "C) 156°",
+          "D) 312°"
+        ],
+        "answer": 1,
+        "explanation": "Inscribed angle = (1/2) × arc = 156/2 = 78°\n\nAnswer: B) 78°\n\n💡 Inscribed = half the arc. Central = full arc. Option A halves again (wrong)."
+      },
+      {
+        "id": 21,
+        "type": "spr",
+        "category": "Unit Circle · cot",
+        "question": "Unit circle point B(−9/√85, 2/√85). Angle AOB = w. What is cos w / sin w?",
+        "correctValue": -4.5,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "cos w = −9/√85, sin w = 2/√85\ncos w / sin w = −9/2 = −4.5\n\nAnswer: −4.5\n\n💡 The √85 cancels. cos/sin = cot (cotangent)."
+      },
+      {
+        "id": 22,
+        "type": "spr",
+        "category": "Discriminant · Max k",
+        "question": "x(kx − 150) = −9. k is an integer. Two distinct real solutions. Greatest k?",
+        "correctValue": 624,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "kx² − 150x + 9 = 0\nD = 150² − 4(k)(9) = 22,500 − 36k > 0\nk < 625 → max k = 624\n\nAnswer: 624"
+      }
+    ]
+  },
+  {
     "id": "geometry-set14",
-    "label": "geometry-set14",
+    "label": "Geometry · SET 14",
     "title": "Circles · Triangles · 3D",
     "subtitle": "Arc · Sector · Trig · Cone · Composite · Verified ✓",
-    "accent": "#6A4C93",
+    "accent": "#D6336C",
     "catColors": {
       "Arc Length": "#E63946",
       "Sector Area": "#457B9D",
@@ -916,10 +1330,10 @@
   },
   {
     "id": "geometry-set15",
-    "label": "geometry-set15",
+    "label": "Geometry Advanced · SET 15",
     "title": "Special Triangles · 3D · Proofs",
     "subtitle": "30-60-90 · Tangent · Sphere · Exterior angle · Verified ✓",
-    "accent": "#1982C4",
+    "accent": "#2B8A3E",
     "catColors": {
       "Supplementary Angles": "#E63946",
       "Pythagorean · Ladder Problem": "#457B9D",
@@ -1064,7 +1478,7 @@
     "label": "June 2026 · SET 2",
     "title": "Unit Conversion & Multi-Step",
     "subtitle": "Currency · Fuel · Dosage · Volume",
-    "accent": "#D6336C",
+    "accent": "#E63946",
     "catColors": {
       "Currency · Fee · Conversion": "#E63946",
       "Fuel Efficiency · Dual Conversion": "#457B9D",
@@ -1211,7 +1625,7 @@
     "label": "June 2026 · SET 3",
     "title": "Multi-Step & Reasoning",
     "subtitle": "Work rates · Dilution · Density · Average speed",
-    "accent": "#2B8A3E",
+    "accent": "#457B9D",
     "catColors": {
       "Work Rate · Time Conversion": "#E63946",
       "Dilution · Concentration": "#457B9D",
@@ -1358,7 +1772,7 @@
     "label": "June 2026 · SET 4",
     "title": "Real-World Multi-Step",
     "subtitle": "Construction · Science · Travel · Engineering",
-    "accent": "#E63946",
+    "accent": "#2A9D8F",
     "catColors": {
       "Volume · Density · Mass": "#E63946",
       "VAT Refund · Exchange Rate": "#457B9D",
@@ -1495,7 +1909,7 @@
     "label": "June 2026 · SET 5",
     "title": "Applied Problem Solving",
     "subtitle": "Shipping · BMI · Tax · Fuel · Mixtures",
-    "accent": "#457B9D",
+    "accent": "#E08A1E",
     "catColors": {
       "Shipping · Weight Conversion": "#E63946",
       "BMI · Dual Unit Conversion": "#457B9D",
@@ -1632,7 +2046,7 @@
     "label": "June 2026 · SET 6",
     "title": "Data & Rates",
     "subtitle": "Unit rates · IV drips · Interest · Nutrition",
-    "accent": "#2A9D8F",
+    "accent": "#6A4C93",
     "catColors": {
       "Data Storage · Scientific Notation": "#E63946",
       "Unit Rate Comparison": "#457B9D",
@@ -1769,7 +2183,7 @@
     "label": "June 2026 · SET 7",
     "title": "Geometry & Finance",
     "subtitle": "Cylinders · Loans · Mixtures · Scale",
-    "accent": "#E08A1E",
+    "accent": "#1982C4",
     "catColors": {
       "Cylinder Volume · Conversion": "#E63946",
       "Trail Grade · Percent": "#457B9D",
@@ -1906,7 +2320,7 @@
     "label": "June 2026 · SET 8",
     "title": "Science & Statistics",
     "subtitle": "CO₂ · Light · Sound · Solar",
-    "accent": "#6A4C93",
+    "accent": "#D6336C",
     "catColors": {
       "Carbon Footprint · Rate × Time": "#E63946",
       "Margin of Error · Statistics": "#457B9D",
@@ -2043,7 +2457,7 @@
     "label": "June 2026 · SET 9",
     "title": "Business & Daily Life",
     "subtitle": "Rent · Pricing · Construction · Commute",
-    "accent": "#1982C4",
+    "accent": "#2B8A3E",
     "catColors": {
       "Rent · Area Conversion": "#E63946",
       "Break-Even Analysis": "#457B9D",
@@ -2176,6 +2590,500 @@
         ],
         "answer": 2,
         "explanation": "Step 1 — Base area: 4 × 5 = 20 m²\nStep 2 — With 10% extra: 20 × 1.10 = 22 m²\nStep 3 — Cost: 22 × $18 = $396\n\nAnswer: C) $396\n\n💡 Option A ($360) forgets the waste. Option B adds 10% to the cost, not the area — close but wrong method."
+      }
+    ]
+  },
+  {
+    "id": "setA-mixed15",
+    "label": "setA-mixed15",
+    "title": "Mixed Advanced — SET A",
+    "subtitle": "Discriminant · Unit circle · Substitution · Percent · Verified ✓",
+    "accent": "#E63946",
+    "catColors": {
+      "Graph Interpretation": "#E63946",
+      "Discriminant · Max k": "#457B9D",
+      "Unit Circle · tan": "#2A9D8F",
+      "Exponential Decay Model": "#E9C46A",
+      "Fraction Equation · Table": "#F4A261",
+      "Percent More Than": "#264653",
+      "Substitution Trick · Find (2−x)": "#6A4C93",
+      "Squared Equation · Sum": "#1982C4",
+      "Exponential Growth · Context": "#8AC926",
+      "One Solution · Find k": "#FF595E",
+      "Percent More · Data": "#E63946",
+      "Unit Circle · cos/sin": "#457B9D",
+      "No Solution · Find k": "#2A9D8F",
+      "Fraction Equation · Verify Table": "#E9C46A",
+      "Function Value · Context": "#F4A261"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Graph Interpretation",
+        "question": "A function models a company's monthly revenue, where x is the number of years since 2020 and y is revenue in thousands of dollars. The graph passes through (2, 800). Which is the best interpretation of this point?",
+        "options": [
+          "A) Revenue in 2022 was $800,000",
+          "B) Revenue increases by $800,000 every 2 years",
+          "C) Revenue in 2020 was $800,000",
+          "D) Revenue doubled after 2 years"
+        ],
+        "answer": 0,
+        "explanation": "x = 2 means 2 years after 2020 = 2022\ny = 800 means $800 thousand = $800,000\n\nThe point (2, 800) means: revenue in 2022 was $800,000.\n\nAnswer: A)\n\n💡 (x, y) = (input, output). x tells you WHEN, y tells you HOW MUCH. Option B describes slope, not a point."
+      },
+      {
+        "id": 2,
+        "type": "spr",
+        "category": "Discriminant · Max k",
+        "question": "x(kx − 80) = −4\n\nIn the given equation, k is an integer constant. If the equation has two distinct real solutions, what is the greatest possible value of k?",
+        "correctValue": 399,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Rearrange: kx² − 80x + 4 = 0\n\nTwo distinct solutions requires D > 0:\nD = 80² − 4(k)(4) = 6,400 − 16k > 0\n16k < 6,400\nk < 400\n\nGreatest integer: k = 399\n\nAnswer: 399\n\n💡 Expand first, rearrange to standard form, then apply D = b²−4ac > 0. Don't forget k must also be nonzero."
+      },
+      {
+        "id": 3,
+        "type": "spr",
+        "category": "Unit Circle · tan",
+        "question": "In the xy-plane, a unit circle centered at the origin contains point A(1, 0) and point B(3/√10, −1/√10). If the measure of angle AOB is w radians, what is the value of tan w?",
+        "correctValue": -0.3333,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "On the unit circle, for point B:\ncos w = x = 3/√10\nsin w = y = −1/√10\n\ntan w = sin w / cos w = (−1/√10) / (3/√10) = −1/3\n\nAnswer: −1/3 ≈ −0.333\n\n💡 The √10 cancels! tan = y/x on the unit circle. Always simplify before calculating."
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Exponential Decay Model",
+        "question": "A car was purchased for $24,000. Each year, its value decreases by 12% of the previous year's value. Which equation gives the value v after t years?",
+        "options": [
+          "A) v = 24,000(0.12)^t",
+          "B) v = 24,000(0.88)^t",
+          "C) v = 24,000(1.12)^t",
+          "D) v = 24,000 − 0.12t"
+        ],
+        "answer": 1,
+        "explanation": "\"Decreases by 12%\" means it RETAINS 88%:\nMultiplier = 1 − 0.12 = 0.88\n\nv = 24,000(0.88)^t\n\nAnswer: B)\n\n💡 Option A uses 0.12 as base → approaches 0 too fast. Option C is GROWTH. Option D is linear, not exponential."
+      },
+      {
+        "id": 5,
+        "type": "mc",
+        "category": "Fraction Equation · Table",
+        "question": "(3/4)x + (1/2)y = 6\n\nWhich ordered pair (x, y) satisfies the equation?",
+        "options": [
+          "A) (4, 6)",
+          "B) (4, 3)",
+          "C) (8, 0)",
+          "D) (2, 9)"
+        ],
+        "answer": 0,
+        "explanation": "Check A) (4, 6):\n(3/4)(4) + (1/2)(6) = 3 + 3 = 6 ✓\n\nCheck B) (4, 3): 3 + 1.5 = 4.5 ✗\nCheck C) (8, 0): 6 + 0 = 6 ✓ — also works!\nCheck D) (2, 9): 1.5 + 4.5 = 6 ✓ — also works!\n\nMultiple answers work. A is listed first.\n\nAnswer: A) (4, 6)\n\n💡 Substitute and verify — don't solve for y algebraically when checking tables."
+      },
+      {
+        "id": 6,
+        "type": "spr",
+        "category": "Percent More Than",
+        "question": "A table shows Group X has 240 objects and Group Y has 408 objects. The number in Group Y is p% more than Group X. What is the value of p?",
+        "correctValue": 70,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "\"p% more than\" means:\n408 = 240 + (p/100)(240)\n408 = 240(1 + p/100)\n\n408/240 = 1 + p/100\n1.70 = 1 + p/100\np/100 = 0.70\np = 70\n\nAnswer: 70\n\n💡 \"p% more than\" ≠ \"p% of\". \"70% more\" means the total is 170% of the original."
+      },
+      {
+        "id": 7,
+        "type": "spr",
+        "category": "Substitution Trick · Find (2−x)",
+        "question": "If 3 + (2−x)/4 = −3(2−x)/5, what is the value of 2−x?",
+        "correctValue": -3.529,
+        "tolerance": 0.02,
+        "unit": "",
+        "explanation": "Let u = 2−x. Multiply everything by 20:\n\n20(3) + 5u = −12u\n60 + 5u = −12u\n60 = −17u\nu = −60/17 ≈ −3.529\n\nAnswer: −60/17 ≈ −3.53\n\n💡 Substitute u = (2−x) to avoid solving for x. The question asks for (2−x) directly!"
+      },
+      {
+        "id": 8,
+        "type": "mc",
+        "category": "Squared Equation · Sum",
+        "question": "(x − 18)² = 25\n\nWhat is the sum of the solutions to the given equation?",
+        "options": [
+          "A) 18",
+          "B) 25",
+          "C) 36",
+          "D) 43"
+        ],
+        "answer": 2,
+        "explanation": "x − 18 = ±5\nx = 23 or x = 13\n\nSum = 23 + 13 = 36\n\nShortcut: sum always = 2a when (x−a)² = b\nSum = 2(18) = 36\n\nAnswer: C) 36\n\n💡 The shortcut works because +√b and −√b cancel when summed."
+      },
+      {
+        "id": 9,
+        "type": "mc",
+        "category": "Exponential Growth · Context",
+        "question": "A biologist models a population as P(t) = 8,000(1.03)^t, where t is years. What does 8,000 represent?",
+        "options": [
+          "A) The annual growth rate",
+          "B) The population after t years",
+          "C) The initial population",
+          "D) The growth factor"
+        ],
+        "answer": 2,
+        "explanation": "At t = 0: P(0) = 8,000(1.03)⁰ = 8,000\n\n8,000 is the value when t = 0 — the initial population.\n\n1.03 is the growth factor (3% annual growth).\n\nAnswer: C) The initial population\n\n💡 In y = a·bˣ: a = initial value (y-intercept), b = growth/decay factor."
+      },
+      {
+        "id": 10,
+        "type": "spr",
+        "category": "One Solution · Find k",
+        "question": "2x² − kx + 18 = 0\n\nThe equation has exactly one real solution. What is the positive value of k?",
+        "correctValue": 12,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Exactly one solution means D = 0:\nD = k² − 4(2)(18) = 0\nk² − 144 = 0\nk² = 144\nk = ±12\n\nPositive value: k = 12\n\nAnswer: 12\n\n💡 D = 0 → one solution (tangent to x-axis). D > 0 → two solutions. D < 0 → none."
+      },
+      {
+        "id": 11,
+        "type": "spr",
+        "category": "Percent More · Data",
+        "question": "A store sold 400 units in Q1 and 560 units in Q2. The Q2 sales are what percent more than Q1?",
+        "correctValue": 40,
+        "tolerance": 0,
+        "unit": "%",
+        "explanation": "Increase: 560 − 400 = 160\n\nPercent more: (160/400) × 100 = 40%\n\nAnswer: 40%\n\n💡 Always divide by the ORIGINAL (Q1), not the new value (Q2). 160/560 = 28.6% — that's the wrong denominator."
+      },
+      {
+        "id": 12,
+        "type": "spr",
+        "category": "Unit Circle · cos/sin",
+        "question": "On a unit circle, point B has coordinates (−7/√53, 2/√53). If angle AOB is w radians (A is at (1,0)), what is the value of cos w / sin w?",
+        "correctValue": -3.5,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "cos w = x-coordinate = −7/√53\nsin w = y-coordinate = 2/√53\n\ncos w / sin w = (−7/√53) / (2/√53) = −7/2 = −3.5\n\nAnswer: −3.5\n\n💡 cos/sin = 1/tan = cot. The √53 cancels, leaving just the ratio of numerators."
+      },
+      {
+        "id": 13,
+        "type": "spr",
+        "category": "No Solution · Find k",
+        "question": "3(kx + 7) = (18/5)x − 14\n\nThe equation has no solution. What is the value of k?",
+        "correctValue": 1.2,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "Expand: 3kx + 21 = (18/5)x − 14\n\nNo solution: x-coefficients equal, constants different:\n3k = 18/5\nk = 18/15 = 6/5 = 1.2\n\nCheck constants: 21 ≠ −14 ✓ (different)\n\nAnswer: 6/5 or 1.2\n\n💡 Same slope + different intercept = parallel lines = no intersection = no solution."
+      },
+      {
+        "id": 14,
+        "type": "mc",
+        "category": "Fraction Equation · Verify Table",
+        "question": "(1/3)x + (3/5)y = 2\n\nWhich pair of values satisfies the equation?",
+        "options": [
+          "A) x=3, y=5/3",
+          "B) x=6, y=0",
+          "C) x=0, y=10/3",
+          "D) All of the above"
+        ],
+        "answer": 3,
+        "explanation": "A) (1/3)(3) + (3/5)(5/3) = 1 + 1 = 2 ✓\nB) (1/3)(6) + 0 = 2 ✓\nC) 0 + (3/5)(10/3) = 2 ✓\n\nAll three satisfy the equation!\n\nAnswer: D) All of the above\n\n💡 Any linear equation has infinite solutions. Check each by substituting."
+      },
+      {
+        "id": 15,
+        "type": "mc",
+        "category": "Function Value · Context",
+        "question": "f(x) = 2,500(1.08)^x models a savings account balance in dollars after x years. Which best describes f(3) ≈ 3,149?",
+        "options": [
+          "A) After 3 years, the balance is about $3,149",
+          "B) The account earns $3,149 per year",
+          "C) The initial deposit was $3,149",
+          "D) The interest rate is 3.149%"
+        ],
+        "answer": 0,
+        "explanation": "f(3) = 2,500(1.08)³ ≈ 2,500(1.2597) ≈ $3,149\n\nThis means: after 3 years, the balance is approximately $3,149.\n\nAnswer: A)\n\n💡 f(3) gives the OUTPUT when the INPUT is 3. In context: balance at year 3."
+      }
+    ]
+  },
+  {
+    "id": "setB-unit-trig-3d",
+    "label": "setB-unit-trig-3d",
+    "title": "Hard Conversion × Geometry",
+    "subtitle": "Squared · Cubed · Cone · Frustum · Trig identities · Verified ✓",
+    "accent": "#457B9D",
+    "catColors": {
+      "Squared Unit · Density": "#E63946",
+      "Cone · Lateral Surface Area": "#457B9D",
+      "Pythagorean Identity · Find cos": "#2A9D8F",
+      "Squared Unit · Reverse": "#E9C46A",
+      "Sphere · Find Radius from SA": "#F4A261",
+      "Angle of Elevation · tan": "#264653",
+      "Frustum Volume": "#6A4C93",
+      "Cubed Unit · Density": "#1982C4",
+      "Complementary Angles · Trig": "#8AC926",
+      "Triangular Prism Volume": "#FF595E"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Squared Unit · Density",
+        "question": "A material has a density of 2.8 kg/m². What is this in g/cm²?\n(1 kg = 1,000 g, 1 m = 100 cm)",
+        "options": [
+          "A) 28",
+          "B) 2.8",
+          "C) 0.28",
+          "D) 0.028"
+        ],
+        "answer": 2,
+        "explanation": "Step 1 — kg → g: 2.8 × 1,000 = 2,800 g/m²\nStep 2 — m² → cm²: 1 m² = 10,000 cm²\n2,800 ÷ 10,000 = 0.28 g/cm²\n\nAnswer: C) 0.28\n\n💡 TWO conversions: mass unit (×1,000) AND area unit (÷10,000). Net effect: ÷10."
+      },
+      {
+        "id": 2,
+        "type": "spr",
+        "category": "Cone · Lateral Surface Area",
+        "question": "A cone has radius 9 and height 12. What is the lateral (side) surface area? (Lateral SA = πrl, where l is the slant height.)",
+        "correctValue": 135,
+        "tolerance": 0,
+        "unit": "π",
+        "explanation": "Slant height: l = √(r² + h²) = √(81 + 144) = √225 = 15\n\nLateral SA = πrl = π(9)(15) = 135π\n\nAnswer: 135π\n\n💡 Find slant height FIRST using Pythagorean theorem. This is a 9-12-15 triple (3-4-5 × 3)."
+      },
+      {
+        "id": 3,
+        "type": "mc",
+        "category": "Pythagorean Identity · Find cos",
+        "question": "In a right triangle, sin θ = 7/25. What is the value of cos θ?",
+        "options": [
+          "A) 7/24",
+          "B) 18/25",
+          "C) 24/25",
+          "D) 25/7"
+        ],
+        "answer": 2,
+        "explanation": "sin²θ + cos²θ = 1\n(7/25)² + cos²θ = 1\n49/625 + cos²θ = 1\ncos²θ = 576/625\ncos θ = 24/25\n\nOr recognize the 7-24-25 Pythagorean triple.\n\nAnswer: C) 24/25\n\n💡 Know the triples: 3-4-5, 5-12-13, 7-24-25, 8-15-17."
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Squared Unit · Reverse",
+        "question": "A pressure is 0.35 N/mm². What is this in N/cm²?\n(1 cm = 10 mm)",
+        "options": [
+          "A) 0.035",
+          "B) 3.5",
+          "C) 35",
+          "D) 350"
+        ],
+        "answer": 2,
+        "explanation": "1 cm = 10 mm → 1 cm² = 100 mm²\n\n0.35 N per 1 mm² = 0.35 × 100 N per 100 mm² = 35 N/cm²\n\nAnswer: C) 35\n\n💡 Going from SMALLER unit² to LARGER unit²: MULTIPLY. Each cm² contains 100 mm², so 100× more newtons per cm²."
+      },
+      {
+        "id": 5,
+        "type": "spr",
+        "category": "Sphere · Find Radius from SA",
+        "question": "A sphere has a surface area of 324π square units. What is the radius?",
+        "correctValue": 9,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "SA = 4πr²\n324π = 4πr²\n324 = 4r²\nr² = 81\nr = 9\n\nAnswer: 9\n\n💡 Divide by 4π first, then take the square root. Don't forget to cancel π on both sides."
+      },
+      {
+        "id": 6,
+        "type": "mc",
+        "category": "Angle of Elevation · tan",
+        "question": "From a point 25 meters away from the base of a tower, the angle of elevation to the top is 60°. What is the height of the tower?",
+        "options": [
+          "A) 25",
+          "B) 25√2",
+          "C) 25√3",
+          "D) 50"
+        ],
+        "answer": 2,
+        "explanation": "tan(60°) = height / 25\n√3 = h / 25\nh = 25√3 ≈ 43.3 m\n\nAnswer: C) 25√3\n\n💡 Memorize: tan 30° = 1/√3, tan 45° = 1, tan 60° = √3."
+      },
+      {
+        "id": 7,
+        "type": "spr",
+        "category": "Frustum Volume",
+        "question": "A cone with radius 10 and height 15 has a smaller cone (radius 4, height 6) removed from its top, creating a frustum. What is the volume of the frustum, expressed as a multiple of π?",
+        "correctValue": 468,
+        "tolerance": 0,
+        "unit": "π",
+        "explanation": "Big cone: V = (1/3)π(10²)(15) = (1/3)π(1500) = 500π\nSmall cone: V = (1/3)π(4²)(6) = (1/3)π(96) = 32π\n\nFrustum = 500π − 32π = 468π\n\nAnswer: 468π\n\n💡 Frustum = big cone − small cone. Calculate each separately."
+      },
+      {
+        "id": 8,
+        "type": "mc",
+        "category": "Cubed Unit · Density",
+        "question": "A liquid has a density of 0.85 g/cm³. What is this in g/mm³?\n(1 cm = 10 mm)",
+        "options": [
+          "A) 850",
+          "B) 8.5",
+          "C) 0.085",
+          "D) 0.00085"
+        ],
+        "answer": 3,
+        "explanation": "1 cm = 10 mm → 1 cm³ = 1,000 mm³\n\n0.85 g per 1 cm³ = 0.85 g per 1,000 mm³\n= 0.85 ÷ 1,000 = 0.00085 g/mm³\n\nAnswer: D) 0.00085\n\n💡 For CUBED units, the factor is 10³ = 1,000, not 10² = 100. This is even trickier than squared."
+      },
+      {
+        "id": 9,
+        "type": "mc",
+        "category": "Complementary Angles · Trig",
+        "question": "If cos θ = 5/13, what is the value of sin(90° − θ)?",
+        "options": [
+          "A) 5/13",
+          "B) 12/13",
+          "C) 5/12",
+          "D) 13/5"
+        ],
+        "answer": 0,
+        "explanation": "Cofunction identity: sin(90° − θ) = cos θ\n\nTherefore: sin(90° − θ) = 5/13\n\nAnswer: A) 5/13\n\n💡 sin and cos are cofunctions: sin(90°−θ) = cos θ and cos(90°−θ) = sin θ. No calculation needed!"
+      },
+      {
+        "id": 10,
+        "type": "spr",
+        "category": "Triangular Prism Volume",
+        "question": "A triangular prism has a right-triangle base with legs 6 and 8. The prism has a height (length) of 15 units. What is the volume?",
+        "correctValue": 360,
+        "tolerance": 0,
+        "unit": "cubic units",
+        "explanation": "Base area = (1/2)(6)(8) = 24\n\nVolume = base area × height = 24 × 15 = 360\n\nAnswer: 360\n\n💡 Prism volume = (base area) × (length). For a triangular base, area = (1/2)(b)(h)."
+      }
+    ]
+  },
+  {
+    "id": "setC-unit-trig-3d-hard",
+    "label": "setC-unit-trig-3d-hard",
+    "title": "Expert Level",
+    "subtitle": "Cubed units · Pyramid SA · Inscribed · sec θ · Verified ✓",
+    "accent": "#2A9D8F",
+    "catColors": {
+      "Cubed Unit · g/cm³ to kg/m³": "#E63946",
+      "Cylinder Inscribed in Sphere": "#457B9D",
+      "Unit Circle · tan from Coordinates": "#2A9D8F",
+      "Cubed Unit · mm³ to cm³": "#E9C46A",
+      "Square Pyramid · Surface Area": "#F4A261",
+      "30-60-90 · Area": "#264653",
+      "Area Unit · Metric to Imperial": "#6A4C93",
+      "Hemisphere Volume": "#1982C4",
+      "Reciprocal Trig · sec θ": "#8AC926",
+      "Speed · Multi-Unit Conversion": "#FF595E"
+    },
+    "problems": [
+      {
+        "id": 1,
+        "type": "mc",
+        "category": "Cubed Unit · g/cm³ to kg/m³",
+        "question": "A metal has a density of 8.5 g/cm³. What is this in kg/m³?\n(1 kg = 1,000 g, 1 m = 100 cm)",
+        "options": [
+          "A) 0.0085",
+          "B) 85",
+          "C) 850",
+          "D) 8,500"
+        ],
+        "answer": 3,
+        "explanation": "1 m = 100 cm → 1 m³ = (100)³ = 1,000,000 cm³\n\n8.5 g/cm³ × 1,000,000 cm³/m³ = 8,500,000 g/m³\n8,500,000 ÷ 1,000 = 8,500 kg/m³\n\nShortcut: g/cm³ → kg/m³ always × 1,000\n\nAnswer: D) 8,500\n\n💡 The cubed conversion (×10⁶) and kg conversion (÷10³) combine to ×10³. Memorize: 1 g/cm³ = 1,000 kg/m³."
+      },
+      {
+        "id": 2,
+        "type": "spr",
+        "category": "Cylinder Inscribed in Sphere",
+        "question": "A cylinder is inscribed in a sphere of radius 13. If the cylinder has a radius of 5, what is the height of the cylinder?",
+        "correctValue": 24,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "The sphere's diameter passes through the cylinder's center.\n\nHalf-height² + cylinder radius² = sphere radius²\n(h/2)² + 5² = 13²\n(h/2)² = 169 − 25 = 144\nh/2 = 12\nh = 24\n\nAnswer: 24\n\n💡 5-12-13 Pythagorean triple! The half-height, cylinder radius, and sphere radius form a right triangle."
+      },
+      {
+        "id": 3,
+        "type": "mc",
+        "category": "Unit Circle · tan from Coordinates",
+        "question": "On a unit circle, point B has coordinates (12/13, −5/13). If angle AOB is w radians, what is tan w?",
+        "options": [
+          "A) −5/12",
+          "B) −12/5",
+          "C) 5/12",
+          "D) 12/5"
+        ],
+        "answer": 0,
+        "explanation": "On the unit circle:\ncos w = 12/13\nsin w = −5/13\n\ntan w = sin w / cos w = (−5/13)/(12/13) = −5/12\n\nAnswer: A) −5/12\n\n💡 The 13 cancels. Point is in Q4 (x>0, y<0), so tan is negative."
+      },
+      {
+        "id": 4,
+        "type": "mc",
+        "category": "Cubed Unit · mm³ to cm³",
+        "question": "A crystal has a volume of 0.072 g/mm³. What is this in g/cm³?\n(1 cm = 10 mm)",
+        "options": [
+          "A) 0.000072",
+          "B) 0.72",
+          "C) 7.2",
+          "D) 72"
+        ],
+        "answer": 3,
+        "explanation": "1 cm = 10 mm → 1 cm³ = 10³ = 1,000 mm³\n\n0.072 g per 1 mm³ = 0.072 × 1,000 g per cm³ = 72 g/cm³\n\nAnswer: D) 72\n\n💡 Going from smaller unit³ to larger unit³: MULTIPLY by 10³. Each cm³ holds 1,000 mm³ worth of material."
+      },
+      {
+        "id": 5,
+        "type": "spr",
+        "category": "Square Pyramid · Surface Area",
+        "question": "A right square pyramid has a base side of 10 and a height of 12. What is the total surface area? (Slant height of each triangular face is measured from base edge midpoint to apex.)",
+        "correctValue": 360,
+        "tolerance": 0,
+        "unit": "sq units",
+        "explanation": "Slant height: l = √(h² + (s/2)²) = √(144 + 25) = √169 = 13\n\nBase area: 10² = 100\n4 triangular faces: 4 × (1/2)(10)(13) = 4 × 65 = 260\n\nTotal SA = 100 + 260 = 360\n\nAnswer: 360\n\n💡 Slant height uses HALF the base side, not the full side. This is the most common error on pyramid SA problems."
+      },
+      {
+        "id": 6,
+        "type": "spr",
+        "category": "30-60-90 · Area",
+        "question": "In a 30-60-90 triangle, the side opposite the 30° angle is 7. What is the area of the triangle? (Use √3 ≈ 1.732. Round to nearest tenth.)",
+        "correctValue": 42.4,
+        "tolerance": 0.2,
+        "unit": "sq units",
+        "explanation": "30-60-90 ratio: x : x√3 : 2x\nSide opposite 30° = x = 7\nSide opposite 60° = 7√3\nHypotenuse = 14\n\nThe two legs are 7 and 7√3.\nArea = (1/2)(7)(7√3) = (49√3)/2\n= 49(1.732)/2 ≈ 42.4\n\nAnswer: 42.4\n\n💡 The legs are always the two shorter sides. Area = (1/2)(leg₁)(leg₂)."
+      },
+      {
+        "id": 7,
+        "type": "mc",
+        "category": "Area Unit · Metric to Imperial",
+        "question": "Solar irradiance is 320 W/m². What is this in W/ft²?\n(1 m ≈ 3.281 ft)",
+        "options": [
+          "A) 9.7",
+          "B) 29.7",
+          "C) 97.5",
+          "D) 1,050"
+        ],
+        "answer": 1,
+        "explanation": "1 m = 3.281 ft → 1 m² = (3.281)² ≈ 10.764 ft²\n\n320 W per 1 m² = 320 W per 10.764 ft²\n= 320 ÷ 10.764 ≈ 29.7 W/ft²\n\nAnswer: B) 29.7\n\n💡 SQUARE the linear factor (3.281² ≈ 10.764), then divide. Not ÷3.281."
+      },
+      {
+        "id": 8,
+        "type": "mc",
+        "category": "Hemisphere Volume",
+        "question": "A hemisphere has a radius of 8. What is its volume?",
+        "options": [
+          "A) (256/3)π",
+          "B) (512/3)π",
+          "C) (1024/3)π",
+          "D) (2048/3)π"
+        ],
+        "answer": 2,
+        "explanation": "Hemisphere = (1/2) × sphere\n= (1/2)(4/3)πr³\n= (2/3)πr³\n= (2/3)π(512)\n= (1024/3)π\n\nAnswer: C) (1024/3)π\n\n💡 Full sphere = (4/3)πr³. Half = (2/3)πr³. Option D uses diameter (16) instead of radius."
+      },
+      {
+        "id": 9,
+        "type": "mc",
+        "category": "Reciprocal Trig · sec θ",
+        "question": "In a right triangle, sin θ = 8/17. What is the value of sec θ? (sec θ = 1/cos θ)",
+        "options": [
+          "A) 15/17",
+          "B) 17/15",
+          "C) 8/15",
+          "D) 17/8"
+        ],
+        "answer": 1,
+        "explanation": "sin θ = 8/17 → opp = 8, hyp = 17\nadj = √(17² − 8²) = √(289 − 64) = √225 = 15\n\ncos θ = adj/hyp = 15/17\nsec θ = 1/cos θ = 17/15\n\nAnswer: B) 17/15\n\n💡 8-15-17 is a Pythagorean triple. sec = hyp/adj (reciprocal of cos)."
+      },
+      {
+        "id": 10,
+        "type": "spr",
+        "category": "Speed · Multi-Unit Conversion",
+        "question": "A car travels at 55 miles per hour. What is this speed in meters per second?\n(1 mile = 1,609 meters, 1 hour = 3,600 seconds. Round to nearest tenth.)",
+        "correctValue": 24.6,
+        "tolerance": 0.2,
+        "unit": "m/s",
+        "explanation": "55 mi/hr × 1,609 m/mi ÷ 3,600 s/hr\n\n= 55 × 1,609 / 3,600\n= 88,495 / 3,600\n≈ 24.6 m/s\n\nAnswer: 24.6 m/s\n\n💡 Multiply by the distance factor, divide by the time factor. Two conversions in one step."
       }
     ]
   }
