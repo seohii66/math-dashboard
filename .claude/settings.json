@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npm run *)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(git check-ignore *)",
+      "Bash(git fetch *)",
+      "Bash(git rev-list *)",
+      "Bash(gh run *)"
     ]
   }
 }
