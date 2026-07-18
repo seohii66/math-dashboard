@@ -2,7 +2,20 @@ import { useState, useEffect, useRef } from "react";
 import { checkSpr } from "../data/sets.js";
 import { recordAttempt, resetSet, useStore, toggleBookmark } from "../store.js";
 
-const TIME_LIMIT = 15 * 60; // 15분 (초 단위)
+const TIME_PRESETS = [5, 10, 15, 20, 25, 30, 45, 60]; // 분 단위 선택지
+const TIME_LIMIT_KEY = "math-platform-time-limit";
+const NO_LIMIT = "none";
+
+// 학생이 마지막으로 고른 제한 시간(분)을 기억해서 다음 세트에도 이어서 씀
+function loadTimeLimit() {
+  const v = localStorage.getItem(TIME_LIMIT_KEY);
+  if (v === NO_LIMIT) return null;
+  const n = parseInt(v, 10);
+  return Number.isFinite(n) && n > 0 ? n * 60 : 15 * 60;
+}
+function saveTimeLimit(seconds) {
+  localStorage.setItem(TIME_LIMIT_KEY, seconds === null ? NO_LIMIT : String(seconds / 60));
+}
 
 function OptionButton({ opt, isRevealed, isAnswer, isSelected, onSelect }) {
   let bg = "#F7F7F7", border = "1px solid #ECECEC", color = "#333";

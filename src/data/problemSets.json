@@ -5432,5 +5432,1877 @@
         "explanation": "P(1st blue) = 6/20\nP(2nd blue | 1st blue) = 5/19\n\nP(both blue) = (6/20)×(5/19) = 30/380 = 3/38 ≈ 0.0789\n\nAnswer: 3/38 ≈ 0.0789"
       }
     ]
+  },
+  {
+    "id": "setJ-30q",
+    "label": "setJ-30q",
+    "title": "Sequences · Law of Sines/Cosines · Expected Value",
+    "subtitle": "중 3 · 중상 15 · 상 7 · 최상 5 · Verified ✓",
+    "accent": "#2A9D8F",
+    "catColors": {},
+    "problems": [
+      {
+        "id": 1,
+        "tier": "중",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Function Evaluation",
+        "question": "f(x) = 7x − 10. What is f(4)?",
+        "correctValue": 18,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "7(4)−10=28−10=18\n\nAnswer: 18"
+      },
+      {
+        "id": 2,
+        "tier": "중",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Simple Linear",
+        "question": "13x = 169. Find x.",
+        "correctValue": 13,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "x=169÷13=13\n\nAnswer: 13"
+      },
+      {
+        "id": 3,
+        "tier": "중",
+        "domain": "Data Analysis",
+        "type": "spr",
+        "category": "Ratio",
+        "question": "Blue to green marbles is 4:9. Total marbles is 390. How many green marbles?",
+        "correctValue": 270,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Total parts=13, each=30\nGreen=9×30=270\n\nAnswer: 270"
+      },
+      {
+        "id": 4,
+        "tier": "중상",
+        "domain": "Problem-Solving",
+        "type": "mc",
+        "category": "Unit Conversion",
+        "question": "A package weighs 220 lb. How many kg? (1 kg=2.2 lb)",
+        "options": [
+          "A) 50",
+          "B) 100",
+          "C) 484",
+          "D) 242"
+        ],
+        "answer": 1,
+        "explanation": "220÷2.2=100\n\nAnswer: B) 100"
+      },
+      {
+        "id": 5,
+        "tier": "중상",
+        "domain": "Problem-Solving",
+        "type": "mc",
+        "category": "Squared Unit Conversion",
+        "question": "45,000 cm² in m²? (1 m=100 cm)",
+        "options": [
+          "A) 0.45",
+          "B) 4.5",
+          "C) 45",
+          "D) 450"
+        ],
+        "answer": 1,
+        "explanation": "1 m²=10,000 cm²\n45,000÷10,000=4.5\n\nAnswer: B) 4.5"
+      },
+      {
+        "id": 6,
+        "tier": "중상",
+        "domain": "Problem-Solving",
+        "type": "mc",
+        "category": "Successive Percent Change",
+        "question": "A price drops 30%, then drops another 10%. What is the total percent decrease?",
+        "options": [
+          "A) 40%",
+          "B) 37%",
+          "C) 33%",
+          "D) 30%"
+        ],
+        "answer": 1,
+        "explanation": "0.70×0.90=0.63 → 63% remains → 37% total decrease\n\nAnswer: B) 37%\n\n💡 Successive discounts multiply, they don't add."
+      },
+      {
+        "id": 7,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "System · Word Problem",
+        "question": "Notebooks cost $2.75, binders cost $4.25. 20 items cost $71.50 total. How many notebooks were bought?",
+        "correctValue": 9,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "n+b=20, 2.75n+4.25b=71.50\nb=20−n\n2.75n+4.25(20−n)=71.5\n−1.5n+85=71.5\nn=9\n\nAnswer: 9"
+      },
+      {
+        "id": 8,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Slope from Two Points",
+        "question": "What is the slope of the line through (3, 7) and (9, 19)?",
+        "correctValue": 2,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "slope=(19−7)/(9−3)=12/6=2\n\nAnswer: 2"
+      },
+      {
+        "id": 9,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "mc",
+        "category": "Factoring · Difference of Squares",
+        "question": "Which is the complete factorization of 81x⁴ − 16?",
+        "options": [
+          "A) (9x²−4)(9x²+4)",
+          "B) (3x−2)(3x+2)(9x²+4)",
+          "C) (9x²−16)(9x²+1)",
+          "D) (81x²−16)(x²+1)"
+        ],
+        "answer": 1,
+        "explanation": "81x⁴−16=(9x²−4)(9x²+4)\n9x²−4 factors further: (3x−2)(3x+2)\n9x²+4 does NOT factor (sum of squares)\n\nComplete: (3x−2)(3x+2)(9x²+4)\n\nAnswer: B)\n\n💡 \"Complete factorization\" means factor until no piece can be broken down further."
+      },
+      {
+        "id": 10,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Vieta's · Product",
+        "question": "x² − 9x + 20 = 0. What is the product of the solutions?",
+        "correctValue": 20,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Product=c/a=20/1=20\n\nAnswer: 20\n\n💡 Vieta's: sum=−b/a, product=c/a."
+      },
+      {
+        "id": 11,
+        "tier": "중상",
+        "domain": "Advanced Math",
+        "type": "spr",
+        "category": "Geometric Sequence",
+        "question": "A geometric sequence has first term 5 and common ratio 3. What is the 6th term?",
+        "correctValue": 1215,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "a₆=a₁×r⁵=5×3⁵=5×243=1,215\n\nAnswer: 1,215"
+      },
+      {
+        "id": 12,
+        "tier": "중상",
+        "domain": "Data Analysis",
+        "type": "spr",
+        "category": "Range",
+        "question": "Data: 4, 8, 15, 16, 23, 42. What is the range?",
+        "correctValue": 38,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Range=max−min=42−4=38\n\nAnswer: 38"
+      },
+      {
+        "id": 13,
+        "tier": "중상",
+        "domain": "Geometry",
+        "type": "spr",
+        "category": "Perimeter · Algebra",
+        "question": "A rectangle has length (2x+3) and width (x−1). Its perimeter is 40. What is x?",
+        "correctValue": 6,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "P=2[(2x+3)+(x−1)]=2(3x+2)=40\n3x+2=20\n3x=18\nx=6\n\nAnswer: 6"
+      },
+      {
+        "id": 14,
+        "tier": "중상",
+        "domain": "Geometry",
+        "type": "spr",
+        "category": "Law of Sines",
+        "question": "In a triangle, ∠A=40°, ∠B=65°, and side a (opposite A) = 12. What is side b (opposite B)? (Round to nearest tenth.)",
+        "correctValue": 16.9,
+        "tolerance": 0.2,
+        "unit": "",
+        "explanation": "Law of Sines: b/sin B = a/sin A\nb = 12×sin(65°)/sin(40°) = 12×0.9063/0.6428 ≈ 16.9\n\nAnswer: 16.9\n\n💡 Law of Sines applies to ANY triangle, not just right triangles."
+      },
+      {
+        "id": 15,
+        "tier": "중상",
+        "domain": "Advanced Math",
+        "type": "spr",
+        "category": "Average Rate of Change",
+        "question": "For a function f, f(1)=5 and f(4)=29. What is the average rate of change from x=1 to x=4?",
+        "correctValue": 8,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Avg rate = (f(4)−f(1))/(4−1) = (29−5)/3 = 24/3 = 8\n\nAnswer: 8\n\n💡 Average rate of change = slope between two points on the function."
+      },
+      {
+        "id": 16,
+        "tier": "중상",
+        "domain": "Data Analysis",
+        "type": "spr",
+        "category": "Weighted Average",
+        "question": "Test scores: 85 (weight 30%), 92 (weight 45%), 78 (weight 25%). What is the weighted average?",
+        "correctValue": 86.4,
+        "tolerance": 0.1,
+        "unit": "",
+        "explanation": "0.30(85)+0.45(92)+0.25(78)\n=25.5+41.4+19.5=86.4\n\nAnswer: 86.4"
+      },
+      {
+        "id": 17,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "mc",
+        "category": "Rearrange Formula",
+        "question": "J = H(15 − M) + N. Which expression gives M?",
+        "options": [
+          "A) 15−(J−N)/H",
+          "B) 15+(J−N)/H",
+          "C) (J−N)/H−15",
+          "D) 15−J/H+N"
+        ],
+        "answer": 0,
+        "explanation": "J−N=H(15−M)\n(J−N)/H=15−M\nM=15−(J−N)/H\n\nAnswer: A)"
+      },
+      {
+        "id": 18,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "mc",
+        "category": "Factoring Quadratic",
+        "question": "x² + 3x − 40 = 0. What is the lesser solution?",
+        "options": [
+          "A) −8",
+          "B) −5",
+          "C) 5",
+          "D) 8"
+        ],
+        "answer": 0,
+        "explanation": "(x+8)(x−5)=0\nx=−8 or x=5\n\nLesser=−8\n\nAnswer: A) −8"
+      },
+      {
+        "id": 19,
+        "tier": "상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Discriminant · Max k",
+        "question": "x(kx − 90) = −5. k is an integer. Two distinct real solutions. Greatest k?",
+        "correctValue": 404,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "kx²−90x+5=0\nD=8,100−20k>0→k<405\nMax k=404\n\nAnswer: 404"
+      },
+      {
+        "id": 20,
+        "tier": "상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "No Solution · Fraction k",
+        "question": "6(kx + 3) = (18/7)x − 10. No solution. Find k.",
+        "correctValue": 0.4286,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "6kx+18=(18/7)x−10\n6k=18/7→k=3/7≈0.4286\nCheck: 18≠−10 ✓\n\nAnswer: 3/7"
+      },
+      {
+        "id": 21,
+        "tier": "상",
+        "domain": "Geometry",
+        "type": "spr",
+        "category": "Composite 3D Surface Area",
+        "question": "A cylinder (r=4, h=10, bottom closed) has a cone (r=4, h=3) attached on top. What is the total surface area as a multiple of π?",
+        "correctValue": 116,
+        "tolerance": 0,
+        "unit": "π",
+        "explanation": "Cylinder lateral: 2π(4)(10)=80π\nBottom: π(16)=16π\nCone slant: √(16+9)=5\nCone lateral: π(4)(5)=20π\n\nTotal=80π+16π+20π=116π\n\nAnswer: 116π"
+      },
+      {
+        "id": 22,
+        "tier": "상",
+        "domain": "Advanced Math",
+        "type": "spr",
+        "category": "Exponential Equation",
+        "question": "3^(2t) = 81. What is t?",
+        "correctValue": 2,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "81=3⁴\n3^(2t)=3⁴\n2t=4\nt=2\n\nAnswer: 2\n\n💡 Match the bases, then set exponents equal."
+      },
+      {
+        "id": 23,
+        "tier": "상",
+        "domain": "Geometry",
+        "type": "spr",
+        "category": "Law of Cosines",
+        "question": "A triangle has sides a=7, b=9, with an included angle C=60°. What is side c? (Round to nearest hundredth.)",
+        "correctValue": 8.19,
+        "tolerance": 0.05,
+        "unit": "",
+        "explanation": "c²=a²+b²−2ab·cos C\n=49+81−2(7)(9)(0.5)\n=130−63=67\nc=√67≈8.19\n\nAnswer: 8.19"
+      },
+      {
+        "id": 24,
+        "tier": "상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Quadratic Inequality",
+        "question": "x² − 4x − 21 ≥ 0. What is the smallest positive integer that satisfies this inequality?",
+        "correctValue": 7,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Factor: (x−7)(x+3)≥0\nRoots: x=7, x=−3\nSolution: x≤−3 or x≥7\n\nSmallest positive integer satisfying: x=7\n\nAnswer: 7"
+      },
+      {
+        "id": 25,
+        "tier": "상",
+        "domain": "Problem-Solving",
+        "type": "spr",
+        "category": "Long Passage · Combined Rate",
+        "question": "A tank with a capacity of 480 liters is filled by two pipes at the same time. Pipe A fills at 15 liters per minute, and Pipe B fills at 25 liters per minute. If the tank starts empty, how many minutes does it take to fill completely?",
+        "correctValue": 12,
+        "tolerance": 0,
+        "unit": "minutes",
+        "explanation": "Combined rate: 15+25=40 L/min\nTime: 480÷40=12 minutes\n\nAnswer: 12 minutes"
+      },
+      {
+        "id": 26,
+        "tier": "최상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Quadratic-Line Intersection",
+        "question": "y = x + 1\ny = x² − 2x − 9\n\nThese two graphs intersect at two points. What is the sum of the y-coordinates of the intersection points?",
+        "correctValue": 5,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Set equal: x²−2x−9 = x+1\nx²−3x−10=0\n(x−5)(x+2)=0\nx=5 or x=−2\n\nAt x=5: y=5+1=6\nAt x=−2: y=−2+1=−1\n\nSum of y-values = 6+(−1) = 5\n\nAnswer: 5\n\n💡 Find x-values first from the combined equation, then plug each back in to get y."
+      },
+      {
+        "id": 27,
+        "tier": "최상",
+        "domain": "Geometry",
+        "type": "spr",
+        "category": "Inscribed Circle Radius",
+        "question": "A right triangle has legs 9 and 12, with hypotenuse 15. What is the radius of the circle inscribed in the triangle?",
+        "correctValue": 3,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "For a right triangle: r = (leg₁ + leg₂ − hypotenuse)/2\nr = (9+12−15)/2 = 6/2 = 3\n\nAnswer: 3\n\n💡 This formula is specific to right triangles — a useful shortcut instead of using Area/semi-perimeter."
+      },
+      {
+        "id": 28,
+        "tier": "최상",
+        "domain": "Problem-Solving",
+        "type": "spr",
+        "category": "Long Passage · Multi-Step Chain",
+        "question": "A company's revenue was $40,000 at the start of the year. In the first quarter, revenue grew by 15% compared to the starting amount. Entering the second quarter, the company spent $5,000 on equipment, which was subtracted before the remaining balance grew by 20% to reach the third-quarter revenue. In the fourth quarter, revenue then decreased by 8% from the third-quarter total. What was the company's revenue at the end of the fourth quarter, rounded to the nearest dollar?",
+        "correctValue": 45264,
+        "tolerance": 1,
+        "unit": "$",
+        "explanation": "Q1: 40,000×1.15=$46,000\nQ2 base: 46,000−5,000=$41,000\nQ3: 41,000×1.20=$49,200\nQ4: 49,200×0.92=$45,264\n\nAnswer: $45,264"
+      },
+      {
+        "id": 29,
+        "tier": "최상",
+        "domain": "Advanced Math",
+        "type": "spr",
+        "category": "Exponential Equation · Matching Bases",
+        "question": "4^(x+1) = 8^(x−2). What is x?",
+        "correctValue": 8,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "4=2², 8=2³\n2^(2(x+1)) = 2^(3(x−2))\n2x+2 = 3x−6\nx=8\n\nAnswer: 8\n\n💡 Convert both sides to the SAME base, then set exponents equal."
+      },
+      {
+        "id": 30,
+        "tier": "최상",
+        "domain": "Data Analysis",
+        "type": "spr",
+        "category": "Expected Value",
+        "question": "A game costs $5 to play. You win $20 with probability 0.1, win $8 with probability 0.3, and win $0 otherwise. What is the expected net profit per game?",
+        "correctValue": -0.6,
+        "tolerance": 0.01,
+        "unit": "$",
+        "explanation": "Expected winnings = 20(0.1)+8(0.3)+0(0.6)\n= 2+2.4+0 = $4.40\n\nNet profit = 4.40−5 = −$0.60\n\nAnswer: −$0.60 (an expected LOSS of 60 cents per game)\n\n💡 Expected value = Σ(outcome × probability). Subtract the cost to find net profit."
+      }
+    ]
+  },
+  {
+    "id": "setK-30q",
+    "label": "setK-30q",
+    "title": "Sequences · Law of Sines/Cosines · Expected Value",
+    "subtitle": "중 3 · 중상 15 · 상 7 · 최상 5 · Verified ✓",
+    "accent": "#E08A1E",
+    "catColors": {},
+    "problems": [
+      {
+        "id": 1,
+        "tier": "중",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Function Evaluation",
+        "question": "f(x) = 5x − 8. What is f(6)?",
+        "correctValue": 22,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "5(6)−8=30−8=22\n\nAnswer: 22"
+      },
+      {
+        "id": 2,
+        "tier": "중",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Simple Linear",
+        "question": "14x = 182. Find x.",
+        "correctValue": 13,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "x=182÷14=13\n\nAnswer: 13"
+      },
+      {
+        "id": 3,
+        "tier": "중",
+        "domain": "Data Analysis",
+        "type": "spr",
+        "category": "Ratio",
+        "question": "Red to yellow marbles is 3:8. Total marbles is 484. How many yellow marbles?",
+        "correctValue": 352,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Total parts=11, each=44\nYellow=8×44=352\n\nAnswer: 352"
+      },
+      {
+        "id": 4,
+        "tier": "중상",
+        "domain": "Problem-Solving",
+        "type": "mc",
+        "category": "Unit Conversion",
+        "question": "A tank holds 40 gallons. How many liters? (1 gal=3.785 L)",
+        "options": [
+          "A) 10.6",
+          "B) 40",
+          "C) 151.4",
+          "D) 1,514"
+        ],
+        "answer": 2,
+        "explanation": "40×3.785=151.4\n\nAnswer: C) 151.4"
+      },
+      {
+        "id": 5,
+        "tier": "중상",
+        "domain": "Problem-Solving",
+        "type": "mc",
+        "category": "Squared Unit Conversion",
+        "question": "32,000 cm² in m²? (1 m=100 cm)",
+        "options": [
+          "A) 0.32",
+          "B) 3.2",
+          "C) 32",
+          "D) 320"
+        ],
+        "answer": 1,
+        "explanation": "1 m²=10,000 cm²\n32,000÷10,000=3.2\n\nAnswer: B) 3.2"
+      },
+      {
+        "id": 6,
+        "tier": "중상",
+        "domain": "Problem-Solving",
+        "type": "mc",
+        "category": "Successive Percent Change",
+        "question": "A price rises 20%, then rises another 25%. What is the total percent increase?",
+        "options": [
+          "A) 45%",
+          "B) 50%",
+          "C) 55%",
+          "D) 60%"
+        ],
+        "answer": 1,
+        "explanation": "1.20×1.25=1.50 → 50% total increase\n\nAnswer: B) 50%\n\n💡 Successive changes multiply, they don't add."
+      },
+      {
+        "id": 7,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "System · Word Problem",
+        "question": "Burgers cost $6, fries cost $3. 25 items cost $120 total. How many burgers were bought?",
+        "correctValue": 15,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "b+f=25, 6b+3f=120\nf=25−b\n6b+3(25−b)=120\n3b+75=120\nb=15\n\nAnswer: 15"
+      },
+      {
+        "id": 8,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Slope from Two Points",
+        "question": "What is the slope of the line through (2, 5) and (6, 17)?",
+        "correctValue": 3,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "slope=(17−5)/(6−2)=12/4=3\n\nAnswer: 3"
+      },
+      {
+        "id": 9,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "mc",
+        "category": "Factoring · Difference of Squares",
+        "question": "Which is the complete factorization of 121x⁴ − 36?",
+        "options": [
+          "A) (11x²−6)(11x²+6)",
+          "B) (11x−6)(11x+6)",
+          "C) (121x²−36)(x²+1)",
+          "D) (11x²−36)(11x²+1)"
+        ],
+        "answer": 0,
+        "explanation": "121x⁴−36=(11x²)²−6²=(11x²−6)(11x²+6)\n\nNeither factor is a difference of squares of a rational form again (11 isn't a perfect square), so this IS complete.\n\nAnswer: A)\n\n💡 Only factor further if the result is another difference of squares with rational coefficients."
+      },
+      {
+        "id": 10,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Vieta's · Product",
+        "question": "x² − 11x + 18 = 0. What is the product of the solutions?",
+        "correctValue": 18,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Product=c/a=18\n\nAnswer: 18"
+      },
+      {
+        "id": 11,
+        "tier": "중상",
+        "domain": "Advanced Math",
+        "type": "spr",
+        "category": "Geometric Sequence",
+        "question": "A geometric sequence has first term 4 and common ratio 2. What is the 7th term?",
+        "correctValue": 256,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "a₇=a₁×r⁶=4×2⁶=4×64=256\n\nAnswer: 256"
+      },
+      {
+        "id": 12,
+        "tier": "중상",
+        "domain": "Data Analysis",
+        "type": "spr",
+        "category": "Range",
+        "question": "Data: 7, 12, 19, 25, 31, 50. What is the range?",
+        "correctValue": 43,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Range=50−7=43\n\nAnswer: 43"
+      },
+      {
+        "id": 13,
+        "tier": "중상",
+        "domain": "Geometry",
+        "type": "spr",
+        "category": "Perimeter · Algebra",
+        "question": "A rectangle has length (3x+1) and width (x+2). Its perimeter is 54. What is x?",
+        "correctValue": 6,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "P=2[(3x+1)+(x+2)]=2(4x+3)=54\n4x+3=27\n4x=24\nx=6\n\nAnswer: 6"
+      },
+      {
+        "id": 14,
+        "tier": "중상",
+        "domain": "Geometry",
+        "type": "spr",
+        "category": "Law of Sines",
+        "question": "In a triangle, ∠A=35°, ∠B=80°, and side a (opposite A) = 10. What is side b (opposite B)? (Round to nearest tenth.)",
+        "correctValue": 17.2,
+        "tolerance": 0.2,
+        "unit": "",
+        "explanation": "Law of Sines: b/sin B = a/sin A\nb = 10×sin(80°)/sin(35°) = 10×0.9848/0.5736 ≈ 17.2\n\nAnswer: 17.2"
+      },
+      {
+        "id": 15,
+        "tier": "중상",
+        "domain": "Advanced Math",
+        "type": "spr",
+        "category": "Average Rate of Change",
+        "question": "For a function f, f(2)=11 and f(7)=41. What is the average rate of change from x=2 to x=7?",
+        "correctValue": 6,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Avg rate = (41−11)/(7−2) = 30/5 = 6\n\nAnswer: 6"
+      },
+      {
+        "id": 16,
+        "tier": "중상",
+        "domain": "Data Analysis",
+        "type": "spr",
+        "category": "Weighted Average",
+        "question": "Product ratings: 4.5 (weight 40%), 3.8 (weight 35%), 4.9 (weight 25%). What is the weighted average? (Round to nearest hundredth.)",
+        "correctValue": 4.36,
+        "tolerance": 0.02,
+        "unit": "",
+        "explanation": "0.40(4.5)+0.35(3.8)+0.25(4.9)\n=1.80+1.33+1.225=4.355≈4.36\n\nAnswer: 4.36"
+      },
+      {
+        "id": 17,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "mc",
+        "category": "Rearrange Formula",
+        "question": "Q = R(20 − S) − T. Which expression gives S?",
+        "options": [
+          "A) 20−(Q+T)/R",
+          "B) 20+(Q+T)/R",
+          "C) (Q+T)/R−20",
+          "D) 20−Q/R+T"
+        ],
+        "answer": 0,
+        "explanation": "Q+T=R(20−S)\n(Q+T)/R=20−S\nS=20−(Q+T)/R\n\nAnswer: A)"
+      },
+      {
+        "id": 18,
+        "tier": "중상",
+        "domain": "Algebra",
+        "type": "mc",
+        "category": "Factoring Quadratic",
+        "question": "x² + 2x − 63 = 0. What is the lesser solution?",
+        "options": [
+          "A) −9",
+          "B) −7",
+          "C) 7",
+          "D) 9"
+        ],
+        "answer": 0,
+        "explanation": "(x+9)(x−7)=0\nx=−9 or x=7\n\nLesser=−9\n\nAnswer: A) −9"
+      },
+      {
+        "id": 19,
+        "tier": "상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Discriminant · Max k",
+        "question": "x(kx − 84) = −6. k is an integer. Two distinct real solutions. Greatest k?",
+        "correctValue": 293,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "kx²−84x+6=0\nD=7,056−24k>0→k<294\nMax k=293\n\nAnswer: 293"
+      },
+      {
+        "id": 20,
+        "tier": "상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "No Solution · Fraction k",
+        "question": "5(kx + 4) = (15/4)x − 8. No solution. Find k.",
+        "correctValue": 0.75,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "5kx+20=(15/4)x−8\n5k=15/4→k=3/4=0.75\nCheck: 20≠−8 ✓\n\nAnswer: 0.75"
+      },
+      {
+        "id": 21,
+        "tier": "상",
+        "domain": "Geometry",
+        "type": "spr",
+        "category": "Composite 3D Surface Area",
+        "question": "A cylinder (r=5, h=12, bottom closed) has a hemisphere (r=5) attached on top. What is the total surface area as a multiple of π?",
+        "correctValue": 195,
+        "tolerance": 0,
+        "unit": "π",
+        "explanation": "Cylinder lateral: 2π(5)(12)=120π\nBottom: π(25)=25π\nHemisphere: 2π(25)=50π\n\nTotal=120π+25π+50π=195π\n\nAnswer: 195π"
+      },
+      {
+        "id": 22,
+        "tier": "상",
+        "domain": "Advanced Math",
+        "type": "spr",
+        "category": "Exponential Equation",
+        "question": "2^(3t) = 16^(t−1). What is t?",
+        "correctValue": 4,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "16=2⁴\n2^(3t)=2^(4(t−1))\n3t=4t−4\nt=4\n\nAnswer: 4"
+      },
+      {
+        "id": 23,
+        "tier": "상",
+        "domain": "Geometry",
+        "type": "spr",
+        "category": "Law of Cosines",
+        "question": "A triangle has sides a=8, b=10, with an included angle C=50°. What is side c? (Round to nearest hundredth.)",
+        "correctValue": 7.82,
+        "tolerance": 0.05,
+        "unit": "",
+        "explanation": "c²=64+100−2(8)(10)(cos50°)\n=164−160(0.6428)\n=164−102.85=61.15\nc≈7.82\n\nAnswer: 7.82"
+      },
+      {
+        "id": 24,
+        "tier": "상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Quadratic Inequality",
+        "question": "x² − 3x − 18 ≥ 0. What is the smallest positive integer that satisfies this inequality?",
+        "correctValue": 6,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Factor: (x−6)(x+3)≥0\nRoots: x=6, x=−3\nSolution: x≤−3 or x≥6\n\nSmallest positive integer: x=6\n\nAnswer: 6"
+      },
+      {
+        "id": 25,
+        "tier": "상",
+        "domain": "Problem-Solving",
+        "type": "spr",
+        "category": "Long Passage · Combined Rate",
+        "question": "A tank holds 600 liters and is drained by two valves at the same time. Valve A drains at 20 liters per minute, and Valve B drains at 10 liters per minute. If the tank starts full, how many minutes does it take to drain completely?",
+        "correctValue": 20,
+        "tolerance": 0,
+        "unit": "minutes",
+        "explanation": "Combined rate: 20+10=30 L/min\nTime: 600÷30=20 minutes\n\nAnswer: 20 minutes"
+      },
+      {
+        "id": 26,
+        "tier": "최상",
+        "domain": "Algebra",
+        "type": "spr",
+        "category": "Quadratic-Line Intersection",
+        "question": "y = x + 1\ny = x² − 2x − 17\n\nThese two graphs intersect at two points. What is the sum of the y-coordinates of the intersection points?",
+        "correctValue": 5,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Set equal: x²−2x−17 = x+1\nx²−3x−18=0\n(x−6)(x+3)=0\nx=6 or x=−3\n\nAt x=6: y=6+1=7\nAt x=−3: y=−3+1=−2\n\nSum of y-values = 7+(−2) = 5\n\nAnswer: 5"
+      },
+      {
+        "id": 27,
+        "tier": "최상",
+        "domain": "Geometry",
+        "type": "spr",
+        "category": "Inscribed Circle Radius",
+        "question": "A right triangle has legs 8 and 15, with hypotenuse 17. What is the radius of the circle inscribed in the triangle?",
+        "correctValue": 3,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "For a right triangle: r = (leg₁ + leg₂ − hypotenuse)/2\nr = (8+15−17)/2 = 6/2 = 3\n\nAnswer: 3"
+      },
+      {
+        "id": 28,
+        "tier": "최상",
+        "domain": "Problem-Solving",
+        "type": "spr",
+        "category": "Long Passage · Multi-Step Chain",
+        "question": "An investment portfolio was valued at $60,000 at the beginning of the year. In the first half, the portfolio grew by 12%. The investor then withdrew $4,000 for expenses before the remaining balance grew by 18% in the second half. A year-end management fee then reduced the total by 5%. What was the portfolio's final value, rounded to the nearest dollar?",
+        "correctValue": 70847,
+        "tolerance": 1,
+        "unit": "$",
+        "explanation": "First half: 60,000×1.12=$67,200\nAfter withdrawal: 67,200−4,000=$63,200\nSecond half: 63,200×1.18=$74,576\nAfter fee: 74,576×0.95=$70,847.20\n\nAnswer: $70,847"
+      },
+      {
+        "id": 29,
+        "tier": "최상",
+        "domain": "Advanced Math",
+        "type": "spr",
+        "category": "Exponential Equation · Matching Bases",
+        "question": "9^(x−1) = 27^(x+2). What is x?",
+        "correctValue": -8,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "9=3², 27=3³\n3^(2(x−1)) = 3^(3(x+2))\n2x−2 = 3x+6\n−8 = x\n\nAnswer: −8"
+      },
+      {
+        "id": 30,
+        "tier": "최상",
+        "domain": "Data Analysis",
+        "type": "spr",
+        "category": "Expected Value",
+        "question": "A game costs $4 to play. You win $15 with probability 0.15, win $6 with probability 0.25, and win $0 otherwise. What is the expected net profit per game?",
+        "correctValue": -0.25,
+        "tolerance": 0.01,
+        "unit": "$",
+        "explanation": "Expected winnings = 15(0.15)+6(0.25)+0(0.60)\n= 2.25+1.5 = $3.75\n\nNet profit = 3.75−4 = −$0.25\n\nAnswer: −$0.25 (expected loss of 25 cents per game)"
+      }
+    ]
+  },
+  {
+    "id": "setL-25q",
+    "label": "setL-25q",
+    "title": "단위변환 2 · 자주나온유형 12 · 신규유형 11",
+    "subtitle": "복소수 · 조합 · IQR · 3원연립 · 월복리 · 반감기 · Verified ✓",
+    "accent": "#6A4C93",
+    "catColors": {},
+    "problems": [
+      {
+        "id": 1,
+        "section": "단위변환",
+        "tier": "중상",
+        "type": "mc",
+        "category": "Squared Unit Conversion",
+        "question": "A pressure is 900 N/m². What is this in N/cm²? (1 m=100 cm)",
+        "options": [
+          "A) 0.009",
+          "B) 0.09",
+          "C) 9",
+          "D) 90"
+        ],
+        "answer": 1,
+        "explanation": "1 m²=10,000 cm²\n900÷10,000=0.09\n\nAnswer: B) 0.09\n\n💡 Larger→smaller unit for AREA: divide by 100² not 100."
+      },
+      {
+        "id": 2,
+        "section": "단위변환",
+        "tier": "상",
+        "type": "spr",
+        "category": "Cubed Unit · Density",
+        "question": "A material has a density of 2.5 g/cm³. What is this in kg/m³?\n(1 kg=1,000 g, 1 m=100 cm)",
+        "correctValue": 2500,
+        "tolerance": 0,
+        "unit": "kg/m³",
+        "explanation": "1 g/cm³ = 1,000 kg/m³ (standard conversion)\n\n2.5 × 1,000 = 2,500 kg/m³\n\nAnswer: 2,500\n\n💡 Memorize this shortcut: g/cm³ → kg/m³ always multiply by 1,000."
+      },
+      {
+        "id": 3,
+        "section": "자주나온유형",
+        "tier": "중상",
+        "type": "mc",
+        "category": "Percent Chain",
+        "question": "p is 25% greater than q. r is 40% less than p. r is what percent of q?",
+        "options": [
+          "A) 65%",
+          "B) 75%",
+          "C) 85%",
+          "D) 100%"
+        ],
+        "answer": 1,
+        "explanation": "p=1.25q, r=0.60(1.25q)=0.75q → 75% of q\n\nAnswer: B) 75%"
+      },
+      {
+        "id": 4,
+        "section": "자주나온유형",
+        "tier": "중상",
+        "type": "mc",
+        "category": "Parallel Slope",
+        "question": "Line: 4y − 12 = 16x. A parallel line has what slope?",
+        "options": [
+          "A) 3",
+          "B) 4",
+          "C) 12",
+          "D) 16"
+        ],
+        "answer": 1,
+        "explanation": "4y=16x+12→y=4x+3, slope=4. Parallel→same slope\n\nAnswer: B) 4"
+      },
+      {
+        "id": 5,
+        "section": "자주나온유형",
+        "tier": "중상",
+        "type": "spr",
+        "category": "Vieta's · Sum",
+        "question": "x² − 13x + 22 = 0. What is the sum of the solutions?",
+        "correctValue": 13,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Sum=−b/a=13\n\nAnswer: 13"
+      },
+      {
+        "id": 6,
+        "section": "자주나온유형",
+        "tier": "중상",
+        "type": "mc",
+        "category": "Factoring Quadratic",
+        "question": "x² − 11x − 42 = 0. What is the greater solution?",
+        "options": [
+          "A) −3",
+          "B) 3",
+          "C) 11",
+          "D) 14"
+        ],
+        "answer": 3,
+        "explanation": "(x−14)(x+3)=0\nx=14 or x=−3\n\nGreater=14\n\nAnswer: D) 14"
+      },
+      {
+        "id": 7,
+        "section": "자주나온유형",
+        "tier": "중상",
+        "type": "mc",
+        "category": "Exponential Decay Model",
+        "question": "A machine worth $9,000 depreciates 6% annually. Which models value V after t years?",
+        "options": [
+          "A) V=9,000(0.06)^t",
+          "B) V=9,000(0.94)^t",
+          "C) V=9,000(1.06)^t",
+          "D) V=9,000−540t"
+        ],
+        "answer": 1,
+        "explanation": "Depreciates 6%→retains 94%\nV=9,000(0.94)^t\n\nAnswer: B)"
+      },
+      {
+        "id": 8,
+        "section": "자주나온유형",
+        "tier": "중상",
+        "type": "spr",
+        "category": "Consecutive Integers",
+        "question": "For three consecutive integers, subtracting the greatest from the sum of the other two gives 36. What is the greatest integer?",
+        "correctValue": 39,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "n+(n+1)−(n+2)=n−1=36\nn=37 → greatest=39\n\nAnswer: 39"
+      },
+      {
+        "id": 9,
+        "section": "자주나온유형",
+        "tier": "중상",
+        "type": "mc",
+        "category": "Triangle Angle Range",
+        "question": "In △DEF, ∠D=96°. Which could be ∠E?",
+        "options": [
+          "A) 96",
+          "B) 90",
+          "C) 84",
+          "D) 83"
+        ],
+        "answer": 3,
+        "explanation": "∠E+∠F=180−96=84°. Both positive → ∠E<84°.\n\n84° would make ∠F=0° (invalid). 83° works (∠F=1°).\n\nAnswer: D) 83"
+      },
+      {
+        "id": 10,
+        "section": "자주나온유형",
+        "tier": "중상",
+        "type": "spr",
+        "category": "Probability",
+        "question": "55 students total, 22 play an instrument. What is P(plays an instrument)? (decimal)",
+        "correctValue": 0.4,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "22/55=0.4\n\nAnswer: 0.4"
+      },
+      {
+        "id": 11,
+        "section": "자주나온유형",
+        "tier": "상",
+        "type": "spr",
+        "category": "Discriminant · Max k",
+        "question": "x(kx − 104) = −6. k is an integer. Two distinct real solutions. Greatest k?",
+        "correctValue": 450,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "kx²−104x+6=0\nD=10,816−24k>0→k<450.67\nMax integer k=450\n\nAnswer: 450"
+      },
+      {
+        "id": 12,
+        "section": "자주나온유형",
+        "tier": "상",
+        "type": "spr",
+        "category": "No Solution · Fraction k",
+        "question": "7(kx − 2) = (35/9)x + 11. No solution. Find k.",
+        "correctValue": 0.5556,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "7kx−14=(35/9)x+11\n7k=35/9→k=5/9≈0.556\nCheck: −14≠11 ✓\n\nAnswer: 5/9"
+      },
+      {
+        "id": 13,
+        "section": "자주나온유형",
+        "tier": "상",
+        "type": "mc",
+        "category": "Compound vs Simple Interest",
+        "question": "$6,000 for 4 years. A: 5.5% simple. B: 5.2% compound. Which wins, and by about how much?",
+        "options": [
+          "A) A by $29",
+          "B) B by $29",
+          "C) A by $100",
+          "D) B by $100"
+        ],
+        "answer": 1,
+        "explanation": "A: 6,000+6,000(0.055)(4)=$7,320\nB: 6,000(1.052)⁴≈$7,348.76\n\nB wins by ≈$28.76≈$29\n\nAnswer: B) B by $29"
+      },
+      {
+        "id": 14,
+        "section": "자주나온유형",
+        "tier": "최상",
+        "type": "spr",
+        "category": "Frustum · Total Surface Area",
+        "question": "A frustum has bottom radius 12, top radius 5, height 24. What is the TOTAL surface area (including both circular faces) as a multiple of π?",
+        "correctValue": 594,
+        "tolerance": 0,
+        "unit": "π",
+        "explanation": "Slant: l=√(24²+7²)=√(576+49)=√625=25\n\nLateral: π(R+r)l=π(17)(25)=425π\nTop: π(25)=25π\nBottom: π(144)=144π\n\nTotal=425π+25π+144π=594π\n\nAnswer: 594π"
+      },
+      {
+        "id": 15,
+        "section": "신규유형",
+        "tier": "중상",
+        "type": "mc",
+        "category": "Even/Odd Function",
+        "question": "f(x) = 3x⁴ − 2x² + 7. Is f even, odd, or neither?",
+        "options": [
+          "A) Even",
+          "B) Odd",
+          "C) Neither",
+          "D) Cannot be determined"
+        ],
+        "answer": 0,
+        "explanation": "f(−x)=3(−x)⁴−2(−x)²+7=3x⁴−2x²+7=f(x)\n\nSince f(−x)=f(x), the function is EVEN.\n\nAnswer: A) Even\n\n💡 Even: f(−x)=f(x) (symmetric about y-axis). Odd: f(−x)=−f(x) (symmetric about origin). Only even-power terms → even function."
+      },
+      {
+        "id": 16,
+        "section": "신규유형",
+        "tier": "상",
+        "type": "mc",
+        "category": "Rational Function Asymptote",
+        "question": "f(x) = (2x + 5)/(x − 3). What is the horizontal asymptote?",
+        "options": [
+          "A) y=0",
+          "B) y=2",
+          "C) y=3",
+          "D) y=5"
+        ],
+        "answer": 1,
+        "explanation": "When numerator and denominator have the SAME degree, the horizontal asymptote is the ratio of leading coefficients:\n\ny = 2/1 = 2\n\nAnswer: B) y=2\n\n💡 The vertical asymptote would be x=3 (where denominator=0), but this question asks for horizontal."
+      },
+      {
+        "id": 17,
+        "section": "신규유형",
+        "tier": "중상",
+        "type": "spr",
+        "category": "Absolute Value · Range",
+        "question": "f(x) = |2x − 6| + 4. What is the minimum value of f(x)?",
+        "correctValue": 4,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "|2x−6| is always ≥0, with minimum 0 at x=3.\n\nMinimum of f(x) = 0+4 = 4\n\nAnswer: 4\n\n💡 For f(x)=a|x−h|+k with a>0, the minimum value is always k."
+      },
+      {
+        "id": 18,
+        "section": "신규유형",
+        "tier": "상",
+        "type": "spr",
+        "category": "Polynomial Division · Remainder",
+        "question": "When x³ − 4x² + 3x − 2 is divided by (x − 2), what is the remainder?",
+        "correctValue": -4,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "By the Remainder Theorem, the remainder equals f(2):\nf(2)=8−16+6−2=−4\n\nAnswer: −4\n\n💡 No long division needed — just evaluate the polynomial at the root of the divisor."
+      },
+      {
+        "id": 19,
+        "section": "신규유형",
+        "tier": "중상",
+        "type": "spr",
+        "category": "Table to Equation",
+        "question": "x: 0, 2, 4, 6   y: 7, 15, 23, 31\n\nThis data is linear. What is y when x = 10?",
+        "correctValue": 47,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Slope: change in y ÷ change in x = (15−7)/(2−0) = 8/2 = 4\ny-intercept (at x=0): 7\n\nEquation: y=4x+7\n\nCheck: at x=6, y=4(6)+7=31 ✓\n\nAt x=10: y=4(10)+7=47\n\nAnswer: 47\n\n💡 Use two table rows to find the slope, then use the x=0 row directly as the y-intercept."
+      },
+      {
+        "id": 20,
+        "section": "신규유형",
+        "tier": "최상",
+        "type": "spr",
+        "category": "Monthly Compound Interest",
+        "question": "$8,000 is invested at 6% annual interest, compounded MONTHLY, for 2 years. What is the value? (Use A=P(1+r/n)^(nt). Round to nearest cent.)",
+        "correctValue": 9017.28,
+        "tolerance": 1,
+        "unit": "$",
+        "explanation": "A=8,000(1+0.06/12)^(12×2)\n=8,000(1.005)^24\n≈$9,017.28\n\nAnswer: $9,017.28\n\n💡 Monthly compounding uses n=12. Divide the rate by 12, multiply the time by 12 for the exponent."
+      },
+      {
+        "id": 21,
+        "section": "신규유형",
+        "tier": "상",
+        "type": "spr",
+        "category": "Half-Life · Time Unit Conversion",
+        "question": "A substance has a half-life of 45 minutes. Starting with 800 mg, how many mg remain after 3 hours?",
+        "correctValue": 50,
+        "tolerance": 0,
+        "unit": "mg",
+        "explanation": "Convert: 3 hours = 180 minutes\n\nNumber of half-lives: 180÷45=4\n\nRemaining: 800×(1/2)⁴=800/16=50 mg\n\nAnswer: 50 mg\n\n💡 Always convert to the SAME time unit as the half-life before dividing."
+      },
+      {
+        "id": 22,
+        "section": "신규유형",
+        "tier": "중상",
+        "type": "mc",
+        "category": "Complex Number Arithmetic",
+        "question": "What is (3 + 4i)(2 − 5i)?",
+        "options": [
+          "A) 26 − 7i",
+          "B) 6 − 20i",
+          "C) −14 − 7i",
+          "D) 26 + 7i"
+        ],
+        "answer": 0,
+        "explanation": "(3+4i)(2−5i) = 6−15i+8i−20i²\n= 6−7i−20(−1)\n= 6−7i+20\n= 26−7i\n\nAnswer: A) 26 − 7i\n\n💡 i²=−1. Use FOIL, then combine real and imaginary parts separately."
+      },
+      {
+        "id": 23,
+        "section": "신규유형",
+        "tier": "중상",
+        "type": "spr",
+        "category": "Combinations",
+        "question": "A student must choose 3 different electives from 7 available options. How many different combinations are possible?",
+        "correctValue": 35,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "This is a combination (order doesn't matter):\nC(7,3) = 7!/(3!×4!) = (7×6×5)/(3×2×1) = 210/6 = 35\n\nAnswer: 35\n\n💡 Use combinations (not permutations) when the ORDER of selection doesn't matter."
+      },
+      {
+        "id": 24,
+        "section": "신규유형",
+        "tier": "상",
+        "type": "spr",
+        "category": "Interquartile Range",
+        "question": "Data set: 3, 7, 9, 12, 15, 18, 22, 25, 30. What is the interquartile range (IQR)?",
+        "correctValue": 15.5,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Median (5th of 9 values) = 15\nLower half: 3,7,9,12 → Q1=(7+9)/2=8\nUpper half: 18,22,25,30 → Q3=(22+25)/2=23.5\n\nIQR = Q3−Q1 = 23.5−8 = 15.5\n\nAnswer: 15.5\n\n💡 IQR = Q3−Q1, capturing the middle 50% spread of the data."
+      },
+      {
+        "id": 25,
+        "section": "신규유형",
+        "tier": "최상",
+        "type": "spr",
+        "category": "3-Variable System",
+        "question": "x + y + z = 12\nx − y = 2\ny + z = 9\n\nWhat is the value of x?",
+        "correctValue": 3,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "From eq3: z=9−y\nSubstitute into eq1: x+y+(9−y)=12 → x+9=12 → x=3\n\nCheck with eq2: x−y=2 → y=1\nThen z=9−1=8\n\nVerify: 3+1+8=12 ✓, 3−1=2 ✓, 1+8=9 ✓\n\nAnswer: 3\n\n💡 Substitute one equation into another to eliminate a variable, then solve step by step."
+      }
+    ]
+  },
+  {
+    "id": "setM-nosolution-factoring-parallel",
+    "label": "setM-nosolution-factoring-parallel",
+    "title": "무해/무한해 · 심화 인수분해 · 평행/수직",
+    "subtitle": "",
+    "accent": "#1982C4",
+    "catColors": {},
+    "problems": [
+      {
+        "id": 1,
+        "section": "무해/무한해",
+        "type": "spr",
+        "category": "No Solution · Fraction k",
+        "question": "4(kx − 3) = (20/7)x + 9. No solution. Find k.",
+        "correctValue": 0.7143,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "4kx−12=(20/7)x+9\n4k=20/7→k=5/7≈0.714\nCheck: −12≠9 ✓\n\nAnswer: 5/7"
+      },
+      {
+        "id": 2,
+        "section": "무해/무한해",
+        "type": "spr",
+        "category": "Infinite Solutions · Two Unknowns",
+        "question": "3x + ky = 15\nmx + 8y = 40\n\nFor what value of k+m does this system have infinitely many solutions?",
+        "correctValue": 11,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "For infinite solutions, all ratios must be equal:\n3/m = k/8 = 15/40 = 3/8\n\n3/m=3/8 → m=8\nk/8=3/8 → k=3\n\nk+m = 3+8 = 11\n\nAnswer: 11\n\n💡 Infinite solutions needs BOTH the coefficient ratio AND constant ratio to match — a stricter condition than \"no solution.\""
+      },
+      {
+        "id": 3,
+        "section": "무해/무한해",
+        "type": "spr",
+        "category": "No Solution · Verify Constants",
+        "question": "9(kx + 5) = (27/4)x − 2. No solution. Find k.",
+        "correctValue": 0.75,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "9kx+45=(27/4)x−2\n9k=27/4→k=3/4=0.75\nCheck: 45≠−2 ✓ (confirms genuinely no solution)\n\nAnswer: 0.75\n\n💡 Always verify the constants differ — if they matched, it would be infinite solutions instead!"
+      },
+      {
+        "id": 4,
+        "section": "무해/무한해",
+        "type": "spr",
+        "category": "Infinite Solutions · Two Conditions",
+        "question": "−5(kx − 6) = 15x − c\n\nIf this equation has infinitely many solutions, what is the value of c − k?",
+        "correctValue": -27,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "−5kx+30=15x−c\n\nCoefficient match: −5k=15→k=−3\nConstant match: 30=−c→c=−30\n\nc−k = −30−(−3) = −27\n\nAnswer: −27\n\n💡 Two separate conditions — one for the x-coefficient, one for the constant — both must be satisfied."
+      },
+      {
+        "id": 5,
+        "section": "무해/무한해",
+        "type": "spr",
+        "category": "No Solution · Standard Form",
+        "question": "6x − 9y = 12\nkx − 6y = 10\n\nThis system has no solution. What is k?",
+        "correctValue": 4,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Parallel condition: 6/k = −9/−6 = 3/2\n6/k=3/2 → k=4\n\nCheck constants: 12/10=6/5 ≠ 3/2 ✓ (confirms no solution)\n\nAnswer: 4"
+      },
+      {
+        "id": 6,
+        "section": "무해/무한해",
+        "type": "spr",
+        "category": "No Solution · Coefficient Ratio",
+        "question": "7x + ky = 21\n14x + 8y = 50\n\nThis system has no solution. What is k?",
+        "correctValue": 4,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Parallel condition: 7/14 = k/8\n1/2 = k/8 → k=4\n\nCheck: 21/50 ≠ 1/2 ✓\n\nAnswer: 4"
+      },
+      {
+        "id": 7,
+        "section": "무해/무한해",
+        "type": "spr",
+        "category": "No Solution · Fraction Coefficients",
+        "question": "(2/3)x + y = 6\nkx + (3/2)y = 10\n\nThis system has no solution. What is k?",
+        "correctValue": 1,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Parallel condition: (2/3)/k = 1/(3/2) = 2/3\n(2/3)/k=2/3 → k=1\n\nCheck: 6/10=3/5 ≠ 2/3 ✓\n\nAnswer: 1\n\n💡 With fraction coefficients, cross-multiply carefully before comparing ratios."
+      },
+      {
+        "id": 8,
+        "section": "무해/무한해",
+        "type": "spr",
+        "category": "Infinite Solutions · Solve for Both",
+        "question": "4x + (k−2)y = 16\n(m+1)x + 9y = 48\n\nIf this system has infinitely many solutions, what is k+m?",
+        "correctValue": 16,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "All ratios equal: 4/(m+1) = (k−2)/9 = 16/48 = 1/3\n\n4/(m+1)=1/3 → m+1=12 → m=11\n(k−2)/9=1/3 → k−2=3 → k=5\n\nk+m = 5+11 = 16\n\nAnswer: 16"
+      },
+      {
+        "id": 9,
+        "section": "심화인수분해",
+        "type": "mc",
+        "category": "Sum of Cubes",
+        "question": "Which is a factor of 8x³ + 27?",
+        "options": [
+          "A) 2x + 3",
+          "B) 2x − 3",
+          "C) 4x² − 9",
+          "D) 8x − 27"
+        ],
+        "answer": 0,
+        "explanation": "Sum of cubes formula: a³+b³=(a+b)(a²−ab+b²)\n\n8x³+27=(2x)³+3³=(2x+3)(4x²−6x+9)\n\nAnswer: A) 2x+3\n\n💡 Memorize: a³+b³=(a+b)(a²−ab+b²). Note the MIDDLE sign is opposite in the trinomial."
+      },
+      {
+        "id": 10,
+        "section": "심화인수분해",
+        "type": "mc",
+        "category": "Difference of Cubes",
+        "question": "Which is a factor of 64x³ − 1?",
+        "options": [
+          "A) 4x + 1",
+          "B) 4x − 1",
+          "C) 16x² + 1",
+          "D) 8x − 1"
+        ],
+        "answer": 1,
+        "explanation": "Difference of cubes: a³−b³=(a−b)(a²+ab+b²)\n\n64x³−1=(4x)³−1³=(4x−1)(16x²+4x+1)\n\nAnswer: B) 4x−1\n\n💡 a³−b³=(a−b)(a²+ab+b²). Here the trinomial sign matches the ORIGINAL problem's operation."
+      },
+      {
+        "id": 11,
+        "section": "심화인수분해",
+        "type": "mc",
+        "category": "Factor by Grouping",
+        "question": "Which is the complete factorization of x³ − 3x² + 4x − 12?",
+        "options": [
+          "A) (x−3)(x²+4)",
+          "B) (x+3)(x²−4)",
+          "C) (x−3)(x+2)(x−2)",
+          "D) x²(x−3)+4"
+        ],
+        "answer": 0,
+        "explanation": "Group: (x³−3x²)+(4x−12)\n= x²(x−3)+4(x−3)\n= (x−3)(x²+4)\n\nNote: x²+4 does NOT factor further over the reals (sum of squares).\n\nAnswer: A) (x−3)(x²+4)\n\n💡 Option C over-factors — x²+4 has no real roots, so it can't split into (x+2)(x−2) [that would be x²−4, not x²+4]."
+      },
+      {
+        "id": 12,
+        "section": "심화인수분해",
+        "type": "spr",
+        "category": "Quadratic in Disguise",
+        "question": "x⁴ − 13x² + 36 = 0. What is the sum of ALL real solutions?",
+        "correctValue": 0,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Let u=x²: u²−13u+36=0\n(u−9)(u−4)=0\nu=9 or u=4\n\nx²=9 → x=±3\nx²=4 → x=±2\n\nAll four solutions: 3,−3,2,−2\nSum = 3+(−3)+2+(−2) = 0\n\nAnswer: 0\n\n💡 A degree-4 equation can have up to 4 real roots. Don't stop after finding just the positive ones!"
+      },
+      {
+        "id": 13,
+        "section": "심화인수분해",
+        "type": "mc",
+        "category": "GCF + Difference of Squares",
+        "question": "Which is a factor of 5x⁵ − 80x?",
+        "options": [
+          "A) x − 2",
+          "B) x² − 4",
+          "C) x + 4",
+          "D) 5x² − 16"
+        ],
+        "answer": 0,
+        "explanation": "Factor out GCF: 5x(x⁴−16)\n\nDifference of squares (twice):\nx⁴−16=(x²−4)(x²+4)=(x−2)(x+2)(x²+4)\n\nFull: 5x(x−2)(x+2)(x²+4)\n\nAnswer: A) x−2\n\n💡 Keep factoring difference-of-squares pieces until nothing more can split. x²+4 is the stopping point (sum of squares)."
+      },
+      {
+        "id": 14,
+        "section": "심화인수분해",
+        "type": "spr",
+        "category": "Perfect Square Trinomial",
+        "question": "25x² + kx + 16 is a perfect square trinomial, where k is positive. What is k?",
+        "correctValue": 40,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Perfect square form: (5x+4)²=25x²+40x+16\n\nSo k=40\n\nAnswer: 40\n\n💡 For (ax+b)²=a²x²+2abx+b², the middle term is always 2×√(first term)×√(last term)."
+      },
+      {
+        "id": 15,
+        "section": "평행/수직",
+        "type": "spr",
+        "category": "Parallel Lines · Find k",
+        "question": "Line 1: y = (3/4)x − 2\nLine 2: kx − 8y = 24\n\nThese lines are parallel. What is k?",
+        "correctValue": 6,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Line 2: kx−8y=24 → y=(k/8)x−3\nSlope of Line 2 = k/8\n\nSet equal to Line 1's slope: k/8=3/4 → k=6\n\nAnswer: 6"
+      },
+      {
+        "id": 16,
+        "section": "평행/수직",
+        "type": "spr",
+        "category": "Perpendicular Lines · Find k",
+        "question": "Line 1 has slope 5.\nLine 2: kx + 10y = 30 is perpendicular to Line 1.\n\nWhat is k?",
+        "correctValue": 2,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Line 2: kx+10y=30 → y=(−k/10)x+3\nSlope of Line 2 = −k/10\n\nPerpendicular to slope 5 means slope = −1/5:\n−k/10=−1/5 → k=2\n\nAnswer: 2"
+      },
+      {
+        "id": 17,
+        "section": "평행/수직",
+        "type": "spr",
+        "category": "Line Through a Point · Parallel",
+        "question": "Find the line parallel to y=2x+5 that passes through (3,4). What is the y-intercept of this new line?",
+        "correctValue": -2,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Parallel → same slope = 2\ny−4=2(x−3)\ny=2x−6+4\ny=2x−2\n\ny-intercept = −2\n\nAnswer: −2"
+      },
+      {
+        "id": 18,
+        "section": "평행/수직",
+        "type": "mc",
+        "category": "Identify Relationship",
+        "question": "Line A: 6x − 2y = 10\nLine B: 3x − y = 8\n\nWhat is the relationship between these lines?",
+        "options": [
+          "A) Parallel (different lines)",
+          "B) Perpendicular",
+          "C) The same line",
+          "D) Neither parallel nor perpendicular"
+        ],
+        "answer": 0,
+        "explanation": "Line A: y=3x−5, slope=3\nLine B: y=3x−8, slope=3\n\nSame slope, DIFFERENT y-intercepts (−5 vs −8) → parallel but not identical.\n\nAnswer: A) Parallel (different lines)\n\n💡 Same slope alone doesn't mean \"same line\" — check the intercepts too!"
+      },
+      {
+        "id": 19,
+        "section": "평행/수직",
+        "type": "spr",
+        "category": "Perpendicular Through a Point",
+        "question": "Find the line perpendicular to 4x + 2y = 10 that passes through (1, −3). What is the slope of this new line?",
+        "correctValue": 0.5,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "Given line: 4x+2y=10 → y=−2x+5, slope=−2\n\nPerpendicular slope = −1/(−2) = 1/2\n\nAnswer: 0.5\n\n💡 Perpendicular slopes are negative reciprocals: flip AND flip the sign."
+      },
+      {
+        "id": 20,
+        "section": "평행/수직",
+        "type": "spr",
+        "category": "Same Line · Find k",
+        "question": "2x + ky = 8\n4x + 6y = 16\n\nFor what value of k are these THE SAME LINE (infinitely many common points)?",
+        "correctValue": 3,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "For the same line, all ratios must match:\n2/4 = k/6 = 8/16\n\n1/2 = k/6 → k=3\n\nCheck: 8/16=1/2 ✓ matches\n\nAnswer: 3\n\n💡 \"Same line\" is the infinite-solutions case — every ratio (x-coeff, y-coeff, constant) must be equal."
+      }
+    ]
+  },
+  {
+    "id": "setN-unitcircle-trig",
+    "label": "setN-unitcircle-trig",
+    "title": "단위원/삼각비 집중 · 무해변형 · 인수분해",
+    "subtitle": "",
+    "accent": "#D6336C",
+    "catColors": {},
+    "problems": [
+      {
+        "id": 1,
+        "section": "단위원/삼각비",
+        "type": "mc",
+        "category": "Unit Circle · Exact Angle",
+        "question": "A point on the unit circle has coordinates (√3/2, 1/2). What angle (in degrees, 0≤θ<360) does this correspond to?",
+        "options": [
+          "A) 30°",
+          "B) 60°",
+          "C) 45°",
+          "D) 150°"
+        ],
+        "answer": 0,
+        "explanation": "(cos θ, sin θ) = (√3/2, 1/2)\n\nThis matches θ=30° exactly (a standard reference angle).\n\nAnswer: A) 30°\n\n💡 Memorize the unit circle values for 30°, 45°, 60°, and their multiples."
+      },
+      {
+        "id": 2,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Unit Circle · Exact Value",
+        "question": "What is sin(210°)?",
+        "correctValue": -0.5,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "210° is in Quadrant III (reference angle 30°).\nIn Q3, sine is negative.\n\nsin(210°) = −sin(30°) = −1/2\n\nAnswer: −0.5\n\n💡 Find the reference angle, apply the exact value, then fix the sign based on the quadrant."
+      },
+      {
+        "id": 3,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Unit Circle · Exact Value",
+        "question": "What is cos(315°)? (Express as a decimal, rounded to 4 places.)",
+        "correctValue": 0.7071,
+        "tolerance": 0.001,
+        "unit": "",
+        "explanation": "315° is in Quadrant IV (reference angle 45°).\nIn Q4, cosine is positive.\n\ncos(315°) = cos(45°) = √2/2 ≈ 0.7071\n\nAnswer: 0.7071"
+      },
+      {
+        "id": 4,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Unit Circle · tan from Coordinates",
+        "question": "On a unit circle, point B has coordinates (−1/√5, −2/√5). If angle AOB = w, what is tan w?",
+        "correctValue": 2,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "tan w = sin w / cos w = (−2/√5)/(−1/√5) = 2\n\nAnswer: 2\n\n💡 Both coordinates negative (Q3) → tangent is positive (negatives cancel)."
+      },
+      {
+        "id": 5,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Reference Angle",
+        "question": "What is the reference angle of 200°?",
+        "correctValue": 20,
+        "tolerance": 0,
+        "unit": "degrees",
+        "explanation": "200° is in Quadrant III.\nReference angle = 200°−180° = 20°\n\nAnswer: 20°"
+      },
+      {
+        "id": 6,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Pythagorean Identity",
+        "question": "sin θ = −3/5, and θ is in Quadrant III. What is cos θ?",
+        "correctValue": -0.8,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "sin²θ+cos²θ=1\n(−3/5)²+cos²θ=1\ncos²θ=16/25\ncos θ=±4/5\n\nIn Quadrant III, cosine is negative:\ncos θ = −4/5 = −0.8\n\nAnswer: −0.8\n\n💡 Both sin and cos are negative in Quadrant III."
+      },
+      {
+        "id": 7,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Arc Length",
+        "question": "A circle has radius 8. What is the arc length for a central angle of 150°? (As a multiple of π.)",
+        "correctValue": 6.667,
+        "tolerance": 0.01,
+        "unit": "π",
+        "explanation": "Arc length = (θ/360)×2πr\n= (150/360)×2π(8)\n= (5/12)×16π\n= 80π/12 = 20π/3 ≈ 6.667π\n\nAnswer: 20π/3 (≈6.667π)"
+      },
+      {
+        "id": 8,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Law of Sines",
+        "question": "In a triangle, ∠A=50°, ∠C=70°, and side c (opposite C) = 18. What is side a (opposite A)? (Round to nearest tenth.)",
+        "correctValue": 14.7,
+        "tolerance": 0.2,
+        "unit": "",
+        "explanation": "Law of Sines: a/sin A = c/sin C\na = 18×sin(50°)/sin(70°) ≈ 18×0.766/0.940 ≈ 14.7\n\nAnswer: 14.7"
+      },
+      {
+        "id": 9,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Law of Cosines · Find Angle",
+        "question": "A triangle has sides a=5, b=7, c=8. What is the measure of angle C (opposite side c)? (Round to nearest tenth of a degree.)",
+        "correctValue": 81.8,
+        "tolerance": 0.3,
+        "unit": "degrees",
+        "explanation": "cos C = (a²+b²−c²)/(2ab)\n= (25+49−64)/(2×5×7)\n= 10/70 = 1/7\n\nC = arccos(1/7) ≈ 81.8°\n\nAnswer: 81.8°\n\n💡 Law of Cosines can find an ANGLE too — just solve for cos C, then take arccos."
+      },
+      {
+        "id": 10,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Cofunction Identity",
+        "question": "sin θ = 0.28. What is cos(90° − θ)?",
+        "correctValue": 0.28,
+        "tolerance": 0.001,
+        "unit": "",
+        "explanation": "Cofunction identity: cos(90°−θ) = sin θ\n\nSo cos(90°−θ) = 0.28\n\nAnswer: 0.28\n\n💡 No calculation needed — sin and cos are cofunctions of complementary angles."
+      },
+      {
+        "id": 11,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Right Triangle · Pythagorean Triple",
+        "question": "A right triangle has legs 20 and 21. What is the hypotenuse, and what is tan θ for the angle opposite the leg of length 20? (Give tan θ as a decimal.)",
+        "correctValue": 0.9524,
+        "tolerance": 0.001,
+        "unit": "",
+        "explanation": "Hypotenuse: √(400+441)=√841=29\n\ntan θ = opposite/adjacent = 20/21 ≈ 0.9524\n\nAnswer: 0.9524 (hypotenuse=29)\n\n💡 20-21-29 is a lesser-known Pythagorean triple worth recognizing."
+      },
+      {
+        "id": 12,
+        "section": "단위원/삼각비",
+        "type": "spr",
+        "category": "Angle of Elevation",
+        "question": "From a point 40 meters from a building's base, the angle of elevation to the top is 35°. What is the building's height? (Round to nearest tenth.)",
+        "correctValue": 28,
+        "tolerance": 0.5,
+        "unit": "meters",
+        "explanation": "tan(35°) = height/40\nheight = 40×tan(35°) ≈ 40×0.700 ≈ 28.0\n\nAnswer: 28.0 meters"
+      },
+      {
+        "id": 13,
+        "section": "무해변형",
+        "type": "spr",
+        "category": "No Solution · Fraction k",
+        "question": "8(kx + 2) = (24/5)x − 7. No solution. Find k.",
+        "correctValue": 0.6,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "8kx+16=(24/5)x−7\n8k=24/5→k=3/5=0.6\nCheck: 16≠−7 ✓\n\nAnswer: 0.6"
+      },
+      {
+        "id": 14,
+        "section": "무해변형",
+        "type": "spr",
+        "category": "Infinite Solutions",
+        "question": "5x + ky = 20\n15x + 18y = c\n\nIf this system has infinitely many solutions, what is k?",
+        "correctValue": 6,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Ratio: 5/15=k/18=20/c\n1/3=k/18 → k=6\n\nAnswer: 6"
+      },
+      {
+        "id": 15,
+        "section": "무해변형",
+        "type": "spr",
+        "category": "No Solution · Distributed Fraction",
+        "question": "(5/2)(kx − 4) = 15x + 9. No solution. Find k.",
+        "correctValue": 6,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "(5/2)kx−10=15x+9\n(5/2)k=15→k=6\nCheck: −10≠9 ✓\n\nAnswer: 6"
+      },
+      {
+        "id": 16,
+        "section": "무해변형",
+        "type": "spr",
+        "category": "Perpendicular Line via Trig",
+        "question": "A line makes a 60° angle with the positive x-axis (slope=tan 60°). A second line is perpendicular to it. What angle (0°–180°) does the second line make with the positive x-axis?",
+        "correctValue": 150,
+        "tolerance": 0,
+        "unit": "degrees",
+        "explanation": "Slope of first line: tan(60°)=√3\n\nPerpendicular slope: −1/√3\n\nThis matches tan(150°)=−1/√3\n\nAnswer: 150°\n\n💡 Perpendicular lines' angles with the x-axis differ by 90°: 60°+90°=150°."
+      },
+      {
+        "id": 17,
+        "section": "인수분해",
+        "type": "mc",
+        "category": "Sum of Cubes",
+        "question": "Which is a factor of 27x³ + 8?",
+        "options": [
+          "A) 3x + 2",
+          "B) 3x − 2",
+          "C) 9x² − 4",
+          "D) 27x − 8"
+        ],
+        "answer": 0,
+        "explanation": "27x³+8=(3x)³+2³=(3x+2)(9x²−6x+4)\n\nAnswer: A) 3x+2"
+      },
+      {
+        "id": 18,
+        "section": "인수분해",
+        "type": "mc",
+        "category": "Factor by Grouping",
+        "question": "Which is the complete factorization of x³ + 5x² − 4x − 20?",
+        "options": [
+          "A) (x+5)(x−2)(x+2)",
+          "B) (x−5)(x+2)(x−2)",
+          "C) (x+5)(x²+4)",
+          "D) x²(x+5)−4"
+        ],
+        "answer": 0,
+        "explanation": "Group: x²(x+5)−4(x+5)=(x+5)(x²−4)\n\nx²−4 factors further: (x−2)(x+2)\n\nComplete: (x+5)(x−2)(x+2)\n\nAnswer: A)"
+      },
+      {
+        "id": 19,
+        "section": "인수분해",
+        "type": "spr",
+        "category": "Quadratic in Disguise",
+        "question": "x⁴ − 5x² − 36 = 0. How many REAL solutions does this equation have?",
+        "correctValue": 2,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Let u=x²: u²−5u−36=0\n(u−9)(u+4)=0\nu=9 or u=−4\n\nu=−4 is REJECTED (x² can't be negative)\nu=9 → x=±3\n\nOnly 2 real solutions: x=3, x=−3\n\nAnswer: 2\n\n💡 Always check that u=x² values are non-negative before taking square roots!"
+      },
+      {
+        "id": 20,
+        "section": "인수분해",
+        "type": "spr",
+        "category": "Perfect Square Trinomial",
+        "question": "49x² − kx + 64 is a perfect square trinomial, where k is positive. What is k?",
+        "correctValue": 112,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "(7x−8)²=49x²−112x+64\n\nSo k=112\n\nAnswer: 112"
+      }
+    ]
+  },
+  {
+    "id": "setO-high-error-traps",
+    "label": "setO-high-error-traps",
+    "title": "실수 많이 하는 문제 모음",
+    "subtitle": "이중조건 · 접선 · 애매한경우 · 둔각 · 외래해 · 단위함정 · Verified ✓",
+    "accent": "#2B8A3E",
+    "catColors": {},
+    "problems": [
+      {
+        "id": 1,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "No Solution → Infinite (Two-Part)",
+        "question": "3(kx − 5) = (9/2)x + n\n\nFirst, find k such that the equation has no solution for most values of n. Then, what specific value of n would instead make the equation have infinitely many solutions?",
+        "correctValue": -15,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "3kx−15=(9/2)x+n\n\nFor no solution (generally): 3k=9/2 → k=3/2\n\nFor INFINITE solutions instead, the constants must also match:\n−15=n → n=−15\n\nAnswer: n=−15\n\n💡 The SAME coefficient condition (k=3/2) creates either \"no solution\" OR \"infinite solutions\" depending entirely on whether the constants happen to match."
+      },
+      {
+        "id": 2,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Perpendicular to Vertical Line",
+        "question": "A line passes through (2, 5) and (2, 9). What is the slope of a line perpendicular to it?",
+        "correctValue": 0,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "The line through (2,5) and (2,9) is VERTICAL (undefined slope, x=2).\n\nA line perpendicular to a vertical line is HORIZONTAL, with slope 0.\n\nAnswer: 0\n\n💡 Vertical/horizontal pairs are a special case — you can't use the \"negative reciprocal\" formula on undefined slope directly."
+      },
+      {
+        "id": 3,
+        "section": "실수유발",
+        "type": "mc",
+        "category": "Parallel to Vertical Line",
+        "question": "A line passes through (4, 7) and (4, −3). Which could be the equation of a line PARALLEL to it?",
+        "options": [
+          "A) x = 9",
+          "B) y = 9",
+          "C) y = 4x",
+          "D) x = 4y"
+        ],
+        "answer": 0,
+        "explanation": "The line through (4,7) and (4,−3) is VERTICAL (x=4, undefined slope).\n\nA line parallel to a vertical line must also be vertical: x=constant.\n\nAnswer: A) x=9\n\n💡 Don't confuse \"vertical\" with slope 0 — that's horizontal. Vertical lines have undefined slope."
+      },
+      {
+        "id": 4,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Unit Circle · Quadrant Trap",
+        "question": "cos θ = 1/3, and θ is in Quadrant IV. What is sin θ? (Round to 4 decimal places.)",
+        "correctValue": -0.9428,
+        "tolerance": 0.001,
+        "unit": "",
+        "explanation": "sin²θ+cos²θ=1\nsin²θ=1−1/9=8/9\nsin θ=±√(8/9)=±2√2/3\n\nIn Quadrant IV, sine is NEGATIVE:\nsin θ = −2√2/3 ≈ −0.9428\n\nAnswer: −0.9428\n\n💡 Q4: cos positive, sin negative. Many students forget to apply the negative sign."
+      },
+      {
+        "id": 5,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Law of Cosines · Obtuse Angle Trap",
+        "question": "A triangle has sides a=4, b=5, c=8. What is the measure of the LARGEST angle (opposite side c)? (Round to nearest tenth of a degree.)",
+        "correctValue": 125.1,
+        "tolerance": 0.3,
+        "unit": "degrees",
+        "explanation": "cos C = (a²+b²−c²)/(2ab)\n= (16+25−64)/(2×4×5)\n= −23/40 = −0.575\n\nC = arccos(−0.575) ≈ 125.1°\n\nAnswer: 125.1°\n\n💡 A NEGATIVE cosine value means the angle is OBTUSE (>90°). Many students see a negative number and assume they made an error — they didn't!"
+      },
+      {
+        "id": 6,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Absolute Value · Extraneous Check",
+        "question": "|4x − 7| = 5x + 2. Solve for x, checking for extraneous solutions.",
+        "correctValue": 0.5556,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "Case 1: 4x−7=5x+2 → x=−9\nCheck RHS: 5(−9)+2=−43 (negative — INVALID)\n\nCase 2: 4x−7=−(5x+2)=−5x−2 → 9x=5 → x=5/9\nCheck RHS: 5(5/9)+2=43/9>0 ✓\nCheck: |20/9−63/9|=43/9=43/9 ✓ Valid\n\nOnly valid solution: x=5/9≈0.556\n\nAnswer: 5/9"
+      },
+      {
+        "id": 7,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Squared Unit · Combined Conversion",
+        "question": "A material's density is 0.6 kg per square centimeter. What is this in grams per square meter?\n(1 kg=1,000 g, 1 m=100 cm)",
+        "correctValue": 6000000,
+        "tolerance": 0,
+        "unit": "g/m²",
+        "explanation": "Step 1 — Area: 1 m²=10,000 cm². Since MORE area means MORE total mass at the same rate, multiply:\n0.6 kg/cm² × 10,000 = 6,000 kg/m²\n\nStep 2 — Convert kg to g:\n6,000 × 1,000 = 6,000,000 g/m²\n\nAnswer: 6,000,000 g/m²\n\n💡 Going from a SMALLER area unit's rate to a LARGER area unit's rate means MULTIPLYING (more area = proportionally more mass), which trips up students used to \"larger unit = divide.\""
+      },
+      {
+        "id": 8,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Discriminant · No Real Solutions (Flipped)",
+        "question": "(3/2)x² − kx + 24 = 0. k is a positive integer. What is the GREATEST value of k for which this equation has NO real solutions?",
+        "correctValue": 11,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "No real solutions: D<0\nD=k²−4(3/2)(24)=k²−144<0\n−12<k<12\n\nSince k is a positive integer: k can be 1 through 11.\nGreatest such k = 11\n\nAnswer: 11\n\n💡 This flips the usual \"max k for TWO solutions\" pattern — here we want the boundary for NO solutions instead. Read carefully!"
+      },
+      {
+        "id": 9,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Vieta's · Given One Root",
+        "question": "x² − (k+3)x + 2k = 0 has one solution equal to 4. What is k?",
+        "correctValue": 2,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Substitute x=4:\n16−4(k+3)+2k=0\n16−4k−12+2k=0\n4−2k=0\nk=2\n\nAnswer: 2\n\n💡 When a specific root is given, plug it directly into the equation rather than trying to use Vieta's formulas."
+      },
+      {
+        "id": 10,
+        "section": "실수유발",
+        "type": "mc",
+        "category": "Compound vs Simple · Close Rates",
+        "question": "$4,500 for 5 years. A: 6.2% simple. B: 5.9% compound. Which wins, and by about how much?",
+        "options": [
+          "A) A by $99",
+          "B) B by $99",
+          "C) A by $500",
+          "D) B by $500"
+        ],
+        "answer": 1,
+        "explanation": "A: 4,500+4,500(0.062)(5)=$5,895\nB: 4,500(1.059)⁵≈$5,993.66\n\nB wins by ≈$98.66≈$99\n\nAnswer: B) B by $99\n\n💡 Even a LOWER compound rate can beat a higher simple rate given enough time. Never assume — always calculate."
+      },
+      {
+        "id": 11,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Percent Chain · Mixed Directions",
+        "question": "a is 20% less than b. c is 35% more than a. d is 10% less than c. What percent of b is d?",
+        "correctValue": 97.2,
+        "tolerance": 0.1,
+        "unit": "%",
+        "explanation": "a=0.80b\nc=1.35a=1.35(0.80b)=1.08b\nd=0.90c=0.90(1.08b)=0.972b\n\nd is 97.2% of b\n\nAnswer: 97.2%\n\n💡 Chains mixing increases and decreases still just multiply the factors in order: 0.80×1.35×0.90=0.972."
+      },
+      {
+        "id": 12,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Volume Scaling Trap",
+        "question": "A cube has a volume of 512. If each side length is increased by 50%, what is the new volume?",
+        "correctValue": 1728,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Side length: ∛512=8\nNew side: 8×1.5=12\n\nNew volume: 12³=1,728\n\nOr using the scaling shortcut: 512×(1.5)³=512×3.375=1,728\n\nAnswer: 1,728\n\n💡 A 50% increase in SIDE gives (1.5)³≈3.375× the volume — a 237.5% increase, NOT 50% or 150%."
+      },
+      {
+        "id": 13,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Tangent Line to Parabola",
+        "question": "y = kx − 16\ny = x² − 6x + 9\n\nFor what value of k is the line tangent to the parabola (exactly one intersection)?",
+        "correctValue": 4,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Set equal: x²−6x+9 = kx−16\nx²−(6+k)x+25=0\n\nFor exactly one solution, D=0:\n(6+k)²−100=0\n(6+k)²=100\n6+k=±10\n\nk=4 or k=−16\n\nTesting k=4: x²−10x+25=0→(x−5)²=0, x=5\nCheck: line y=4(5)−16=4; parabola y=25−30+9=4 ✓\n\nAnswer: 4\n\n💡 The ± from the square root gives TWO possible k values — verify which one is intended or report both if the question allows."
+      },
+      {
+        "id": 14,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Expected Value · Net Profit",
+        "question": "A game costs $6 to play. You win $25 with probability 0.08, win $12 with probability 0.22, and win $0 otherwise. What is the expected net profit per game?",
+        "correctValue": -1.36,
+        "tolerance": 0.01,
+        "unit": "$",
+        "explanation": "Expected winnings = 25(0.08)+12(0.22)+0(0.70)\n= 2+2.64 = $4.64\n\nNet profit = 4.64−6 = −$1.36\n\nAnswer: −$1.36 (expected loss)"
+      },
+      {
+        "id": 15,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Half-Life · Non-Integer Halvings",
+        "question": "A substance has a half-life of 2.5 hours. Starting with 960 mg, how many mg remain after 24 hours? (Round to nearest hundredth.)",
+        "correctValue": 1.24,
+        "tolerance": 0.05,
+        "unit": "mg",
+        "explanation": "Number of half-lives: 24÷2.5=9.6 (NOT a whole number!)\n\nA(t)=960×(0.5)^9.6≈1.24 mg\n\nAnswer: 1.24 mg\n\n💡 Half-lives don't need to be whole numbers — use the exponent 9.6 directly rather than rounding to 9 or 10."
+      },
+      {
+        "id": 16,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Sum & Difference → Difference of Squares",
+        "question": "x + y = 14 and x − y = 6. What is x² − y²?",
+        "correctValue": 84,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "x²−y²=(x+y)(x−y)=14×6=84\n\nAnswer: 84\n\n💡 No need to solve for x and y separately — the difference of squares identity gives the answer directly."
+      },
+      {
+        "id": 17,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Law of Sines · Ambiguous Case (SSA)",
+        "question": "In a triangle, ∠A=30°, side a=5, side b=9. How many distinct triangles are possible?",
+        "correctValue": 2,
+        "tolerance": 0,
+        "unit": "",
+        "explanation": "Using Law of Sines: sin B = b·sin A/a = 9×0.5/5 = 0.9\n\nB ≈ 64.16° OR B ≈ 180−64.16 = 115.84°\n\nCheck both: A+B₁=30+64.16=94.16°<180° ✓ valid\nA+B₂=30+115.84=145.84°<180° ✓ valid\n\nBOTH cases work → 2 distinct triangles possible.\n\nAnswer: 2\n\n💡 SSA (side-side-angle) is the \"ambiguous case\" — always check whether one, two, or zero triangles are possible."
+      },
+      {
+        "id": 18,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Perpendicular Bisector",
+        "question": "What is the slope of the perpendicular bisector of the segment connecting (2, 3) and (8, 11)?",
+        "correctValue": -0.75,
+        "tolerance": 0.01,
+        "unit": "",
+        "explanation": "Slope of segment: (11−3)/(8−2)=8/6=4/3\n\nPerpendicular slope: −3/4=−0.75\n\nAnswer: −0.75\n\n💡 \"Perpendicular bisector\" needs the perpendicular SLOPE — the midpoint matters only if you need the full equation, not just the slope."
+      },
+      {
+        "id": 19,
+        "section": "실수유발",
+        "type": "spr",
+        "category": "Quadratic Formula · Irrational Roots",
+        "question": "2x² − 6x − 3 = 0. What is the positive solution? (Round to nearest hundredth.)",
+        "correctValue": 3.44,
+        "tolerance": 0.02,
+        "unit": "",
+        "explanation": "This doesn't factor nicely — use the quadratic formula:\nx = (6±√(36+24))/4 = (6±√60)/4\n\n√60 ≈ 7.746\n\nPositive solution: x=(6+7.746)/4≈3.44\n\nAnswer: 3.44\n\n💡 Don't waste time trying to factor when the discriminant isn't a perfect square — go straight to the quadratic formula."
+      },
+      {
+        "id": 20,
+        "section": "실수유발",
+        "type": "mc",
+        "category": "Monthly Compound Interest",
+        "question": "$5,000 at 4.8% annual interest, compounded monthly, for 3 years. What is the approximate final value?",
+        "options": [
+          "A) $5,720",
+          "B) $5,742",
+          "C) $5,773",
+          "D) $5,800"
+        ],
+        "answer": 2,
+        "explanation": "A=P(1+r/n)^(nt)\n=5,000(1+0.048/12)^(36)\n=5,000(1.004)^36\n≈$5,772.76\n\nAnswer: C) $5,773\n\n💡 Monthly compounding: divide rate by 12, multiply years by 12 for the exponent."
+      }
+    ]
   }
 ]
