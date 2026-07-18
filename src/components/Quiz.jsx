@@ -49,7 +49,7 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
   const [redeemedCount, setRedeemedCount] = useState(0);
   const [redeemedIds, setRedeemedIds] = useState({});
   const [showKey, setShowKey] = useState(teacherMode);
-  const [timeLeft, setTimeLeft] = useState(teacherMode ? null : TIME_LIMIT);
+  const [timeLeft, setTimeLeft] = useState(teacherMode ? null : loadTimeLimit());
   const [timesUp, setTimesUp] = useState(false);
   const scoreAllRef = useRef(null);
 
@@ -115,7 +115,7 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
   const reset = () => {
     setSelected({}); setSprInputs({}); setRevealed({}); setScore(null);
     setRedeemedCount(0); setRedeemedIds({}); setShowKey(false);
-    setTimeLeft(teacherMode ? null : TIME_LIMIT);
+    setTimeLeft(teacherMode ? null : loadTimeLimit());
     setTimesUp(false);
     // Don't reset the store for virtual review sets — original records should persist.
     if (!set.id.startsWith("__")) resetSet(set.id);
