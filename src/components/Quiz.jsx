@@ -49,20 +49,29 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
   const [redeemedCount, setRedeemedCount] = useState(0);
   const [redeemedIds, setRedeemedIds] = useState({});
   const [showKey, setShowKey] = useState(teacherMode);
-  const [timeLeft, setTimeLeft] = useState(teacherMode ? null : loadTimeLimit());
+  const [timeLimit, setTimeLimit] = useState(() => (teacherMode ? null : loadTimeLimit()));
+  const [timeLeft, setTimeLeft] = useState(timeLimit);
   const [timesUp, setTimesUp] = useState(false);
   const scoreAllRef = useRef(null);
+
+  const changeTimeLimit = (minutesOrNull) => {
+    const seconds = minutesOrNull === null ? null : minutesOrNull * 60;
+    saveTimeLimit(seconds);
+    setTimeLimit(seconds);
+    setTimeLeft(seconds);
+    setTimesUp(false);
+  };
 
   const getAnswer = (p) => (p.type === "mc" ? selected[p.id] : sprInputs[p.id] || "");
   const handleSelect = (pid, oi) => { if (!revealed[pid]) setSelected((prev) => ({ ...prev, [pid]: oi })); };
   const handleSprInput = (pid, v) => { if (!revealed[pid]) setSprInputs((prev) => ({ ...prev, [pid]: v })); };
 
-  // 타이머: teacherMode가 아닐 때, 채점 전까지만 카운트다운
+  // 타이머: teacherMode가 아니고 제한 시간이 설정된 경우, 채점 전까지만 카운트다운
   useEffect(() => {
-    if (teacherMode || score !== null) return;
-    if (timeLeft <= 0) return;
+    if (teacherMode || score !== null || timeLeft === null || timeLeft <= 0) return;
     const id = setInterval(() => {
       setTimeLeft((t) => {
+        if (t === null) return null;
         if (t <= 1) {
           clearInterval(id);
           setTimesUp(true);
@@ -73,7 +82,7 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
       });
     }, 1000);
     return () => clearInterval(id);
-  }, [teacherMode, score]);
+  }, [teacherMode, score, timeLimit]);
 
   const isAnswered = (p) => (p.type === "mc" ? selected[p.id] !== undefined : (sprInputs[p.id] || "") !== "");
   const isCorrect = (p) => (p.type === "mc" ? (teacherMode ? false : selected[p.id] === p.answer) : checkSpr(p, sprInputs[p.id] || ""));
@@ -115,7 +124,9 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
   const reset = () => {
     setSelected({}); setSprInputs({}); setRevealed({}); setScore(null);
     setRedeemedCount(0); setRedeemedIds({}); setShowKey(false);
-    setTimeLeft(teacherMode ? null : loadTimeLimit());
+    const lim = teacherMode ? null : loadTimeLimit();
+    setTimeLimit(lim);
+    setTimeLeft(lim);
     setTimesUp(false);
     // Don't reset the store for virtual review sets — original records should persist.
     if (!set.id.startsWith("__")) resetSet(set.id);
@@ -135,15 +146,32 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
         <h1 style={{ fontSize: 24, fontWeight: 700, color: "#1a1a1a", margin: "0 0 8px" }}>{set.title}</h1>
         <p style={{ fontSize: 13, color: "#777", margin: 0 }}>{set.subtitle}</p>
 
-        {!teacherMode && timeLeft !== null && (
-          <div style={{ marginTop: 16, display: "inline-flex", alignItems: "center", gap: 8, background: timesUp ? "#FFEBEE" : timeLeft <= 120 ? "#FFF3E0" : "#F5F5F5", border: `1.5px solid ${timesUp ? "#EF5350" : timeLeft <= 120 ? "#FFA726" : "#E0E0E0"}`, borderRadius: 12, padding: "8px 20px" }}>
-            <span style={{ fontSize: 13, color: timesUp ? "#C62828" : timeLeft <= 120 ? "#E65100" : "#555", fontWeight: 600 }}>
-              {timesUp ? "⏰ 시간 종료!" : "⏱"}
-            </span>
-            {!timesUp && (
-              <span style={{ fontSize: 22, fontWeight: 700, fontVariantNumeric: "tabular-nums", color: timeLeft <= 120 ? "#E65100" : "#1a1a1a", letterSpacing: 1 }}>
-                {String(Math.floor(timeLeft / 60)).padStart(2, "0")}:{String(timeLeft % 60).padStart(2, "0")}
-              </span>
+        {!teacherMode && (
+          <div style={{ marginTop: 16, display: "inline-flex", alignItems: "center", gap: 10, flexWrap: "wrap", justifyContent: "center" }}>
+            {score === null && (
+              <select
+                value={timeLimit === null ? NO_LIMIT : String(timeLimit / 60)}
+                onChange={(e) => changeTimeLimit(e.target.value === NO_LIMIT ? null : parseInt(e.target.value, 10))}
+                style={{ fontSize: 13, fontWeight: 600, color: "#555", background: "#F5F5F5", border: "1.5px solid #E0E0E0", borderRadius: 12, padding: "8px 12px", fontFamily: "inherit", cursor: "pointer" }}
+              >
+                {TIME_PRESETS.map((m) => (
+                  <option key={m} value={m}>{m}분</option>
+                ))}
+                <option value={NO_LIMIT}>제한 없음</option>
+              </select>
+            )}
+
+            {timeLeft !== null && (
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: timesUp ? "#FFEBEE" : timeLeft <= 120 ? "#FFF3E0" : "#F5F5F5", border: `1.5px solid ${timesUp ? "#EF5350" : timeLeft <= 120 ? "#FFA726" : "#E0E0E0"}`, borderRadius: 12, padding: "8px 20px" }}>
+                <span style={{ fontSize: 13, color: timesUp ? "#C62828" : timeLeft <= 120 ? "#E65100" : "#555", fontWeight: 600 }}>
+                  {timesUp ? "⏰ 시간 종료!" : "⏱"}
+                </span>
+                {!timesUp && (
+                  <span style={{ fontSize: 22, fontWeight: 700, fontVariantNumeric: "tabular-nums", color: timeLeft <= 120 ? "#E65100" : "#1a1a1a", letterSpacing: 1 }}>
+                    {String(Math.floor(timeLeft / 60)).padStart(2, "0")}:{String(timeLeft % 60).padStart(2, "0")}
+                  </span>
+                )}
+              </div>
             )}
           </div>
         )}
@@ -151,7 +179,7 @@ export default function Quiz({ set, onBack, teacherMode = false }) {
 
       {timesUp && score !== null && (
         <div style={{ background: "#FFEBEE", border: "1.5px solid #EF5350", borderRadius: 12, padding: "12px 20px", marginBottom: 16, textAlign: "center" }}>
-          <span style={{ fontSize: 14, fontWeight: 700, color: "#C62828" }}>⏰ 15분 시간 종료 — 자동 채점되었습니다</span>
+          <span style={{ fontSize: 14, fontWeight: 700, color: "#C62828" }}>⏰ 시간 종료 — 자동 채점되었습니다</span>
         </div>
       )}
 
